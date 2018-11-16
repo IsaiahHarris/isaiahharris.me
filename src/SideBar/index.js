@@ -13,10 +13,12 @@ class SideBar extends Component {
           <div className="close" onClick={this.props.click} />
         </div>
         <ul className="links">
-          <Link to="/" className="link">
+          <Link to="/" className="link" onClick={this.props.click}>
             Home
           </Link>
-          <li className="link">Home</li>
+          <Link to="/about" className="link" onClick={this.props.click}>
+            About
+          </Link>
           <li className="link">Home</li>
         </ul>
         <div className="logo" />
