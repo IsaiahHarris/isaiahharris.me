@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './SideBar.scss';
 class SideBar extends Component {
   render() {
@@ -12,7 +13,9 @@ class SideBar extends Component {
           <div className="close" onClick={this.props.click} />
         </div>
         <ul className="links">
-          <li className="link">Home</li>
+          <Link to="/" className="link">
+            Home
+          </Link>
           <li className="link">Home</li>
           <li className="link">Home</li>
         </ul>
