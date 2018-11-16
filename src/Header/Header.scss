@@ -1,17 +1,13 @@
-$light-green: #00dea6;
-$dark-green: #00cc99;
-%overlay-line {
-  width: 35px;
-  height: 5px;
-  margin: 6px 0;
-  border-radius: 5px;
-}
+@import '../index.scss';
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10vh;
+  font-family: 'Ubuntu', sans-serif;
   .contact {
     margin: 3%;
+    margin-right: 5%;
     padding: 1% 3%;
     border: 2px solid $light-green;
     border-radius: 8px;
@@ -19,6 +15,7 @@ $dark-green: #00cc99;
   }
   .overlay {
     padding: 3%;
+    margin-left: 3%;
     .line {
       @extend %overlay-line;
       background-color: $light-green;
