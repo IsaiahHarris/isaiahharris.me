@@ -1,0 +1,51 @@
+@import '../index.scss';
+.sidebar-container {
+  height: 100vh;
+  background-color: white;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  max-width: 300px;
+  z-index: 2;
+  transform: translateX(-110%);
+  transition: transform 0.3s ease-out;
+  .links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.sidebar-container.open {
+  transform: translateX(0);
+}
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5%;
+  .close {
+    width: 32px;
+    height: 32px;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before,
+  .close:after {
+    position: absolute;
+    right: 10%;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: $light-green;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+}
