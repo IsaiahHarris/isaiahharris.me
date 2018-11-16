@@ -16,6 +16,7 @@ class SideBar extends Component {
           <li className="link">Home</li>
           <li className="link">Home</li>
         </ul>
+        <div className="logo" />
       </div>
     );
   }
