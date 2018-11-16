@@ -1,0 +1,17 @@
+.home-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  .title,
+  .sub-title {
+    font-size: 7vw;
+  }
+  .logo {
+    background-image: url('../Assets/logo.png');
+    height: 50vh;
+    width: 80vw;
+    background-size: 100% 100%;
+  }
+}
