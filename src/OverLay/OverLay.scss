@@ -1,0 +1,13 @@
+@import '../index.scss';
+.overlay {
+  padding: 3%;
+  margin-left: 3%;
+  .line {
+    @extend %overlay-line;
+    background-color: $light-green;
+  }
+  .line-mid {
+    @extend %overlay-line;
+    background-color: $dark-green;
+  }
+}
