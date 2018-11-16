@@ -1,0 +1,31 @@
+$light-green: #00dea6;
+$dark-green: #00cc99;
+%overlay-line {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  border-radius: 5px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .contact {
+    margin: 3%;
+    padding: 1% 3%;
+    border: 2px solid $light-green;
+    border-radius: 8px;
+    color: $light-green;
+  }
+  .overlay {
+    padding: 3%;
+    .line {
+      @extend %overlay-line;
+      background-color: $light-green;
+    }
+    .line-mid {
+      @extend %overlay-line;
+      background-color: $dark-green;
+    }
+  }
+}
