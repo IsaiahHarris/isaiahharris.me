@@ -7,10 +7,11 @@
     padding-left: 8%;
     font-family: 'Ubuntu', sans-serif;
     .title {
-      font-size: 26px;
+      font-size: 32px;
     }
     .sub-title {
       font-size: 22px;
+      padding-top: 1%;
     }
   }
   .body {
@@ -21,6 +22,12 @@
     border-bottom: 2px $light-green solid;
     width: 80%;
     margin: 0 auto;
+    height: 60vh;
+    div {
+      line-height: 1.6;
+      padding: 3% 0%;
+      font-size: 18px;
+    }
   }
   .footer {
   }
