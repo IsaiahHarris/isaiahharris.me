@@ -27,7 +27,15 @@ class About extends Component {
             experiences.
           </div>
         </div>
-        <div className="footer">logos</div>
+        <div className="footer">
+          <div className="icon-container">
+            <i class="fab fa-github" />
+            <i class="fab fa-linkedin" />
+            <i class="fab fa-medium-m" />
+            <i class="fab fa-instagram" />
+            <i class="fas fa-envelope" />
+          </div>
+        </div>
       </div>
     );
   }
