@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './About.scss';
 class About extends Component {
   render() {
@@ -30,11 +31,21 @@ class About extends Component {
         </div>
         <div className="footer">
           <div className="icon-container">
-            <i class="fab fa-github" />
-            <i class="fab fa-linkedin" />
-            <i class="fab fa-medium-m" />
-            <i class="fab fa-instagram" />
-            <i class="fas fa-envelope" />
+            <a href="https://www.github.com/IsaiahHarris" target="_blank">
+              <i class="fab fa-github" />
+            </a>
+            <a href="https://linkedin.com/in/isaiah-a-harris" target="_blank">
+              <i class="fab fa-linkedin" />
+            </a>
+            <a href="https://medium.com/@isaiah.harris.hi" target="_blank">
+              <i class="fab fa-medium-m" />
+            </a>
+            <a href="https://www.instagram.com/isaiah.h__/" target="_blank">
+              <i class="fab fa-instagram" />
+            </a>
+            <Link to="/contact">
+              <i class="fas fa-envelope" />
+            </Link>
           </div>
         </div>
       </div>
