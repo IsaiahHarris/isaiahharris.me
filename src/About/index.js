@@ -17,10 +17,11 @@ class About extends Component {
             improve myself as a developer everyday.
           </div>
           <div>
-            Four months after I graduated, I completed an immersive Javascript
-            Coding Bootcamp in Honolulu, Hawaii. Since then I have enjoyed
-            participating in multiple Hackathons and Meetups. I also have taken
-            multiple online courses to enhance my skills.
+            Four months later, I completed an immersive Javascript Coding
+            Bootcamp in Honolulu, Hawaii. Since then I have enjoyed being a
+            Teachers Assistant. I also have taken multiple online courses and
+            participated in multiple meetups and hackathons to enhance my
+            skills.
           </div>
           <div>
             I'm passionate, always ready for a challenge, and open to new
