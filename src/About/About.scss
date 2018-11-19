@@ -6,12 +6,27 @@
     padding-top: 8%;
     padding-left: 8%;
     font-family: 'Ubuntu', sans-serif;
-    .title {
-      font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+
+    .picture {
+      height: 12vh;
+      width: 12vh;
+      background-image: url('../Assets/profilePic.png');
+      background-size: cover;
+      border-radius: 10px;
+      margin-right: 6vw;
     }
-    .sub-title {
-      font-size: 22px;
-      padding-top: 1%;
+    .titles {
+      margin-left: 2vw;
+
+      .title {
+        font-size: 32px;
+      }
+      .sub-title {
+        font-size: 22px;
+        padding-top: 1%;
+      }
     }
   }
   .body {
@@ -24,7 +39,7 @@
     margin: 0 auto;
     height: 60vh;
     div {
-      line-height: 1.6;
+      line-height: 1.35;
       padding: 3% 0%;
       font-size: 18px;
     }

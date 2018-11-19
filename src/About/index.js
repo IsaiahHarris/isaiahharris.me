@@ -5,8 +5,11 @@ class About extends Component {
     return (
       <div className="about-container">
         <div className="title-container">
-          <div className="title">About</div>
-          <div className="sub-title">Hi, I'm Isaiah Harris</div>
+          <div className="titles">
+            <div className="title">About</div>
+            <div className="sub-title">Hi, I'm Isaiah Harris</div>
+          </div>
+          <div className="picture" />
         </div>
         <div className="body">
           <div>
