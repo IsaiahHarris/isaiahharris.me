@@ -7,15 +7,44 @@
   top: 0;
   left: 0;
   width: 60vw;
-  max-width: 300px;
   z-index: 2;
   transform: translateX(-110%);
   transition: transform 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
   .links {
     list-style: none;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    width: 50%;
+    margin-bottom: 200%;
+    .link {
+      padding: 15% 0%;
+      font-size: 6vw;
+      width: 100%;
+    }
+    .link:hover {
+      padding: 15% 0%;
+      font-size: 6vw;
+      width: 100%;
+      border-bottom: 2px solid $light-green;
+    }
+    .link:active {
+      padding: 15% 0%;
+      font-size: 6vw;
+      width: 100%;
+      border-bottom: 2px solid $light-green;
+    }
+  }
+  .logo {
+    background-image: url('../Assets/logo.png');
+    height: 10vh;
+    width: 10vw;
+    background-size: 100% 100%;
+    padding: 5%;
+    margin: 5%;
   }
 }
 

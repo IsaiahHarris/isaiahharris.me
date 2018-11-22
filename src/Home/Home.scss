@@ -4,9 +4,14 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  font-family: 'Lato', sans-serif;
   .title,
   .sub-title {
-    font-size: 7vw;
+    font-size: 8vw;
+  }
+  .sub-title {
+    font-style: italic;
+    font-weight: lighter;
   }
   .logo {
     background-image: url('../Assets/logo.png');
