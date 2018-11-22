@@ -13,10 +13,11 @@
   }
   .skills {
     width: 100%;
+
     .skill-header {
       font-size: 26px;
       padding-left: 7.5vw;
-      padding-top: 2vh;
+      padding-top: 5vh;
     }
     .front-end-skill-header {
       font-size: 26px;
@@ -24,20 +25,24 @@
     }
     .skill-container {
       display: flex;
-      align-items: center;
-      padding-top: 2vh;
-      padding-bottom: 3.5vh;
-      display: flex;
+      justify-content: center;
+      padding-top: 1.5vh;
+      padding-bottom: 1.5vh;
       flex-wrap: wrap;
       .skill {
-        padding: 2px;
-        font-size: 18px;
-        width: 50%;
+        padding: 4px;
+        font-size: 20px;
+        width: 49vw;
         padding-left: 7.5vw;
       }
     }
     .border {
       border: 2px solid $light-green;
+      width: 60%;
+      margin-left: 7.5vw;
+    }
+    .border-bot {
+      border: 18px solid white;
       width: 60%;
       margin-left: 7.5vw;
     }

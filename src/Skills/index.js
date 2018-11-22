@@ -5,7 +5,7 @@ class Skills extends Component {
     let frontEndSkills = [
       'HTML5',
       'CSS3',
-      'JavaScipt',
+      'JavaScript',
       'React',
       'Redux',
       'Angular',
@@ -13,7 +13,8 @@ class Skills extends Component {
       'Sass',
       'Material',
       'JQuery',
-      'Gulp.js'
+      'Gulp.js',
+      'Bootstrap'
     ];
     let backEndSkills = [
       'Node.js',
@@ -27,14 +28,7 @@ class Skills extends Component {
       'Knex.js',
       'Bookshelf.js'
     ];
-    let concepts = [
-      'Responsive Design',
-      'OOP',
-      'Serverless',
-      "REST API's",
-      'Model View Control',
-      'LEAN'
-    ];
+    let concepts = ['UI/UX', 'OOP', 'Serverless', "REST API's", 'MVC', 'LEAN'];
 
     let tools = [
       'Git',
@@ -111,6 +105,7 @@ class Skills extends Component {
               );
             })}
           </div>
+          <div className="border-bot" />
         </div>
       </div>
     );
