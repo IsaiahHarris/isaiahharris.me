@@ -21,15 +21,16 @@ class Skills extends Component {
       'Python',
       'AWS',
       'DynamoDB',
-      'SQL/NoSQL Databases',
+      'Databases',
+      'SQL',
       'PostgreSQL',
       'Knex.js',
       'Bookshelf.js'
     ];
     let concepts = [
-      'Responsive Web Design',
-      'Object Oriented Programming',
-      'Serverless Architecture',
+      'Responsive Design',
+      'OOP',
+      'Serverless',
       "REST API's",
       'Model View Control',
       'LEAN'
@@ -40,7 +41,7 @@ class Skills extends Component {
       'GitHub',
       'Trello',
       'Postman',
-      'Browser Development Tools',
+      'Browser Dev Tools',
       'WebPack',
       'Babel',
       'NPM'
@@ -49,8 +50,7 @@ class Skills extends Component {
       'Machine Learning',
       'Deep Learning',
       'PyTorch',
-      'Vue.js',
-      'And More'
+      'Vue.js'
     ];
 
     return (
@@ -59,10 +59,10 @@ class Skills extends Component {
         <div className="skills">
           <div className="front-end-skill-header">Front End</div>
           <div className="skill-container">
-            {frontEndSkills.map((frontEndSkill, key) => {
+            {frontEndSkills.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  - {frontEndSkill}
+                  - {skill}
                 </div>
               );
             })}
@@ -70,15 +70,47 @@ class Skills extends Component {
           <div className="border" />
           <div className="skill-header">Back End</div>
           <div className="skill-container">
-            {frontEndSkills.map((frontEndSkill, key) => {
+            {backEndSkills.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  - {frontEndSkill}
+                  - {skill}
                 </div>
               );
             })}
           </div>
           <div className="border" />
+          <div className="skill-header">Tools</div>
+          <div className="skill-container">
+            {tools.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  - {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="border" />
+          <div className="skill-header">Concepts</div>
+          <div className="skill-container">
+            {concepts.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  - {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="border" />
+          <div className="skill-header">Currently Learning</div>
+          <div className="skill-container">
+            {currentlyLearning.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  - {skill}
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     );
