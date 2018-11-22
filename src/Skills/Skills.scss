@@ -28,10 +28,9 @@
       justify-content: center;
       padding-top: 1.5vh;
       padding-bottom: 1.5vh;
-
       flex-wrap: wrap;
       .skill {
-        padding: 2px;
+        padding: 4px;
         font-size: 20px;
         width: 49vw;
         padding-left: 7.5vw;
@@ -39,6 +38,11 @@
     }
     .border {
       border: 2px solid $light-green;
+      width: 60%;
+      margin-left: 7.5vw;
+    }
+    .border-bot {
+      border: 18px solid white;
       width: 60%;
       margin-left: 7.5vw;
     }

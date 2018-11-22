@@ -105,7 +105,7 @@ class Skills extends Component {
               );
             })}
           </div>
-          <div className="border" />
+          <div className="border-bot" />
         </div>
       </div>
     );
