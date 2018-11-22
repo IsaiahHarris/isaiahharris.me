@@ -22,6 +22,9 @@ class SideBar extends Component {
           <Link to="/skills" className="link" onClick={this.props.click}>
             Skills
           </Link>
+          <Link to="/education" className="link" onClick={this.props.click}>
+            Education
+          </Link>
         </ul>
         <div className="logo" />
       </div>
