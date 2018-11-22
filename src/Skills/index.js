@@ -34,7 +34,7 @@ const skills = props => {
     'GitHub',
     'Trello',
     'Postman',
-    'Browser Dev Tools',
+    'Dev Tools',
     'WebPack',
     'Babel',
     'NPM'
