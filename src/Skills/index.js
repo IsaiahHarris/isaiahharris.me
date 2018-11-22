@@ -19,10 +19,12 @@ const skills = props => {
     'Node.js',
     'Express.js',
     'Python',
+    'Passport.js',
     'AWS',
     'DynamoDB',
     'Databases',
     'SQL',
+    'ORM',
     'PostgreSQL',
     'Knex.js',
     'Bookshelf.js'
@@ -60,6 +62,11 @@ const skills = props => {
             );
           })}
         </div>
+        <div className="logo-container">
+          <i class="fab fa-js-square" />
+          <i class="fab fa-react" />
+          <i class="fab fa-sass" />
+        </div>
         <div className="border" />
         <div className="skill-header">Back End</div>
         <div className="skill-container">
@@ -70,6 +77,11 @@ const skills = props => {
               </div>
             );
           })}
+        </div>
+        <div className="logo-container">
+          <i class="fab fa-node-js" />
+          <i class="fab fa-aws" />
+          <i class="fas fa-database" />
         </div>
         <div className="border" />
         <div className="skill-header">Tools</div>
