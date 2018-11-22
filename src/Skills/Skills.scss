@@ -1,0 +1,48 @@
+@import '../index.scss';
+.skills-container {
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 7.5vw;
+  }
+  .skills {
+    width: 100%;
+    .skill-header {
+      font-size: 26px;
+      padding-left: 7.5vw;
+      padding-top: 2vh;
+    }
+    .front-end-skill-header {
+      font-size: 26px;
+      padding-left: 7.5vw;
+    }
+    .skill-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      height: 26vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      .skill {
+        padding: 2px;
+        font-size: 18px;
+        width: 50%;
+        padding-left: 7.5vw;
+      }
+    }
+    .border {
+      border: 2px solid $light-green;
+      width: 60%;
+      margin-left: 7.5vw;
+    }
+  }
+}
