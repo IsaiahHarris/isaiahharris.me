@@ -94,6 +94,11 @@ const skills = props => {
             );
           })}
         </div>
+        <div className="logo-container">
+          <i class="fab fa-github" />
+          <i class="fas fa-code-branch" />
+          <i class="fab fa-npm" />
+        </div>
         <div className="border" />
         <div className="skill-header">Concepts</div>
         <div className="skill-container">

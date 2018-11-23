@@ -28,20 +28,36 @@ const about = props => (
     </div>
     <div className="footer">
       <div className="icon-container">
-        <a href="https://www.github.com/IsaiahHarris" target="_blank">
-          <i class="fab fa-github" />
+        <a
+          href="https://www.github.com/IsaiahHarris"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-github" />
         </a>
-        <a href="https://linkedin.com/in/isaiah-a-harris" target="_blank">
-          <i class="fab fa-linkedin" />
+        <a
+          href="https://linkedin.com/in/isaiah-a-harris"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-linkedin" />
         </a>
-        <a href="https://medium.com/@isaiah.harris.hi" target="_blank">
-          <i class="fab fa-medium-m" />
+        <a
+          href="https://medium.com/@isaiah.harris.hi"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-medium-m" />
         </a>
-        <a href="https://www.instagram.com/isaiah.h__/" target="_blank">
-          <i class="fab fa-instagram" />
+        <a
+          href="https://www.instagram.com/isaiah.h__/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-instagram" />
         </a>
         <Link to="/contact">
-          <i class="fas fa-envelope" />
+          <i className="fas fa-envelope" />
         </Link>
       </div>
     </div>
