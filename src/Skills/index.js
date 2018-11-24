@@ -50,7 +50,7 @@ const skills = props => {
     'Babel',
     'NPM'
   ];
-  let currentlyLearning = ['Deep Learning', 'AI', 'PyTorch', 'Vue.js'];
+  let currentlyLearning = ['Deep Learning', 'IOS/Android', 'PyTorch', 'Vue.js'];
 
   return (
     <div className="skills-container">
@@ -113,6 +113,11 @@ const skills = props => {
               </div>
             );
           })}
+        </div>
+        <div className="logo-container">
+          <i className="fas fa-route" />
+          <i className="fas fa-cloud" />
+          <i className="fas fa-code" />
         </div>
         <div className="border" />
         <div className="skill-header">Currently Learning</div>
