@@ -29,7 +29,6 @@
       .description {
         padding-top: 30px;
       }
-
       .dl-img {
         height: 40vh;
         width: 40vh;
@@ -37,7 +36,7 @@
         background-size: 100% 100%;
         z-index: -1;
         opacity: 0.2;
-        position: fixed;
+        position: absolute;
       }
     }
     // .course-container-devleague {

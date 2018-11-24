@@ -11,7 +11,11 @@ const education = props => {
           </div>
           <div className="dl-img" />
           <div className="date">June 2018 - Sept 2018</div>
-          <div className="description">Completed over 800 hours</div>
+          <div className="description">
+            Completed over 800 hours in an immersive JavaScript coding boot camp
+            where I built full-stack web applications utilizing many JavaScript
+            frameworks and libraries.
+          </div>
         </div>
         <div className="course-container">
           <div className="title">
