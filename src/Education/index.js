@@ -1,12 +1,6 @@
 import React from 'react';
 import './Education.scss';
 const education = props => {
-  // let courses = [
-  //   'DevLeague Full-Time JavaScript Web Engineering Coding Bootcamp',
-  //   'Udacity PyTorch Scholarship Challenge from Facebook',
-  //   'Udemy: AWS Certified Developer Associate',
-  //   'Udemy: The Modern Python 3 Bootcamp'
-  // ];
   return (
     <div className="education-container">
       <div className="header">EDUCATION</div>
@@ -15,6 +9,7 @@ const education = props => {
           <div className="title">
             DevLeague Full-Time JavaScript Web Engineering Coding Bootcamp
           </div>
+          <div className="dl-img" />
           <div className="date">June 2018 - Sept 2018</div>
           <div className="description">Completed over 800 hours</div>
         </div>
