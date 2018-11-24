@@ -24,14 +24,15 @@
     }
     .skill-container {
       display: flex;
-      justify-content: center;
       padding-top: 1.5vh;
       padding-bottom: 1.5vh;
+      padding-left: 4vw;
       flex-wrap: wrap;
+      width: 100%;
       .skill {
         padding: 4px;
         font-size: 20px;
-        width: 49vw;
+        width: 48vw;
         padding-left: 7.5vw;
       }
     }
@@ -75,6 +76,16 @@
       }
       .fas.fa-code-branch {
         color: turquoise;
+      }
+      .fab.fa-vuejs {
+        color: #00bc7e;
+        transform: scale(3.4, 3.4);
+      }
+      .fas.fa-robot {
+        color: rgb(50, 204, 255);
+      }
+      .fas.fa-fire {
+        color: rgb(255, 57, 13);
       }
     }
     .border {

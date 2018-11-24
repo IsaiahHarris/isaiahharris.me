@@ -29,7 +29,16 @@ const skills = props => {
     'Knex.js',
     'Bookshelf.js'
   ];
-  let concepts = ['UI/UX', 'OOP', 'Serverless', "REST API's", 'MVC', 'LEAN'];
+  let concepts = [
+    'UI/UX',
+    'OOP',
+    'Serverless',
+    "REST API's",
+    'MVC',
+    'LEAN',
+    'Agile Dev',
+    'DRY'
+  ];
 
   let tools = [
     'Git',
@@ -41,12 +50,7 @@ const skills = props => {
     'Babel',
     'NPM'
   ];
-  let currentlyLearning = [
-    'Machine Learning',
-    'Deep Learning',
-    'PyTorch',
-    'Vue.js'
-  ];
+  let currentlyLearning = ['Deep Learning', 'AI', 'PyTorch', 'Vue.js'];
 
   return (
     <div className="skills-container">
@@ -63,9 +67,9 @@ const skills = props => {
           })}
         </div>
         <div className="logo-container">
-          <i class="fab fa-js-square" />
-          <i class="fab fa-react" />
-          <i class="fab fa-sass" />
+          <i className="fab fa-js-square" />
+          <i className="fab fa-react" />
+          <i className="fab fa-sass" />
         </div>
         <div className="border" />
         <div className="skill-header">Back End</div>
@@ -79,9 +83,9 @@ const skills = props => {
           })}
         </div>
         <div className="logo-container">
-          <i class="fab fa-node-js" />
-          <i class="fab fa-aws" />
-          <i class="fas fa-database" />
+          <i className="fab fa-node-js" />
+          <i className="fab fa-aws" />
+          <i className="fas fa-database" />
         </div>
         <div className="border" />
         <div className="skill-header">Tools</div>
@@ -95,9 +99,9 @@ const skills = props => {
           })}
         </div>
         <div className="logo-container">
-          <i class="fab fa-github" />
-          <i class="fas fa-code-branch" />
-          <i class="fab fa-npm" />
+          <i className="fab fa-github" />
+          <i className="fab fa-npm" />
+          <i className="fas fa-code-branch" />
         </div>
         <div className="border" />
         <div className="skill-header">Concepts</div>
@@ -120,6 +124,11 @@ const skills = props => {
               </div>
             );
           })}
+        </div>
+        <div className="logo-container">
+          <i className="fas fa-robot" />
+          <i className="fab fa-vuejs" />
+          <i className="fas fa-fire" />
         </div>
         <div className="border-bot" />
       </div>
