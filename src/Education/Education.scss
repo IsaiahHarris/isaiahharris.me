@@ -6,7 +6,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-left: 7.5vw;
+    padding-left: 9vw;
   }
   .courses {
     display: flex;
@@ -17,18 +17,16 @@
       flex-direction: column;
       align-items: center;
       height: 40vh;
-      width: 85vw;
-      .title {
-        width: 100%;
-        padding: 10px;
-      }
-      .date {
-        width: 100%;
-        padding: 10px;
-      }
+      width: 100vw;
+      .title,
+      .date,
       .description {
         width: 100%;
-        padding: 10px;
+        padding-left: 10vw;
+      }
+      .date {
+      }
+      .description {
         padding-top: 30px;
       }
 

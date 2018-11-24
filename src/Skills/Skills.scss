@@ -13,27 +13,29 @@
   }
   .skills {
     width: 100%;
-    .skill-header {
-      font-size: 26px;
-      padding-left: 7.5vw;
-      padding-top: 4.5vh;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .skill-header,
     .front-end-skill-header {
       font-size: 26px;
       padding-left: 7.5vw;
+      padding-top: 4.5vh;
+      width: 100%;
     }
+
     .skill-container {
       display: flex;
       padding-top: 1.5vh;
       padding-bottom: 1.5vh;
-      padding-left: 4vw;
       flex-wrap: wrap;
+      justify-content: space-evenly;
       width: 100%;
       .skill {
         padding: 4px;
         font-size: 20px;
         width: 48vw;
-        padding-left: 7.5vw;
+        padding-left: 7vw;
       }
     }
     .logo-container {
