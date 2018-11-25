@@ -1,4 +1,5 @@
 .education-container {
+  font-family: 'Lato', sans-serif;
   .header {
     display: flex;
     justify-content: flex-start;
@@ -23,15 +24,24 @@
       .description {
         width: 100%;
         padding-left: 10vw;
+        padding-right: 5vw;
+      }
+      .title {
+        font-size: 22px;
       }
       .date {
+        padding-top: 1vh;
+        color: #575757;
+        font-size: 20px;
       }
       .description {
-        padding-top: 30px;
+        padding-top: 4vh;
+        font-size: 20px;
+        color: #1c1c1c;
       }
       .dl-img {
-        height: 40vh;
-        width: 40vh;
+        height: 35vh;
+        width: 35vh;
         background-image: url('../Assets/devleague.jpeg');
         background-size: 100% 100%;
         z-index: -1;
