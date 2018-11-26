@@ -1,5 +1,4 @@
 import React from 'react';
-
-const border = props =>(
-  
-)
+import './Border.scss';
+const Border = props => <div className="border" />;
+export default Border;

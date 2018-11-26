@@ -7,7 +7,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-left: 9vw;
+    padding-left: 7.5vw;
   }
   .courses {
     display: flex;
@@ -23,30 +23,53 @@
       .date,
       .description {
         width: 100%;
-        padding-left: 10vw;
-        padding-right: 5vw;
+        padding-left: 7.5vw;
       }
       .title {
-        font-size: 22px;
+        font-size: 24px;
       }
       .date {
-        padding-top: 1vh;
+        padding-top: 2vh;
         color: #575757;
-        font-size: 20px;
+        font-size: 22px;
       }
       .description {
-        padding-top: 4vh;
-        font-size: 20px;
-        color: #1c1c1c;
+        padding-top: 5vh;
+        font-size: 21px;
+        color: black;
+        padding-bottom: 1vh;
+        letter-spacing: 0.5px;
+        font-weight: 300;
       }
       .dl-img {
-        height: 35vh;
-        width: 35vh;
-        background-image: url('../Assets/devleague.jpeg');
+        height: 30vh;
+        width: 30vh;
+        background-image: url('../Assets/devleague.png');
         background-size: 100% 100%;
         z-index: -1;
         opacity: 0.2;
         position: absolute;
+        margin-top: 2vh;
+      }
+      .udacity-img {
+        height: 30vh;
+        width: 30vh;
+        background-image: url('../Assets/udacity.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 2vh;
+      }
+      .udemy-img {
+        height: 25vh;
+        width: 35vh;
+        background-image: url('../Assets/udemy.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.3;
+        position: absolute;
+        margin-top: 2vh;
       }
     }
     // .course-container-devleague {

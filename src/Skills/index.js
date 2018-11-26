@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skills.scss';
+import Border from '../Border';
 const skills = props => {
   let frontEndSkills = [
     'HTML5',
@@ -71,7 +72,7 @@ const skills = props => {
           <i className="fab fa-react" />
           <i className="fab fa-sass" />
         </div>
-        <div className="border" />
+        <Border />
         <div className="skill-header">Back End</div>
         <div className="skill-container">
           {backEndSkills.map((skill, key) => {
