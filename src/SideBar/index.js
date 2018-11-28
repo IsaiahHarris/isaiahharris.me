@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SideBar.scss';
-const SideBar = props => {
+const sideBar = props => {
   let sideBarClasses = 'sidebar-container';
   if (props.show) {
     sideBarClasses = 'sidebar-container open';
@@ -24,10 +24,13 @@ const SideBar = props => {
         <Link to="/education" className="link" onClick={props.click}>
           Education
         </Link>
+        <Link to="/contact" className="link" onClick={props.click}>
+          Contact
+        </Link>
       </ul>
       <div className="logo" />
     </div>
   );
 };
 
-export default SideBar;
+export default sideBar;
