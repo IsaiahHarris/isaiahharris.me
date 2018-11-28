@@ -7,6 +7,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
+    padding-left: 7vw;
   }
   .courses {
     display: flex;
@@ -16,12 +17,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 40vh;
+      padding-bottom: 4vh;
       width: 100vw;
       .title,
       .date,
       .description {
-        width: 90%;
+        width: 100%;
+        padding-left: 7.5vw;
       }
       .title {
         font-size: 24px;
@@ -34,10 +36,9 @@
       .description {
         padding-top: 5vh;
         font-size: 21px;
-        color: black;
+        color: #2e2e2e;
         padding-bottom: 1vh;
-        letter-spacing: 0.5px;
-        font-weight: 300;
+        letter-spacing: 0.2px;
       }
       .dl-img {
         height: 30vh;
@@ -70,20 +71,5 @@
         margin-top: 2vh;
       }
     }
-    // .course-container-devleague {
-    //   position: relative;
-    // }
-    // .course-container-devleague:after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   background-image: url('../Assets/devleague.jpeg');
-    //   width: 100%;
-    //   height: 100%;
-    //   opacity: 0.2;
-    //   z-index: -1;
-    //   background-size: 100% 100%;
-    // }
   }
 }
