@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Contact.scss';
+import $ from 'jquery';
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -10,8 +11,29 @@ class Contact extends Component {
       message: ''
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.sendMessage = this.sendMessage.bind(this);
   }
-
+  sendMessage() {
+    const data = {
+      name: this.state.name,
+      email: this.state.email,
+      subject: this.state.subject,
+      message: this.state.message
+    };
+    $.ajax({
+      url: 'https://65nn0ge4si.execute-api.us-east-1.amazonaws.com/dev/contact',
+      method: 'POST',
+      contentType: 'application/json; charset=utf-8',
+      dataType: 'JSON',
+      data: JSON.stringify(data)
+    });
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+  }
   handleInputChange(event) {
     switch (event.target.id) {
       case 'name':
@@ -85,7 +107,9 @@ class Contact extends Component {
             />
           </div>
         </div>
-        <div className="send">Send</div>
+        <div className="send" onClick={this.sendMessage}>
+          Send
+        </div>
       </div>
     );
   }
