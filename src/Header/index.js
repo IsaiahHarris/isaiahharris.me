@@ -6,7 +6,7 @@ const header = props => {
   var lastScrollTop = 0;
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
+    if (st > lastScrollTop && $(this).scrollTop() > 250) {
       $('#header-container')
         .stop(true, false)
         .fadeTo(200, 0);

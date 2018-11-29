@@ -9,33 +9,36 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-left: 7.5vw;
   }
   .skills {
-    width: 100%;
+    width: 100vw;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    .skill-header,
-    .front-end-skill-header {
-      font-size: 26px;
-      padding-left: 7.5vw;
+    align-items: center;
+    .skill-header {
+      font-size: 28px;
       padding-top: 4.5vh;
       width: 100%;
+      padding-left: 5vw;
     }
-
+    .front-end-skill-header {
+      font-size: 28px;
+      width: 100%;
+      padding-left: 5vw;
+    }
     .skill-container {
       display: flex;
       padding-top: 1.5vh;
       padding-bottom: 1.5vh;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      width: 100%;
+      width: 90vw;
       .skill {
         padding: 4px;
-        font-size: 20px;
-        width: 48vw;
-        padding-left: 7vw;
+        padding-left: 0;
+        font-size: 22px;
+        width: 45vw;
+        font-weight: 300;
       }
     }
     .logo-container {

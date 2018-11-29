@@ -7,7 +7,6 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
-    padding-left: 5.5vw;
   }
   .courses {
     display: flex;
@@ -19,7 +18,7 @@
       flex-direction: column;
       align-items: center;
       padding-bottom: 4vh;
-      width: 88.5vw;
+      width: 90vw;
       .title,
       .date,
       .description {
@@ -29,12 +28,12 @@
         font-size: 1.5em;
       }
       .date {
-        padding-top: 2vh;
+        padding-top: 1vh;
         color: #575757;
         font-size: 22px;
       }
       .description {
-        padding-top: 5vh;
+        padding-top: 3vh;
         font-size: 21px;
         color: black;
         padding-bottom: 1vh;
@@ -42,6 +41,7 @@
         font-weight: 300;
         line-height: 1.3em;
       }
+
       .dl-img {
         height: 30vh;
         width: 30vh;
