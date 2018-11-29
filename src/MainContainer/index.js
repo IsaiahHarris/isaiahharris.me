@@ -5,6 +5,7 @@ import about from '../About';
 import skills from '../Skills';
 import education from '../Education';
 import Contact from '../Contact';
+import './MainContainer.scss';
 const mainContainer = props => (
   <div className="main-container">
     <Switch>

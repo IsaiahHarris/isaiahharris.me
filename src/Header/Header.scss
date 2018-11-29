@@ -5,6 +5,11 @@
   align-items: center;
   height: 10vh;
   font-family: 'Lato', sans-serif;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+
   .contact {
     font-size: 16px;
     border: 2px solid $light-green;
@@ -14,5 +19,13 @@
     margin-right: 3%;
     display: flex;
     align-items: center;
+  }
+  .scroll-down {
+    opacity: 0;
+    transition: 0.01s;
+  }
+  .scroll-up {
+    opacity: 1;
+    transition: 0.01s;
   }
 }

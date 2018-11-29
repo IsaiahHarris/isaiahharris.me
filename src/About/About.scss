@@ -1,6 +1,7 @@
 @import '../index.scss';
 .about-container {
   height: 90vh;
+  font-family: 'Lato', sans-serif;
   .title-container {
     padding-top: 8%;
     padding-left: 8%;
@@ -19,12 +20,15 @@
       justify-content: center;
       display: flex;
       flex-direction: column;
+      font-weight: 700;
       .title {
         font-size: 32px;
       }
       .sub-title {
         font-size: 22px;
         padding-top: 1%;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
       }
     }
   }
@@ -34,13 +38,14 @@
     align-items: center;
     padding-bottom: 2vh;
     justify-content: space-evenly;
-    border-bottom: 2px $light-green solid;
     width: 85%;
     margin: 0 auto;
     height: 55vh;
-    div {
-      line-height: 1.4;
-      font-size: 17.5px;
+    font-size: 19px;
+    .paragraph {
+      line-height: 1.3;
+      font-weight: 300;
+      letter-spacing: 1px;
     }
   }
   .footer {
@@ -56,7 +61,7 @@
       align-items: center;
       .fab,
       .fas {
-        transform: scale(3, 3);
+        transform: scale(2.5, 2.5);
       }
       a {
         color: inherit;
