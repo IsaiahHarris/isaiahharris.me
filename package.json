@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aws-sdk": "^2.365.0",
+    "axios": "^0.18.0",
+    "jquery": "^3.3.1",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",

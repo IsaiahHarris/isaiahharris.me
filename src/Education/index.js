@@ -9,7 +9,7 @@ const education = props => {
       <div className="courses">
         <div className="course-container">
           <div className="title">
-            DevLeague Full-Time JavaScript Web Engineering Coding Bootcamp
+            DevLeague JavaScript Web Engineering Coding Bootcamp
           </div>
           <div className="dl-img" />
           <div className="date">June 2018 - Sept 2018</div>
@@ -18,6 +18,7 @@ const education = props => {
             where I built full-stack web applications utilizing many JavaScript
             frameworks and libraries.
           </div>
+
           <Border />
         </div>
         <div className="course-container">

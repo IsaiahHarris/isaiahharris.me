@@ -1,0 +1,61 @@
+@keyframes logo-top {
+  0% {
+    opacity: 0;
+    top: -20%;
+  }
+  30% {
+    top: -15%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes logo-bottom {
+  0% {
+    opacity: 0;
+    bottom: -20%;
+  }
+  30% {
+    bottom: -15%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes wrapper {
+  0% {
+    transform: rotate(-270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes title {
+  0% {
+    bottom: -10%;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes sub-title {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}

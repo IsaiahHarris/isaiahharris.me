@@ -78,7 +78,7 @@ const skills = props => {
           {backEndSkills.map((skill, key) => {
             return (
               <div key={key} className="skill">
-                {skill}
+                - {skill}
               </div>
             );
           })}
