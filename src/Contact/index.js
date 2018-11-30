@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.scss';
 import $ from 'jquery';
+import { Link } from 'react-router-dom';
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -107,8 +108,45 @@ class Contact extends Component {
             />
           </div>
         </div>
-        <div className="send" onClick={this.sendMessage}>
-          Send
+        <div className="send-container">
+          <div className="send" onClick={this.sendMessage}>
+            <div className="s">Send</div>
+          </div>
+        </div>
+        <div className="footer">
+          <div className="icon-container">
+            <a
+              href="https://www.github.com/IsaiahHarris"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-github" />
+            </a>
+            <a
+              href="https://linkedin.com/in/isaiah-a-harris"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-linkedin" />
+            </a>
+            <a
+              href="https://medium.com/@isaiah.harris.hi"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-medium-m" />
+            </a>
+            <a
+              href="https://www.instagram.com/isaiah.h__/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-instagram" />
+            </a>
+            <Link to="/contact">
+              <i className="fas fa-envelope" />
+            </Link>
+          </div>
         </div>
       </div>
     );

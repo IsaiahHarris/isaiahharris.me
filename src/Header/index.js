@@ -20,7 +20,7 @@ const header = props => {
   return (
     <div id="header-container" className="header-container">
       <OverLay click={props.sideBarClickHandler} />
-      <div className="contact">contact</div>
+      <div className="contact">Contact</div>
     </div>
   );
 };
