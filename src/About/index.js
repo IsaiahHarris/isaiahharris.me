@@ -11,20 +11,22 @@ const about = props => (
       </div>
       <div className="picture" />
     </div>
-    <div className="body">
-      <div className="paragraph">
-        After discovering coding in High-School, I've been determined to improve
-        myself as a developer everyday.
-      </div>
-      <div className="paragraph">
-        Four months later, I completed an immersive Javascript Coding Bootcamp
-        in Honolulu, Hawaii. Since then I have enjoyed being a Teachers
-        Assistant. I also have taken multiple online courses and participated in
-        multiple meetups and hackathons to enhance my skills.
-      </div>
-      <div className="paragraph">
-        I'm passionate, always ready for a challenge, and open to new
-        experiences.
+    <div className="body-container">
+      <div className="body">
+        <div className="paragraph-1">
+          After discovering coding in High-School, I've been determined to
+          improve myself as a developer everyday.
+        </div>
+        <div className="paragraph">
+          Four months later, I completed an immersive Javascript Coding Bootcamp
+          in Honolulu, Hawaii. Since then I have enjoyed being a Teachers
+          Assistant. I also have taken multiple online courses and participated
+          in multiple meetups and hackathons to enhance my skills.
+        </div>
+        <div className="paragraph">
+          I'm passionate, always ready for a challenge, and open to new
+          experiences.
+        </div>
       </div>
     </div>
     <Border />
