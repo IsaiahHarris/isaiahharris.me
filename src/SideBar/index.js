@@ -27,6 +27,9 @@ const sideBar = props => {
         <Link to="/contact" className="link" onClick={props.click}>
           Contact
         </Link>
+        <Link to="/experience" className="link" onClick={props.click}>
+          Experience
+        </Link>
       </ul>
       <div className="logo" />
     </div>

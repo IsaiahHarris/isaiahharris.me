@@ -9,7 +9,8 @@ class Contact extends Component {
       name: '',
       email: '',
       subject: '',
-      message: ''
+      message: '',
+      nameError: ''
     };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
@@ -52,8 +53,17 @@ class Contact extends Component {
       default:
         break;
     }
+    if (event.target.name === 'name' && !this.state.name) {
+      let nameError = 'Name Is Required';
+      this.setState({
+        nameError: nameError
+      });
+    }
   }
   render() {
+    const { name } = this.state;
+    let isEnabled = name.length > 0;
+
     return (
       <div className="contact-container">
         <div className="header">
@@ -62,6 +72,11 @@ class Contact extends Component {
         </div>
         <div className="form-container">
           <div className="top-inputs">
+            {!isEnabled && this.state.nameError ? (
+              <div className="error">{this.state.nameError}</div>
+            ) : (
+              ''
+            )}
             <div className="name-input">
               <input
                 className="name"
@@ -73,6 +88,7 @@ class Contact extends Component {
                 placeholder="Name"
               />
             </div>
+
             <div className="email-input">
               <input
                 className="email"
@@ -111,6 +127,9 @@ class Contact extends Component {
         <div className="send-container">
           <div className="send" onClick={this.sendMessage}>
             <div className="s">Send</div>
+          </div>
+          <div className="send" onClick={this.sendMessage}>
+            <div className="se">Send</div>
           </div>
         </div>
         <div className="footer">
