@@ -1,16 +1,13 @@
 @import '../index.scss';
 %send-button {
   padding-left: 6vw;
-  height: 5vh;
+
   width: 20vw;
   padding: 3px;
   padding-top: 2px;
   border: $light-green solid 2px;
   border-radius: 5px;
   background-color: $light-green;
-  display: table-cell;
-  vertical-align: middle;
-  position: absolute;
   font-weight: 300;
   font-size: 24px;
   text-align: center;

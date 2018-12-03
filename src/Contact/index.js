@@ -96,52 +96,46 @@ class Contact extends Component {
         <Snackbar open={this.state.open} handleClose={this.handleClose} />
         <div className="form-container">
           <div className="top-inputs">
-            <div className="name-input">
-              <input
-                className="name"
-                type="text"
-                name="name"
-                id="name"
-                value={this.state.name}
-                onChange={this.handleInputChange}
-                placeholder="Name"
-              />
-            </div>
-
-            <div className="email-input">
-              <input
-                className="email"
-                type="text"
-                name="email"
-                id="email"
-                value={this.state.email}
-                onChange={this.handleInputChange}
-                placeholder="Email"
-              />
-            </div>
-          </div>
-          <div className="subject-input">
             <input
-              className="subject"
+              className="name"
               type="text"
-              name="subject"
-              id="subject"
-              value={this.state.subject}
+              name="name"
+              id="name"
+              value={this.state.name}
               onChange={this.handleInputChange}
-              placeholder="Subject"
+              placeholder="Name"
+            />
+
+            <input
+              className="email"
+              type="text"
+              name="email"
+              id="email"
+              value={this.state.email}
+              onChange={this.handleInputChange}
+              placeholder="Email"
             />
           </div>
-          <div className="message-input">
-            <textarea
-              className="message"
-              type="text"
-              name="message"
-              id="message"
-              value={this.state.message}
-              onChange={this.handleInputChange}
-              placeholder="Message"
-            />
-          </div>
+
+          <input
+            className="subject"
+            type="text"
+            name="subject"
+            id="subject"
+            value={this.state.subject}
+            onChange={this.handleInputChange}
+            placeholder="Subject"
+          />
+
+          <textarea
+            className="message"
+            type="text"
+            name="message"
+            id="message"
+            value={this.state.message}
+            onChange={this.handleInputChange}
+            placeholder="Message"
+          />
         </div>
         <div className="send-container">
           <SendButton click={this.handleClick} enable={!isEnabled} />
