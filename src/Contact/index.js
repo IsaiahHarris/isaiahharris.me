@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './Contact.scss';
+import Snackbar from '../Snackbar';
+import SendButton from '../SendButton';
 import $ from 'jquery';
-import { Link } from 'react-router-dom';
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -10,10 +11,27 @@ class Contact extends Component {
       email: '',
       subject: '',
       message: '',
-      nameError: ''
+      nameError: '',
+      open: false
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+  }
+  handleClick() {
+    this.setState({ open: true });
+    this.sendMessage();
+  }
+
+  handleClose(event, reason) {
+    console.log('hi');
+    if (reason === 'clickaway') {
+      return;
+    }
+    this.setState({
+      open: false
+    });
   }
   sendMessage() {
     const data = {
@@ -36,6 +54,7 @@ class Contact extends Component {
       message: ''
     });
   }
+
   handleInputChange(event) {
     switch (event.target.id) {
       case 'name':
@@ -61,22 +80,22 @@ class Contact extends Component {
     }
   }
   render() {
-    const { name } = this.state;
-    let isEnabled = name.length > 0;
-
+    const { name, email, subject, message } = this.state;
+    let isEnabled =
+      name.length > 0 &&
+      email.length > 0 &&
+      subject.length > 0 &&
+      message.length > 0;
     return (
       <div className="contact-container">
         <div className="header">
           <div className="title">CONTACT</div>
           <div className="sub-title">Let's get in touch!</div>
         </div>
+
+        <Snackbar open={this.state.open} handleClose={this.handleClose} />
         <div className="form-container">
           <div className="top-inputs">
-            {!isEnabled && this.state.nameError ? (
-              <div className="error">{this.state.nameError}</div>
-            ) : (
-              ''
-            )}
             <div className="name-input">
               <input
                 className="name"
@@ -125,12 +144,7 @@ class Contact extends Component {
           </div>
         </div>
         <div className="send-container">
-          <div className="send" onClick={this.sendMessage}>
-            <div className="s">Send</div>
-          </div>
-          <div className="send" onClick={this.sendMessage}>
-            <div className="se">Send</div>
-          </div>
+          <SendButton click={this.handleClick} enable={!isEnabled} />
         </div>
         <div className="footer">
           <div className="icon-container">
@@ -162,9 +176,6 @@ class Contact extends Component {
             >
               <i className="fab fa-instagram" />
             </a>
-            <Link to="/contact">
-              <i className="fas fa-envelope" />
-            </Link>
           </div>
         </div>
       </div>

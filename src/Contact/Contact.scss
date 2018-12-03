@@ -17,6 +17,7 @@
       color: #2e2e2e;
     }
   }
+
   .form-container {
     width: 100%;
     height: 50vh;
@@ -94,30 +95,6 @@
   .send-container {
     width: 100vw;
     padding-left: 6vw;
-    .send {
-      padding-left: 6vw;
-      height: 5vh;
-      width: 20vw;
-      padding: 3px;
-      border: $light-green solid 2px;
-      border-radius: 5px;
-      background-color: $light-green;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      .s {
-        font-weight: 300;
-        font-size: 24px;
-        color: white;
-        display: none;
-      }
-      .se {
-        font-weight: 300;
-        font-size: 24px;
-        color: white;
-      }
-    }
   }
   .footer {
     display: flex;
@@ -134,7 +111,7 @@
       align-items: center;
       .fab,
       .fas {
-        transform: scale(2, 2);
+        transform: scale(2.2, 2.2);
       }
       a {
         color: #505050;
