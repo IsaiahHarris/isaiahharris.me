@@ -3,14 +3,43 @@ import './Contact.scss';
 import Snackbar from '../Snackbar';
 import SendButton from '../SendButton';
 import $ from 'jquery';
+import TextField from '@material-ui/core/TextField';
+import { withStyles } from '@material-ui/core/styles';
+const styles = theme => ({
+  margin: {
+    margin: theme.spacing.unit,
+    borderRadius: '0px 5px 5px 0px',
+    borderLeft: '#00dea6 4px solid',
+    width: '86.5vw',
+    height: '20vh',
+    backgroundColor: '#f3f3f3',
+    fontSize: '22px',
+    padding: '1.5vh',
+    wordWrap: 'break-word',
+    color: 'black',
+    '&::placeholder': {
+      color: '#000000',
+      fontWeight: '300'
+    }
+  },
+  input: {
+    fontSize: '22px',
+    color: '#000000',
+    fontWeight: '300',
+    height: '100%',
+    maxHeight: '18vh',
+    paddingBottom: '1vh'
+  }
+});
+
 class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
+      nameInput: '',
+      emailInput: '',
+      subjectInput: '',
+      messageInput: '',
       nameError: '',
       open: false
     };
@@ -35,10 +64,10 @@ class Contact extends Component {
   }
   sendMessage() {
     const data = {
-      name: this.state.name,
-      email: this.state.email,
-      subject: this.state.subject,
-      message: this.state.message
+      name: this.state.nameInput,
+      email: this.state.emailInput,
+      subject: this.state.subjectInput,
+      message: this.state.messageInput
     };
     $.ajax({
       url: 'https://65nn0ge4si.execute-api.us-east-1.amazonaws.com/dev/contact',
@@ -48,44 +77,27 @@ class Contact extends Component {
       data: JSON.stringify(data)
     });
     this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      nameInput: '',
+      emailInput: '',
+      subjectInput: '',
+      messageInput: ''
     });
   }
 
-  handleInputChange(event) {
-    switch (event.target.id) {
-      case 'name':
-        this.setState({ name: event.target.value });
-        break;
-      case 'email':
-        this.setState({ email: event.target.value });
-        break;
-      case 'subject':
-        this.setState({ subject: event.target.value });
-        break;
-      case 'message':
-        this.setState({ message: event.target.value });
-        break;
-      default:
-        break;
-    }
-    if (event.target.name === 'name' && !this.state.name) {
-      let nameError = 'Name Is Required';
-      this.setState({
-        nameError: nameError
-      });
-    }
-  }
+  handleInputChange = name => event => {
+    this.setState({
+      [name]: event.target.value
+    });
+  };
+
   render() {
-    const { name, email, subject, message } = this.state;
+    const { classes } = this.props;
+    const { nameInput, emailInput, subjectInput, messageInput } = this.state;
     let isEnabled =
-      name.length > 0 &&
-      email.length > 0 &&
-      subject.length > 0 &&
-      message.length > 0;
+      nameInput.length > 0 &&
+      emailInput.length > 0 &&
+      subjectInput.length > 0 &&
+      messageInput.length > 0;
     return (
       <div className="contact-container">
         <div className="header">
@@ -99,20 +111,20 @@ class Contact extends Component {
             <input
               className="name"
               type="text"
-              name="name"
+              name="nameInput"
               id="name"
-              value={this.state.name}
-              onChange={this.handleInputChange}
+              value={this.state.nameInput}
+              onChange={this.handleInputChange('nameInput')}
               placeholder="Name"
             />
 
             <input
               className="email"
               type="text"
-              name="email"
+              name="emailInput"
               id="email"
-              value={this.state.email}
-              onChange={this.handleInputChange}
+              value={this.state.emailInput}
+              onChange={this.handleInputChange('emailInput')}
               placeholder="Email"
             />
           </div>
@@ -120,21 +132,23 @@ class Contact extends Component {
           <input
             className="subject"
             type="text"
-            name="subject"
+            name="subjectInput"
             id="subject"
-            value={this.state.subject}
-            onChange={this.handleInputChange}
+            value={this.state.subjectInput}
+            onChange={this.handleInputChange('subjectInput')}
             placeholder="Subject"
           />
-
-          <textarea
-            className="message"
-            type="text"
-            name="message"
-            id="message"
-            value={this.state.message}
-            onChange={this.handleInputChange}
+          <TextField
+            multiline={true}
+            className={classes.margin}
+            name="messageInput"
+            value={this.state.messageInput}
+            onChange={this.handleInputChange('messageInput')}
             placeholder="Message"
+            InputProps={{
+              disableUnderline: true,
+              classes: { input: classes.input }
+            }}
           />
         </div>
         <div className="send-container">
@@ -177,4 +191,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withStyles(styles)(Contact);

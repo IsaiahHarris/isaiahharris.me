@@ -14,7 +14,7 @@ const skills = props => {
     'Material',
     'JQuery',
     'Gulp.js',
-    'Bootstrap'
+    'Material-UI'
   ];
   let backEndSkills = [
     'Node.js',

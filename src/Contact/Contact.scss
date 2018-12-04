@@ -29,6 +29,7 @@
     flex-wrap: wrap;
     align-items: center;
     flex-wrap: wrap;
+
     .error {
       position: absolute;
     }
@@ -40,36 +41,31 @@
 
     .name,
     .email {
-      background-color: #f2f2f2;
+      background-color: #f3f3f3;
       padding: 1.5vh;
       width: 40vw;
-      font-size: 20px;
+      font-size: 22px;
+      height: 7vh;
     }
   }
 
   .subject {
     height: 7vh;
     width: 86.5vw;
-    background-color: #f2f2f2;
+    background-color: #f3f3f3;
     padding: 1.5vh;
-    font-size: 20px;
+    font-size: 22px;
   }
-  .message {
-    width: 86.5vw;
-    height: 20vh;
-    background-color: #f2f2f2;
-    font-size: 20px;
-    padding: 1.5vh;
-    word-wrap: break-word;
-  }
+
   .name::placeholder,
   .email::placeholder,
   .subject::placeholder,
-  .message::placeholder {
-    color: black;
+  .message-::placeholder {
+    color: #4d4d4d;
     font-weight: 300;
   }
 }
+
 .send-container {
   width: 100vw;
   padding-left: 6vw;
@@ -103,8 +99,16 @@
 .name,
 .email,
 .subject,
-.message {
+.message- {
   border-style: none;
   border-radius: 0px 5px 5px 0px;
   border-left: $light-green 4px solid;
+}
+
+.MuiInputBase-root-26.MuiInput-root-13.MuiInput-underline-17.MuiInputBase-formControl-27.MuiInput-formControl-14.MuiInputBase-multiline-34.MuiInput-multiline-19 {
+  border-style: none;
+}
+.MuiPrivateTextarea-textarea-46.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25::placeholder {
+  color: #000000;
+  font-weight: 300;
 }
