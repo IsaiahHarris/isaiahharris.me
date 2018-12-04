@@ -37,6 +37,7 @@
       width: 100vw;
       display: flex;
       justify-content: space-evenly;
+      padding-bottom: 1vh;
     }
 
     .name,
@@ -75,7 +76,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 17vh;
+  height: 16vh;
   padding-top: 3vh;
   .icon-container {
     display: flex;
@@ -85,7 +86,7 @@
     align-items: center;
     .fab,
     .fas {
-      transform: scale(2.2, 2.2);
+      transform: scale(2.3, 2.3);
     }
     a {
       color: #505050;

@@ -48,9 +48,11 @@ class Contact extends Component {
     this.sendMessage = this.sendMessage.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
+
   handleClick() {
     this.setState({ open: true });
     this.sendMessage();
+    setTimeout(this.handleClose, 3500);
   }
 
   handleClose(event, reason) {
