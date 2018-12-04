@@ -5,7 +5,7 @@
   .header {
     display: flex;
     justify-content: flex-start;
-    font-size: 36px;
+    font-size: 34px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
@@ -16,13 +16,13 @@
     flex-direction: column;
     align-items: center;
     .skill-header {
-      font-size: 28px;
+      font-size: 26px;
       padding-top: 4.5vh;
       width: 100%;
       padding-left: 5vw;
     }
     .front-end-skill-header {
-      font-size: 28px;
+      font-size: 26px;
       width: 100%;
       padding-left: 5vw;
     }
@@ -36,7 +36,7 @@
       .skill {
         padding: 4px;
         padding-left: 0;
-        font-size: 22px;
+        font-size: 23px;
         width: 45vw;
         font-weight: 300;
       }

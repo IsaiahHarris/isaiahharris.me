@@ -1,12 +1,14 @@
 @import '../index.scss';
 .contact-container {
   font-family: 'Lato', sans-serif;
+  height: 90vh;
   .header {
     display: flex;
     flex-direction: column;
     padding-left: 6vw;
+    height: 17vh;
     .title {
-      font-size: 33px;
+      font-size: 34px;
       font-family: 'Ubuntu', sans-serif;
       font-weight: bold;
       letter-spacing: 1px;
@@ -17,119 +19,97 @@
       color: #2e2e2e;
     }
   }
+
   .form-container {
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
+
+    .error {
+      position: absolute;
+    }
     .top-inputs {
-      width: 100%;
+      width: 100vw;
       display: flex;
       justify-content: space-evenly;
-    }
-    .name-input,
-    .email-input,
-    .subject-input,
-    .message-input {
-      height: 7vh;
-      width: 40vw;
-      background-color: #f2f2f2;
-      border-style: none;
-      border-left: $light-green 4px solid;
-      border-radius: 0px 5px 5px 0px;
-      font-size: 20px;
-      word-wrap: break-word;
+      padding-bottom: 1vh;
     }
 
-    .name-input,
-    .email-input {
-      .name,
-      .email {
-        background-color: #f2f2f2;
-        border-style: none;
-        padding: 1.5vh;
-        width: 100%;
-        font-size: 20px;
-      }
-    }
-    .subject-input {
-      height: 7vh;
-      width: 86.5vw;
-      .subject {
-        background-color: #f2f2f2;
-        border-style: none;
-        padding: 1.5vh;
-        width: 100%;
-        font-size: 20px;
-      }
-    }
-    .message-input {
-      width: 86.5vw;
-      height: 20vh;
-      .message {
-        background-color: #f2f2f2;
-        border-style: none;
-        font-size: 20px;
-        padding: 1.5vh;
-        word-wrap: break-word;
-        width: 100%;
-        height: 20vh;
-      }
-    }
-    .name::placeholder,
-    .email::placeholder,
-    .subject::placeholder,
-    .message::placeholder {
-      color: black;
-      font-weight: 300;
+    .name,
+    .email {
+      background-color: #f3f3f3;
+      padding: 1.5vh;
+      width: 40vw;
+      font-size: 22px;
+      height: 7.5vh;
     }
   }
-  .send-container {
-    width: 100vw;
-    padding-left: 6vw;
-    .send {
-      padding-left: 6vw;
-      height: 5vh;
-      width: 20vw;
-      padding: 3px;
-      border: $light-green solid 2px;
-      border-radius: 5px;
-      background-color: $light-green;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .s {
-        font-weight: 300;
-        font-size: 24px;
-        color: white;
-      }
-    }
+
+  .subject {
+    height: 7.5vh;
+    width: 86.5vw;
+    background-color: #f3f3f3;
+    padding: 1.5vh;
+    font-size: 22px;
   }
-  .footer {
+
+  .name::placeholder,
+  .email::placeholder,
+  .subject::placeholder,
+  .message-::placeholder {
+    color: #4d4d4d;
+    font-weight: 300;
+  }
+}
+
+.send-container {
+  width: 100vw;
+  padding-left: 6vw;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 16vh;
+  padding-top: 3vh;
+  .icon-container {
     display: flex;
-    justify-content: center;
+    width: 70%;
+    height: 15vh;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 18vh;
-    .icon-container {
-      display: flex;
-      width: 60%;
-      height: 15vh;
-      justify-content: space-evenly;
-      align-items: center;
-      .fab,
-      .fas {
-        transform: scale(1.8, 1.8);
-      }
-      a {
-        color: #505050;
-      }
-      a:hover {
-        color: $light-green;
-      }
+    .fab,
+    .fas {
+      transform: scale(2.3, 2.3);
+    }
+    a {
+      color: #505050;
+    }
+    a:hover {
+      color: $light-green;
     }
   }
+}
+
+.name,
+.email,
+.subject,
+.message- {
+  border-style: none;
+  border-radius: 0px 5px 5px 0px;
+  border-left: $light-green 4px solid;
+}
+
+.MuiInputBase-root-26.MuiInput-root-13.MuiInput-underline-17.MuiInputBase-formControl-27.MuiInput-formControl-14.MuiInputBase-multiline-34.MuiInput-multiline-19 {
+  border-style: none;
+}
+.MuiPrivateTextarea-textarea-46.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25::placeholder {
+  color: #000000;
+  font-weight: 300;
 }

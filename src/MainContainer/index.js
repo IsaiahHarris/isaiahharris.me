@@ -5,6 +5,7 @@ import about from '../About';
 import skills from '../Skills';
 import education from '../Education';
 import Contact from '../Contact';
+import experience from '../Experience';
 import './MainContainer.scss';
 const mainContainer = props => (
   <div className="main-container">
@@ -14,6 +15,7 @@ const mainContainer = props => (
       <Route exact path="/skills" component={skills} />
       <Route exact path="/education" component={education} />
       <Route exact path="/contact" component={Contact} />
+      <Route exact path="/experience" component={experience} />
     </Switch>
   </div>
 );

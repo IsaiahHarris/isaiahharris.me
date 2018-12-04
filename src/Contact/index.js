@@ -1,25 +1,75 @@
 import React, { Component } from 'react';
 import './Contact.scss';
+import Snackbar from '../Snackbar';
+import SendButton from '../SendButton';
 import $ from 'jquery';
-import { Link } from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import { withStyles } from '@material-ui/core/styles';
+const styles = theme => ({
+  margin: {
+    margin: theme.spacing.unit,
+    borderRadius: '0px 5px 5px 0px',
+    borderLeft: '#00dea6 4px solid',
+    width: '86.5vw',
+    height: '22vh',
+    backgroundColor: '#f3f3f3',
+    fontSize: '22px',
+    padding: '1.5vh',
+    wordWrap: 'break-word',
+    color: 'black',
+    '&::placeholder': {
+      color: '#000000',
+      fontWeight: '300'
+    }
+  },
+  input: {
+    fontSize: '22px',
+    color: '#000000',
+    fontWeight: '300',
+    height: '100%',
+    maxHeight: '19vh',
+    paddingBottom: '1vh'
+  }
+});
+
 class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      nameInput: '',
+      emailInput: '',
+      subjectInput: '',
+      messageInput: '',
+      nameError: '',
+      open: false
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+  }
+
+  handleClick() {
+    this.setState({ open: true });
+    this.sendMessage();
+    setTimeout(this.handleClose, 3500);
+  }
+
+  handleClose(event, reason) {
+    console.log('hi');
+    if (reason === 'clickaway') {
+      return;
+    }
+    this.setState({
+      open: false
+    });
   }
   sendMessage() {
     const data = {
-      name: this.state.name,
-      email: this.state.email,
-      subject: this.state.subject,
-      message: this.state.message
+      name: this.state.nameInput,
+      email: this.state.emailInput,
+      subject: this.state.subjectInput,
+      message: this.state.messageInput
     };
     $.ajax({
       url: 'https://65nn0ge4si.execute-api.us-east-1.amazonaws.com/dev/contact',
@@ -29,89 +79,82 @@ class Contact extends Component {
       data: JSON.stringify(data)
     });
     this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+      nameInput: '',
+      emailInput: '',
+      subjectInput: '',
+      messageInput: ''
     });
   }
-  handleInputChange(event) {
-    switch (event.target.id) {
-      case 'name':
-        this.setState({ name: event.target.value });
-        break;
-      case 'email':
-        this.setState({ email: event.target.value });
-        break;
-      case 'subject':
-        this.setState({ subject: event.target.value });
-        break;
-      case 'message':
-        this.setState({ message: event.target.value });
-        break;
-      default:
-        break;
-    }
-  }
+
+  handleInputChange = name => event => {
+    this.setState({
+      [name]: event.target.value
+    });
+  };
+
   render() {
+    const { classes } = this.props;
+    const { nameInput, emailInput, subjectInput, messageInput } = this.state;
+    let isEnabled =
+      nameInput.length > 0 &&
+      emailInput.length > 0 &&
+      subjectInput.length > 0 &&
+      messageInput.length > 0;
     return (
       <div className="contact-container">
         <div className="header">
           <div className="title">CONTACT</div>
           <div className="sub-title">Let's get in touch!</div>
         </div>
+
+        <Snackbar open={this.state.open} handleClose={this.handleClose} />
         <div className="form-container">
           <div className="top-inputs">
-            <div className="name-input">
-              <input
-                className="name"
-                type="text"
-                name="name"
-                id="name"
-                value={this.state.name}
-                onChange={this.handleInputChange}
-                placeholder="Name"
-              />
-            </div>
-            <div className="email-input">
-              <input
-                className="email"
-                type="text"
-                name="email"
-                id="email"
-                value={this.state.email}
-                onChange={this.handleInputChange}
-                placeholder="Email"
-              />
-            </div>
-          </div>
-          <div className="subject-input">
             <input
-              className="subject"
+              className="name"
               type="text"
-              name="subject"
-              id="subject"
-              value={this.state.subject}
-              onChange={this.handleInputChange}
-              placeholder="Subject"
+              name="nameInput"
+              id="name"
+              value={this.state.nameInput}
+              onChange={this.handleInputChange('nameInput')}
+              placeholder="Name"
+            />
+
+            <input
+              className="email"
+              type="text"
+              name="emailInput"
+              id="email"
+              value={this.state.emailInput}
+              onChange={this.handleInputChange('emailInput')}
+              placeholder="Email"
             />
           </div>
-          <div className="message-input">
-            <textarea
-              className="message"
-              type="text"
-              name="message"
-              id="message"
-              value={this.state.message}
-              onChange={this.handleInputChange}
-              placeholder="Message"
-            />
-          </div>
+
+          <input
+            className="subject"
+            type="text"
+            name="subjectInput"
+            id="subject"
+            value={this.state.subjectInput}
+            onChange={this.handleInputChange('subjectInput')}
+            placeholder="Subject"
+          />
+          <TextField
+            multiline={true}
+            className={classes.margin}
+            name="messageInput"
+            value={this.state.messageInput}
+            onChange={this.handleInputChange('messageInput')}
+            placeholder="Message"
+            InputProps={{
+              disableUnderline: true,
+              classes: { input: classes.input }
+            }}
+          />
         </div>
         <div className="send-container">
-          <div className="send" onClick={this.sendMessage}>
-            <div className="s">Send</div>
-          </div>
+          <SendButton click={this.handleClick} enable={!isEnabled} />
         </div>
         <div className="footer">
           <div className="icon-container">
@@ -143,9 +186,6 @@ class Contact extends Component {
             >
               <i className="fab fa-instagram" />
             </a>
-            <Link to="/contact">
-              <i className="fas fa-envelope" />
-            </Link>
           </div>
         </div>
       </div>
@@ -153,4 +193,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default withStyles(styles)(Contact);
