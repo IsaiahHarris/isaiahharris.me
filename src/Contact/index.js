@@ -11,7 +11,7 @@ const styles = theme => ({
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
     width: '86.5vw',
-    height: '20vh',
+    height: '22vh',
     backgroundColor: '#f3f3f3',
     fontSize: '22px',
     padding: '1.5vh',
@@ -27,7 +27,7 @@ const styles = theme => ({
     color: '#000000',
     fontWeight: '300',
     height: '100%',
-    maxHeight: '18vh',
+    maxHeight: '19vh',
     paddingBottom: '1vh'
   }
 });
