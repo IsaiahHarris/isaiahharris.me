@@ -7,4 +7,16 @@
     font-weight: 900;
     letter-spacing: 1px;
   }
+  .work-container {
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+  }
+  .projects-container {
+    z-index: 0;
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+  }
 }
