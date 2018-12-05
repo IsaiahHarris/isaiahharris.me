@@ -1,9 +1,11 @@
 import React from 'react';
+import './Experience.scss';
 
 const experience = () => {
+  console.log();
   return (
     <div className="experience-container">
-      <div className="experience-header">experience</div>
+      <div className="header">Experience</div>
     </div>
   );
 };

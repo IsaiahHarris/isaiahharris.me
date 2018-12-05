@@ -24,11 +24,11 @@ const sideBar = props => {
         <Link to="/education" className="link" onClick={props.click}>
           Education
         </Link>
-        <Link to="/contact" className="link" onClick={props.click}>
-          Contact
-        </Link>
         <Link to="/experience" className="link" onClick={props.click}>
           Experience
+        </Link>
+        <Link to="/contact" className="link" onClick={props.click}>
+          Contact
         </Link>
       </ul>
       <div className="logo" />
