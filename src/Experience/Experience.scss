@@ -101,5 +101,20 @@
     background-color: white;
     height: 73.5vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    .description-container {
+      width: 48vw;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 35vh;
+      background-color: red;
+    }
+    .phone-container {
+      width: 48vw;
+      height: 35vh;
+      background-color: red;
+    }
   }
 }

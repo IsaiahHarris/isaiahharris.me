@@ -2,7 +2,7 @@ import React from 'react';
 import './Experience.scss';
 import Border from '../Border';
 const experience = () => {
-  function showProjects(subject) {
+  function switchPages(subject) {
     let projectsContainer = document.getElementById('projects-container');
     let workContainer = document.getElementById('work-container');
     let projectsChoice = document.getElementById('projects-choice');
@@ -27,7 +27,7 @@ const experience = () => {
         <div
           className="work-choice"
           onClick={() => {
-            showProjects('work');
+            switchPages('work');
           }}
         >
           <div className="work-choice-start" id="work-choice">
@@ -38,7 +38,7 @@ const experience = () => {
         <div
           className="projects-choice"
           onClick={() => {
-            showProjects('projects');
+            switchPages('projects');
           }}
         >
           <div className="projects-choice" id="projects-choice">
@@ -64,7 +64,16 @@ const experience = () => {
         </div>
       </div>
       <div className="projects-container" id="projects-container">
-        im projects
+        <div className="phone-container">this is the phone container</div>
+        <div className="description-container">
+          <div className="title">Garden Guru</div>
+          <div className="desc">this is a desc</div>
+          <div className="technology-container">
+            <div className="tech">Angular 6</div>
+            <div className="tech">Node.js</div>
+            <div className="tech">PostgreSQL</div>
+          </div>
+        </div>
       </div>
     </div>
   );
