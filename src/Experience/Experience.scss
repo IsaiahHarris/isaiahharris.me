@@ -1,6 +1,7 @@
 @import '../index.scss';
 .experience-container {
   height: 90vh;
+
   font-family: 'Lato', sans-serif;
   .header {
     display: flex;
@@ -33,8 +34,9 @@
         width: 50%;
         height: 4.5vh;
         border-bottom: 3px solid $light-green;
-        font-size: 22px;
+        font-size: 24px;
       }
+
       .work-choice,
       .projects-choice {
         width: 40%;
@@ -49,6 +51,49 @@
     height: 72.5vh;
     width: 100vw;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    .course-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 4vh;
+      width: 90vw;
+      .title,
+      .date,
+      .description {
+        width: 100%;
+      }
+      .title {
+        font-size: 1.5em;
+      }
+      .date {
+        padding-top: 1vh;
+        color: #575757;
+        font-size: 22px;
+      }
+      .description {
+        padding-top: 3vh;
+        font-size: 21px;
+        color: black;
+        padding-bottom: 1vh;
+        letter-spacing: 0.2px;
+        font-weight: 300;
+        line-height: 1.3em;
+      }
+
+      .dl-img {
+        height: 30vh;
+        width: 30vh;
+        background-image: url('../Assets/devleague.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 2vh;
+      }
+    }
   }
   .projects-container {
     z-index: 0;

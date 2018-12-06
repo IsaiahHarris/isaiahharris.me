@@ -1,6 +1,6 @@
 import React from 'react';
 import './Experience.scss';
-
+import Border from '../Border';
 const experience = () => {
   function showProjects(subject) {
     let projectsContainer = document.getElementById('projects-container');
@@ -34,6 +34,7 @@ const experience = () => {
             Work
           </div>
         </div>
+
         <div
           className="projects-choice"
           onClick={() => {
@@ -46,7 +47,21 @@ const experience = () => {
         </div>
       </div>
       <div className="work-container" id="work-container">
-        im work
+        <div className="work-experience-container">
+          <div className="course-container">
+            <div className="title">
+              DevLeague, Honolulu, Hawaii Coding Teaching Assistant
+            </div>
+            <div className="dl-img" />
+            <div className="date">Nov 2018 - Present</div>
+            <div className="description">
+              Hired as a web development coding teaching assistant. Collaborate
+              with teachers to monitor and promote learning and development of
+              each student.
+            </div>
+            <Border />
+          </div>
+        </div>
       </div>
       <div className="projects-container" id="projects-container">
         im projects
