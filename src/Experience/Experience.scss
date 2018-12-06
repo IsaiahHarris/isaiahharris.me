@@ -1,4 +1,7 @@
+@import '../index.scss';
 .experience-container {
+  height: 90vh;
+  font-family: 'Lato', sans-serif;
   .header {
     display: flex;
     justify-content: flex-start;
@@ -6,17 +9,52 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
+    height: 11.5vh;
+  }
+  .choices {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    border-bottom: 1px solid black;
+    .work-choice,
+    .projects-choice {
+      width: 48vw;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      .choice-active {
+        width: 50%;
+        height: 4.5vh;
+        border-bottom: 3px solid $light-green;
+        font-size: 24px;
+      }
+      .work-choice-start {
+        width: 50%;
+        height: 4.5vh;
+        border-bottom: 3px solid $light-green;
+        font-size: 22px;
+      }
+      .work-choice,
+      .projects-choice {
+        width: 40%;
+        height: 4.5vh;
+        font-size: 22px;
+      }
+    }
   }
   .work-container {
     z-index: 1;
     position: absolute;
-    background-color: white;
+    height: 72.5vh;
     width: 100vw;
+    background-color: white;
   }
   .projects-container {
     z-index: 0;
     position: absolute;
     background-color: white;
+    height: 73.5vh;
     width: 100vw;
   }
 }
