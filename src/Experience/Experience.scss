@@ -1,7 +1,6 @@
 @import '../index.scss';
 .experience-container {
   height: 90vh;
-
   font-family: 'Lato', sans-serif;
   .header {
     display: flex;
@@ -96,7 +95,7 @@
     }
   }
   .projects-container {
-    z-index: 0;
+    z-index: 2;
     position: absolute;
     background-color: white;
     height: 73.5vh;
@@ -106,15 +105,23 @@
     .description-container {
       width: 48vw;
       display: flex;
-      justify-content: center;
       flex-direction: column;
       height: 35vh;
-      background-color: red;
+      .title {
+        padding-top: 2.5vh;
+        font-size: 1.6em;
+      }
     }
     .phone-container {
       width: 48vw;
+      display: flex;
       height: 35vh;
-      background-color: red;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2vh;
+      .fas {
+        transform: scale(14, 14);
+      }
     }
   }
 }
