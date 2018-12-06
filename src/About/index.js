@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './About.scss';
 import Border from '../Border';
 const about = props => (
