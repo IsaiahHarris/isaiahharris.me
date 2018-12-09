@@ -5,9 +5,10 @@
   align-items: center;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
+  padding-bottom: 5vh;
   .title,
   .sub-title {
-    font-size: 8vw;
+    font-size: 2em;
     position: relative;
     z-index: 0;
   }
@@ -30,19 +31,57 @@
     z-index: 1;
     animation: wrapper 3s ease 0.5s normal both;
     .logo-top {
-      width: 50vw;
+      width: 60vw;
+      height: 20vh;
       position: absolute;
       display: inline-block;
       top: 0;
       animation: logo-top 4s ease 0.5s normal both;
     }
     .logo-bottom {
-      width: 50vw;
-      margin-left: 2vw;
+      width: 60vw;
+      height: 20vh;
+      margin-left: 1.5vw;
       position: absolute;
       display: inline-block;
       bottom: 0;
       animation: logo-bottom 4s ease 0.5s normal both;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .home-container {
+    .title,
+    .sub-title {
+      font-size: 2.6em;
+    }
+    .logo-container {
+      height: 50vh;
+      .logo-top {
+        width: 40vw;
+      }
+      .logo-bottom {
+        width: 40vw;
+      }
+    }
+  }
+}
+@media (min-width: 1100px) {
+  .home-container {
+    .title,
+    .sub-title {
+      font-size: 3.5em;
+    }
+    .logo-container {
+      height: 50vh;
+      .logo-top {
+        width: 20vw;
+      }
+      .logo-bottom {
+        width: 20vw;
+        margin-left: 0.75vw;
+      }
     }
   }
 }

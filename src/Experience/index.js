@@ -65,11 +65,12 @@ const experience = () => {
       </div>
       <div className="projects-container" id="projects-container">
         <div className="phone-container">
-          <i class="fas fa-mobile-alt" />
+          <i className="fas fa-mobile-alt" />
+          <div className="gardenGuru-img" />
         </div>
         <div className="description-container">
           <div className="title">Garden Guru</div>
-          <div className="desc">this is a desc</div>
+          <div className="desc">this is a description</div>
           <div className="technology-container">
             <div className="tech">Angular 6</div>
             <div className="tech">Node.js</div>

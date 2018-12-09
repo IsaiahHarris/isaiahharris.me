@@ -19,20 +19,16 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin-bottom: 200%;
+    height: 90vh;
     .link {
-      padding: 15% 0%;
+      padding: 22% 0%;
       font-size: 1.5em;
       width: 100%;
+      text-decoration: none;
     }
-    .link:hover {
-      padding: 15% 0%;
-      font-size: 1.5em;
-      width: 100%;
-      border-bottom: 2px solid $light-green;
-    }
+    .link:hover,
     .link:active {
-      padding: 15% 0%;
+      padding: 22% 0%;
       font-size: 1.5em;
       width: 100%;
       border-bottom: 2px solid $light-green;
@@ -41,7 +37,7 @@
   .logo {
     background-image: url('../Assets/logo.png');
     height: 10vh;
-    width: 10vw;
+    width: 14vw;
     background-size: 100% 100%;
     padding: 5%;
     margin: 5%;
@@ -76,5 +72,64 @@
   }
   .close:after {
     transform: rotate(-45deg);
+  }
+}
+@media (min-width: 590px) {
+  .sidebar-container {
+    width: 40vw;
+    .links {
+      .link,
+      .link:active,
+      .link:hover {
+        padding: 15% 0%;
+        font-size: 1.5em;
+        width: 50%;
+      }
+    }
+    .logo {
+      width: 10vw;
+    }
+  }
+}
+@media (min-width: 800px) {
+  .sidebar-container {
+    width: 30vw;
+    .links {
+      .link,
+      .link:active,
+      .link:hover {
+        padding: 18% 0%;
+        font-size: 2em;
+        width: 50%;
+      }
+    }
+    .close {
+      width: 45px;
+      height: 45px;
+    }
+    .close:before,
+    .close:after {
+      height: 45px;
+      width: 4px;
+    }
+    .logo {
+      width: 5.5vw;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .sidebar-container {
+    .links {
+      .link,
+      .link:active,
+      .link:hover {
+        padding: 15% 0%;
+        font-size: 2.2em;
+        width: 50%;
+      }
+    }
+    .logo {
+      width: 5vw;
+    }
   }
 }

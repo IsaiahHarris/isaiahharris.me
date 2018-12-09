@@ -95,7 +95,7 @@
     }
   }
   .projects-container {
-    z-index: 2;
+    z-index: 0;
     position: absolute;
     background-color: white;
     height: 73.5vh;
@@ -121,6 +121,16 @@
       padding-bottom: 2vh;
       .fas {
         transform: scale(14, 14);
+        position: absolute;
+      }
+      .gardenGuru-img {
+        height: 17.96vh;
+        width: 25.88vw;
+        background-image: url('../Assets/gardenguru.png');
+        background-size: 100% 100%;
+        position: relative;
+        z-index: -1;
+        margin-bottom: 4.35vh;
       }
     }
   }

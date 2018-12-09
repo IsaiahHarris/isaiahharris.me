@@ -9,7 +9,6 @@
   z-index: 10;
   background-color: white;
   width: 100%;
-
   .contact {
     text-decoration: none;
     font-size: 16px;
@@ -28,5 +27,22 @@
   .scroll-up {
     opacity: 1;
     transition: 0.01s;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-container {
+    .contact {
+      font-size: 20px;
+      margin-right: 2%;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .header-container {
+    .contact {
+      font-size: 26px;
+      margin-right: 2%;
+    }
   }
 }

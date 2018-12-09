@@ -11,3 +11,28 @@
     background-color: $dark-green;
   }
 }
+
+@media (min-width: 800px) {
+  .overlay {
+    margin-left: 0;
+    .line,
+    .line-mid {
+      width: 45px;
+      height: 7px;
+      margin: 7px 0;
+      border-radius: 5px;
+    }
+  }
+}
+@media (min-width: 1000px) {
+  .overlay {
+    margin-left: 0;
+    .line,
+    .line-mid {
+      width: 50px;
+      height: 8px;
+      margin: 8px 0;
+      border-radius: 5px;
+    }
+  }
+}
