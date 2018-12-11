@@ -22,7 +22,7 @@ const experience = () => {
 
   return (
     <div className="experience-container">
-      <div className="header">Experience</div>
+      <div className="header">EXPERIENCE</div>
       <div className="choices">
         <div
           className="work-choice"
@@ -65,16 +65,27 @@ const experience = () => {
       </div>
       <div className="projects-container" id="projects-container">
         <div className="phone-container">
-          <i className="fas fa-mobile-alt" />
-          <div className="gardenGuru-img" />
+          <img
+            className="phone-img"
+            src={require('../Assets/phone.png')}
+            alt=""
+          />
+          <img
+            className="garden-guru-img"
+            src={require('../Assets/gardenguru.png')}
+            alt=""
+          />
         </div>
         <div className="description-container">
           <div className="title">Garden Guru</div>
-          <div className="desc">this is a description</div>
+          <div className="desc">
+            Gardening assistant and virtual farmers market application.
+          </div>
           <div className="technology-container">
-            <div className="tech">Angular 6</div>
+            <div className="tech1">Angular 6</div>
             <div className="tech">Node.js</div>
-            <div className="tech">PostgreSQL</div>
+            <div className="tech-bot">PostgreSQL</div>
+            <div className="learn-more">Learn More</div>
           </div>
         </div>
       </div>
