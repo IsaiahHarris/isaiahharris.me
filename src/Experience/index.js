@@ -77,7 +77,14 @@ const experience = () => {
           />
         </div>
         <div className="description-container">
-          <div className="title">Garden Guru</div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gardenguru.farm"
+            className="title"
+          >
+            gardenguru.farm
+          </a>
           <div className="desc">
             Mobile friendly gardening assistant and virtual farmers market
             application.
@@ -86,7 +93,12 @@ const experience = () => {
             <div className="tech1">Angular 6</div>
             <div className="tech">Node.js</div>
             <div className="tech-bot">PostgreSQL</div>
-            <div className="learn-more">Learn More</div>
+            <a
+              className="github"
+              href="https://www.github.com/IsaiahHarris/GardenGuru"
+            >
+              <div className="learn-more">View On Github</div>
+            </a>
           </div>
         </div>
       </div>

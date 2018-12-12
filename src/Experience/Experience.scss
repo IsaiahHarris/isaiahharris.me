@@ -111,9 +111,15 @@
       height: 35vh;
       .title {
         padding-top: 2.5vh;
-        font-size: 1.6em;
+        font-size: 1.5em;
         font-weight: 600;
         color: #434343;
+        text-decoration: none;
+        @media (min-width: 767px) {
+          font-size: 2em;
+        }
+        @media (min-width: 1000px) {
+        }
       }
       .desc {
         padding-top: 1.7vh;
@@ -156,11 +162,15 @@
           padding: 3%;
         }
         .learn-more {
-          width: 65%;
+          width: 48vw;
           border: 2px solid $light-green;
           border-radius: 5px;
           padding: 3%;
           color: $light-green;
+          text-decoration: none;
+        }
+        .github {
+          text-decoration: none;
         }
         .learn-more,
         .tech-bot {
@@ -169,13 +179,21 @@
       }
     }
     .phone-container {
-      width: 35vw;
-      height: 35vh;
+      width: 150px;
+      height: 300px;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 2vh;
+      @media (min-width: 767px) {
+        width: 200px;
+        height: 400px;
+      }
+      @media (min-width: 1000px) {
+        width: 250px;
+        height: 500px;
+      }
       .phone-img {
         height: 100%;
         width: 100%;
