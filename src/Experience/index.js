@@ -79,7 +79,8 @@ const experience = () => {
         <div className="description-container">
           <div className="title">Garden Guru</div>
           <div className="desc">
-            Gardening assistant and virtual farmers market application.
+            Mobile friendly gardening assistant and virtual farmers market
+            application.
           </div>
           <div className="technology-container">
             <div className="tech1">Angular 6</div>

@@ -116,7 +116,7 @@
         color: #434343;
       }
       .desc {
-        padding-top: 3vh;
+        padding-top: 1.7vh;
         font-weight: 300;
         font-size: 1.2em;
       }
@@ -124,6 +124,14 @@
         display: flex;
         flex-wrap: wrap;
         width: 50vw;
+        .tech1,
+        .tech,
+        .tech-bot,
+        .learn-more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
         .tech1,
         .tech,
         .tech-bot {
@@ -135,19 +143,24 @@
           background-color: $light-green;
           padding: 3%;
           border-radius: 5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+
           margin-top: 6%;
         }
         .tech {
           margin-left: 3vw;
         }
         .tech-bot {
-          width: 70%;
+          width: 65%;
           background-color: $light-green;
           border-radius: 5px;
           padding: 3%;
+        }
+        .learn-more {
+          width: 65%;
+          border: 2px solid $light-green;
+          border-radius: 5px;
+          padding: 3%;
+          color: $light-green;
         }
         .learn-more,
         .tech-bot {
@@ -156,8 +169,8 @@
       }
     }
     .phone-container {
-      width: 30vw;
-      height: 30vh;
+      width: 35vw;
+      height: 35vh;
       position: relative;
       display: flex;
       justify-content: center;
@@ -171,8 +184,7 @@
       }
       .garden-guru-img {
         height: 76%;
-        width: 87%;
-
+        width: 88%;
         position: absolute;
       }
     }
