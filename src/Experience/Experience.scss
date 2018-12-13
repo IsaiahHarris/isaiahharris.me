@@ -134,12 +134,20 @@
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 27vh;
+          width: 27vh;
+        }
+        @media (min-width: 1300px) {
+          height: 25vh;
+          width: 25vh;
+        }
       }
     }
   }
 
   .projects-container {
-    z-index: 2;
+    z-index: 0;
     position: absolute;
     background-color: white;
     height: 73.5vh;
