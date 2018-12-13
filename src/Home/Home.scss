@@ -5,11 +5,18 @@
   align-items: center;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
+  padding-bottom: 5vh;
   .title,
   .sub-title {
-    font-size: 8vw;
+    font-size: 2em;
     position: relative;
     z-index: 0;
+    @media (min-width: 767px) {
+      font-size: 2.5em;
+    }
+    @media (min-width: 1000px) {
+      font-size: 2.7em;
+    }
   }
   .sub-title {
     font-style: italic;
@@ -30,15 +37,25 @@
     z-index: 1;
     animation: wrapper 3s ease 0.5s normal both;
     .logo-top {
-      width: 50vw;
+      width: 225px;
+      height: 20vh;
       position: absolute;
       display: inline-block;
       top: 0;
       animation: logo-top 4s ease 0.5s normal both;
+      @media (min-width: 1000px) {
+        width: 250px;
+        height: 20vh;
+      }
     }
     .logo-bottom {
-      width: 50vw;
-      margin-left: 2vw;
+      width: 225px;
+      height: 20vh;
+      @media (min-width: 1000px) {
+        width: 250px;
+        height: 20vh;
+      }
+      margin-left: 7px;
       position: absolute;
       display: inline-block;
       bottom: 0;

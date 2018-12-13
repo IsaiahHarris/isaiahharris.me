@@ -7,6 +7,12 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
+    @media (min-width: 767px) {
+      font-size: 40px;
+    }
+    @media (min-width: 1300px) {
+      font-size: 44px;
+    }
   }
   .courses {
     display: flex;
@@ -26,11 +32,25 @@
       }
       .title {
         font-size: 1.5em;
+        @media (min-width: 767px) {
+          font-size: 1.7em;
+        }
+        @media (min-width: 1300px) {
+          font-size: 2em;
+        }
       }
       .date {
         padding-top: 1vh;
         color: #575757;
         font-size: 22px;
+        @media (min-width: 767px) {
+          font-size: 26px;
+          padding-top: 2vh;
+        }
+        @media (min-width: 1300px) {
+          font-size: 30px;
+          padding-top: 3vh;
+        }
       }
       .description {
         padding-top: 3vh;
@@ -40,6 +60,14 @@
         letter-spacing: 0.2px;
         font-weight: 300;
         line-height: 1.3em;
+        @media (min-width: 767px) {
+          font-size: 25px;
+          padding-top: 4vh;
+        }
+        @media (min-width: 1300px) {
+          font-size: 29px;
+          padding-top: 6vh;
+        }
       }
 
       .dl-img {
@@ -51,6 +79,14 @@
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 767px) {
+          height: 27.5vh;
+          width: 27.5vh;
+        }
+        @media (min-width: 1300px) {
+          height: 25vh;
+          width: 25vh;
+        }
       }
       .udacity-img {
         height: 30vh;
@@ -61,6 +97,14 @@
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 767px) {
+          height: 27.5vh;
+          width: 27.5vh;
+        }
+        @media (min-width: 1300px) {
+          height: 25vh;
+          width: 25vh;
+        }
       }
       .udemy-img {
         height: 25vh;
@@ -71,6 +115,14 @@
         opacity: 0.3;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 767px) {
+          height: 22.5vh;
+          width: 32.5vh;
+        }
+        @media (min-width: 1300px) {
+          height: 20vh;
+          width: 30vh;
+        }
       }
     }
   }

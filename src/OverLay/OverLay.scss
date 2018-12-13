@@ -2,12 +2,27 @@
 .overlay {
   padding: 3%;
   margin-left: 3%;
+  @media (min-width: 767px) {
+    margin: 0;
+  }
   .line {
     @extend %overlay-line;
     background-color: $light-green;
+    @media (min-width: 767px) {
+      width: 45px;
+      height: 7px;
+      margin: 7px 0;
+      border-radius: 5px;
+    }
   }
   .line-mid {
     @extend %overlay-line;
     background-color: $dark-green;
+    @media (min-width: 767px) {
+      width: 45px;
+      height: 7px;
+      margin: 7px 0;
+      border-radius: 5px;
+    }
   }
 }

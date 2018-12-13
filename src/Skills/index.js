@@ -88,7 +88,7 @@ const skills = props => {
           <i className="fab fa-aws" />
           <i className="fas fa-database" />
         </div>
-        <div className="border" />
+        <Border />
         <div className="skill-header">Tools</div>
         <div className="skill-container">
           {tools.map((skill, key) => {
@@ -104,7 +104,7 @@ const skills = props => {
           <i className="fab fa-npm" />
           <i className="fas fa-code-branch" />
         </div>
-        <div className="border" />
+        <Border />
         <div className="skill-header">Concepts</div>
         <div className="skill-container">
           {concepts.map((skill, key) => {
@@ -120,7 +120,7 @@ const skills = props => {
           <i className="fas fa-cloud" />
           <i className="fas fa-code" />
         </div>
-        <div className="border" />
+        <Border />
         <div className="skill-header">Currently Learning</div>
         <div className="skill-container">
           {currentlyLearning.map((skill, key) => {

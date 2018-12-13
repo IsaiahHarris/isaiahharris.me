@@ -20,7 +20,7 @@ const header = props => {
   });
   return (
     <div id="header-container" className="header-container">
-      <OverLay click={props.sideBarClickHandler} />
+      <OverLay className="over" click={props.sideBarClickHandler} />
       <Link to={'/contact'} className="contact">
         Contact
       </Link>

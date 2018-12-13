@@ -22,7 +22,7 @@ const experience = () => {
 
   return (
     <div className="experience-container">
-      <div className="header">Experience</div>
+      <div className="header">EXPERIENCE</div>
       <div className="choices">
         <div
           className="work-choice"
@@ -64,14 +64,41 @@ const experience = () => {
         </div>
       </div>
       <div className="projects-container" id="projects-container">
-        <div className="phone-container">this is the phone container</div>
+        <div className="phone-container">
+          <img
+            className="phone-img"
+            src={require('../Assets/phone.png')}
+            alt=""
+          />
+          <img
+            className="garden-guru-img"
+            src={require('../Assets/gardenguru.png')}
+            alt=""
+          />
+        </div>
         <div className="description-container">
-          <div className="title">Garden Guru</div>
-          <div className="desc">this is a desc</div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gardenguru.farm"
+            className="title"
+          >
+            gardenguru.farm
+          </a>
+          <div className="desc">
+            Mobile friendly gardening assistant and virtual farmers market
+            application.
+          </div>
           <div className="technology-container">
-            <div className="tech">Angular 6</div>
+            <div className="tech1">Angular 6</div>
             <div className="tech">Node.js</div>
-            <div className="tech">PostgreSQL</div>
+            <div className="tech-bot">PostgreSQL</div>
+            <a
+              className="github"
+              href="https://www.github.com/IsaiahHarris/GardenGuru"
+            >
+              <div className="learn-more">View On Github</div>
+            </a>
           </div>
         </div>
       </div>

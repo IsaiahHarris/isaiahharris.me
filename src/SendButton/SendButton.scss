@@ -1,7 +1,6 @@
 @import '../index.scss';
 %send-button {
   padding-left: 6vw;
-
   width: 20vw;
   padding: 3px;
   padding-top: 2px;
@@ -12,6 +11,11 @@
   font-size: 24px;
   text-align: center;
   color: white;
+  height: 35px;
+  @media (min-width: 767px) {
+    margin-left: 0.6vw;
+    height: 40px;
+  }
 }
 .send {
   @extend %send-button;

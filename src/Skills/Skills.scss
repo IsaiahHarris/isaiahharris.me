@@ -9,6 +9,12 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
+    @media (min-width: 767px) {
+      font-size: 40px;
+    }
+    @media (min-width: 1300px) {
+      font-size: 44px;
+    }
   }
   .skills {
     width: 100vw;
@@ -20,11 +26,23 @@
       padding-top: 4.5vh;
       width: 100%;
       padding-left: 5vw;
+      @media (min-width: 767px) {
+        font-size: 30px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 33px;
+      }
     }
     .front-end-skill-header {
       font-size: 26px;
       width: 100%;
       padding-left: 5vw;
+      @media (min-width: 767px) {
+        font-size: 30px;
+      }
+      @media (min-width: 1300px) {
+        font-size: 33px;
+      }
     }
     .skill-container {
       display: flex;
@@ -39,6 +57,14 @@
         font-size: 23px;
         width: 45vw;
         font-weight: 300;
+        @media (min-width: 767px) {
+          font-size: 26px;
+          padding: 5px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 29px;
+          padding: 6px;
+        }
       }
     }
     .logo-container {
@@ -55,6 +81,12 @@
         height: 12px;
         width: 12px;
         transform: scale(3, 3);
+        @media (min-width: 767px) {
+          transform: scale(3.5, 3.5);
+        }
+        @media (min-width: 1300px) {
+          transform: scale(4, 4);
+        }
       }
       .fab.fa-sass {
         color: #de5b9c;
@@ -62,6 +94,7 @@
       .fab.fa-js-square {
         color: #fbde00;
         background-color: black;
+        height: 12px;
       }
       .fab.fa-react {
         color: #00ddff;
