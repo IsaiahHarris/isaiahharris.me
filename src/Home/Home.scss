@@ -11,6 +11,12 @@
     font-size: 2em;
     position: relative;
     z-index: 0;
+    @media (min-width: 767px) {
+      font-size: 2.5em;
+    }
+    @media (min-width: 1000px) {
+      font-size: 2.7em;
+    }
   }
   .sub-title {
     font-style: italic;
@@ -31,57 +37,29 @@
     z-index: 1;
     animation: wrapper 3s ease 0.5s normal both;
     .logo-top {
-      width: 60vw;
+      width: 225px;
       height: 20vh;
       position: absolute;
       display: inline-block;
       top: 0;
       animation: logo-top 4s ease 0.5s normal both;
+      @media (min-width: 1000px) {
+        width: 250px;
+        height: 20vh;
+      }
     }
     .logo-bottom {
-      width: 60vw;
+      width: 225px;
       height: 20vh;
-      margin-left: 1.5vw;
+      @media (min-width: 1000px) {
+        width: 250px;
+        height: 20vh;
+      }
+      margin-left: 7px;
       position: absolute;
       display: inline-block;
       bottom: 0;
       animation: logo-bottom 4s ease 0.5s normal both;
-    }
-  }
-}
-
-@media (min-width: 800px) {
-  .home-container {
-    .title,
-    .sub-title {
-      font-size: 2.6em;
-    }
-    .logo-container {
-      height: 50vh;
-      .logo-top {
-        width: 40vw;
-      }
-      .logo-bottom {
-        width: 40vw;
-      }
-    }
-  }
-}
-@media (min-width: 1100px) {
-  .home-container {
-    .title,
-    .sub-title {
-      font-size: 3.5em;
-    }
-    .logo-container {
-      height: 50vh;
-      .logo-top {
-        width: 20vw;
-      }
-      .logo-bottom {
-        width: 20vw;
-        margin-left: 0.75vw;
-      }
     }
   }
 }
