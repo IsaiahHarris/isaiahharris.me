@@ -79,7 +79,6 @@
     display: flex;
     justify-content: center;
     padding-top: 2vh;
-
     .course-container {
       display: flex;
       flex-direction: column;
@@ -93,11 +92,23 @@
       }
       .title {
         font-size: 1.5em;
+        @media (min-width: 1000px) {
+          font-size: 2em;
+        }
+        @media (min-width: 1300px) {
+          font-size: 2.4em;
+        }
       }
       .date {
         padding-top: 1vh;
         color: #575757;
         font-size: 22px;
+        @media (min-width: 1000px) {
+          font-size: 28px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 34px;
+        }
       }
       .description {
         padding-top: 3vh;
@@ -107,8 +118,13 @@
         letter-spacing: 0.2px;
         font-weight: 300;
         line-height: 1.3em;
+        @media (min-width: 1000px) {
+          font-size: 28px;
+        }
+        @media (min-width: 1300px) {
+          font-size: 34px;
+        }
       }
-
       .dl-img {
         height: 30vh;
         width: 30vh;
