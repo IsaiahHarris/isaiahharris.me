@@ -62,7 +62,7 @@ const skills = props => {
           {frontEndSkills.map((skill, key) => {
             return (
               <div key={key} className="skill">
-                - {skill}
+                {skill}
               </div>
             );
           })}
@@ -78,7 +78,7 @@ const skills = props => {
           {backEndSkills.map((skill, key) => {
             return (
               <div key={key} className="skill">
-                - {skill}
+                {skill}
               </div>
             );
           })}
@@ -94,7 +94,7 @@ const skills = props => {
           {tools.map((skill, key) => {
             return (
               <div key={key} className="skill">
-                - {skill}
+                {skill}
               </div>
             );
           })}
@@ -110,7 +110,7 @@ const skills = props => {
           {concepts.map((skill, key) => {
             return (
               <div key={key} className="skill">
-                - {skill}
+                {skill}
               </div>
             );
           })}
@@ -126,7 +126,7 @@ const skills = props => {
           {currentlyLearning.map((skill, key) => {
             return (
               <div key={key} className="skill">
-                - {skill}
+                {skill}
               </div>
             );
           })}

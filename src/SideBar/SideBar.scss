@@ -15,13 +15,12 @@
   justify-content: space-between;
   font-family: 'Lato', sans-serif;
   .links {
-    list-style: none;
     display: flex;
     flex-direction: column;
     width: 65%;
-    height: 90vh;
+    margin-left: 25px;
     .link {
-      padding: 22% 0%;
+      margin-top: 22%;
       font-size: 1.5em;
       width: 100%;
       text-decoration: none;
@@ -30,12 +29,7 @@
     }
     .link:hover,
     .link:active {
-      padding: 22% 0%;
-      font-size: 1.5em;
-      width: 100%;
       border-bottom: 2px solid $light-green;
-      color: black;
-      font-weight: 300;
     }
   }
   .logo {

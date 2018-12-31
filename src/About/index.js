@@ -6,7 +6,7 @@ const about = props => (
     <div className="title-container">
       <div className="titles">
         <div className="title">ABOUT</div>
-        <div className="sub-title">Hi, I'm Isaiah Harris.</div>
+        <div className="sub-title">HI, I'm Isaiah Harris.</div>
       </div>
       <div className="picture" />
     </div>
@@ -27,7 +27,6 @@ const about = props => (
           experiences.
         </div>
       </div>
-      <Border />
     </div>
   </div>
 );

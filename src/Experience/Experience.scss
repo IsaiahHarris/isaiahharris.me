@@ -268,20 +268,20 @@
       }
     }
     .phone-container {
-      width: 150px;
-      height: 300px;
+      width: 130px;
+      height: 260px;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 2vh;
       @media (min-width: 767px) {
-        width: 200px;
-        height: 400px;
+        width: 170px;
+        height: 290px;
       }
       @media (min-width: 1000px) {
-        width: 260px;
-        height: 520px;
+        width: 200px;
+        height: 380px;
       }
       .phone-img {
         height: 100%;

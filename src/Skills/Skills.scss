@@ -57,12 +57,12 @@
         font-size: 23px;
         width: 45vw;
         font-weight: 300;
-        @media (min-width: 767px) {
-          font-size: 26px;
+        @media (min-width: 1000px) {
+          font-size: 28px;
           padding: 5px;
         }
         @media (min-width: 1300px) {
-          font-size: 29px;
+          font-size: 34px;
           padding: 6px;
         }
       }
@@ -94,7 +94,7 @@
       .fab.fa-js-square {
         color: #fbde00;
         background-color: black;
-        height: 12px;
+        height: 10px;
       }
       .fab.fa-react {
         color: #00ddff;

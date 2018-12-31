@@ -11,7 +11,7 @@ const sideBar = props => {
       <div className="header">
         <div className="close" onClick={props.click} />
       </div>
-      <ul className="links">
+      <div className="links">
         <Link to="/" className="link" onClick={props.click}>
           Home
         </Link>
@@ -30,7 +30,7 @@ const sideBar = props => {
         <Link to="/contact" className="link" onClick={props.click}>
           Contact
         </Link>
-      </ul>
+      </div>
       <div className="logo" />
     </div>
   );
