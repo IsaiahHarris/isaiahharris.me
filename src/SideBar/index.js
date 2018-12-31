@@ -12,7 +12,7 @@ const sideBar = props => {
         <div className="close" onClick={props.click} />
       </div>
       <div className="links">
-        <Link to="/" className="link" onClick={props.click}>
+        <Link to="/" className="lin" onClick={props.click}>
           Home
         </Link>
         <Link to="/about" className="link" onClick={props.click}>
