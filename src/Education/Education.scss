@@ -3,15 +3,12 @@
   .header {
     display: flex;
     justify-content: flex-start;
-    font-size: 34px;
+    font-size: 32px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
-    @media (min-width: 767px) {
-      font-size: 40px;
-    }
     @media (min-width: 1300px) {
-      font-size: 44px;
+      font-size: 38px;
     }
   }
   .courses {
@@ -23,7 +20,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 4vh;
+      padding-bottom: 25px;
       width: 90vw;
       .title,
       .date,
@@ -31,30 +28,23 @@
         width: 100%;
       }
       .title {
-        font-size: 1.5em;
-        @media (min-width: 767px) {
-          font-size: 1.7em;
-        }
-        @media (min-width: 1300px) {
-          font-size: 2em;
+        font-size: 22px;
+        @media (min-width: 1000px) {
+          font-size: 28px;
         }
       }
       .date {
-        padding-top: 1vh;
+        padding-top: 8px;
         color: #575757;
-        font-size: 22px;
-        @media (min-width: 767px) {
+        font-size: 20px;
+        @media (min-width: 1000px) {
           font-size: 26px;
-          padding-top: 2vh;
-        }
-        @media (min-width: 1300px) {
-          font-size: 30px;
           padding-top: 3vh;
         }
       }
       .description {
-        padding-top: 3vh;
-        font-size: 21px;
+        padding-top: 15px;
+        font-size: 18px;
         color: black;
         padding-bottom: 1vh;
         letter-spacing: 0.2px;
@@ -71,58 +61,34 @@
       }
 
       .dl-img {
-        height: 30vh;
-        width: 30vh;
+        height: 200px;
+        width: 200px;
         background-image: url('../Assets/devleague.png');
         background-size: 100% 100%;
         z-index: -1;
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
-        @media (min-width: 767px) {
-          height: 27.5vh;
-          width: 27.5vh;
-        }
-        @media (min-width: 1300px) {
-          height: 25vh;
-          width: 25vh;
-        }
       }
       .udacity-img {
-        height: 30vh;
-        width: 30vh;
+        height: 200px;
+        width: 200px;
         background-image: url('../Assets/udacity.png');
         background-size: 100% 100%;
         z-index: -1;
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
-        @media (min-width: 767px) {
-          height: 27.5vh;
-          width: 27.5vh;
-        }
-        @media (min-width: 1300px) {
-          height: 25vh;
-          width: 25vh;
-        }
       }
       .udemy-img {
-        height: 25vh;
-        width: 35vh;
+        height: 175px;
+        width: 225px;
         background-image: url('../Assets/udemy.png');
         background-size: 100% 100%;
         z-index: -1;
         opacity: 0.3;
         position: absolute;
         margin-top: 2vh;
-        @media (min-width: 767px) {
-          height: 22.5vh;
-          width: 32.5vh;
-        }
-        @media (min-width: 1300px) {
-          height: 20vh;
-          width: 30vh;
-        }
       }
     }
   }

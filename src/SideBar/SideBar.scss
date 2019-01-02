@@ -14,37 +14,62 @@
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Lato', sans-serif;
+  @media (min-width: 1000px) {
+    width: 35vw;
+  }
   .links {
-    list-style: none;
     display: flex;
     flex-direction: column;
     width: 65%;
-    height: 90vh;
-    .link {
-      padding: 22% 0%;
+    margin-left: 25px;
+    height: 80%;
+    @media (min-width: 1000px) {
+      margin-left: 60px;
+    }
+    .lin {
+      margin-top: 15%;
       font-size: 1.5em;
-      width: 100%;
+      width: 80%;
       text-decoration: none;
       color: black;
       font-weight: 300;
+      padding-bottom: 10px;
+      @media (min-width: 1000px) {
+        margin-top: 5%;
+        font-size: 1.8em;
+      }
     }
-    .link:hover,
-    .link:active {
-      padding: 22% 0%;
+    .link {
+      margin-top: 30%;
       font-size: 1.5em;
-      width: 100%;
-      border-bottom: 2px solid $light-green;
+      width: 80%;
+      text-decoration: none;
       color: black;
       font-weight: 300;
+      padding-bottom: 10px;
+      @media (min-width: 1000px) {
+        margin-top: 18%;
+        font-size: 1.8em;
+      }
+    }
+    .link:hover,
+    .link:active,
+    .lin:hover,
+    .lin:active {
+      border-bottom: 2px solid $light-green;
     }
   }
   .logo {
     background-image: url('../Assets/logo.png');
-    height: 10vh;
-    width: 14vw;
+    height: 50px;
+    width: 40px;
     background-size: 100% 100%;
-    padding: 5%;
-    margin: 5%;
+    margin: 10px;
+    @media (min-width: 1000px) {
+      margin: 20px;
+      height: 70px;
+      width: 55px;
+    }
   }
 }
 
@@ -76,64 +101,5 @@
   }
   .close:after {
     transform: rotate(-45deg);
-  }
-}
-@media (min-width: 590px) {
-  .sidebar-container {
-    width: 40vw;
-    .links {
-      .link,
-      .link:active,
-      .link:hover {
-        padding: 15% 0%;
-        font-size: 1.5em;
-        width: 50%;
-      }
-    }
-    .logo {
-      width: 10vw;
-    }
-  }
-}
-@media (min-width: 800px) {
-  .sidebar-container {
-    width: 30vw;
-    .links {
-      .link,
-      .link:active,
-      .link:hover {
-        padding: 18% 0%;
-        font-size: 2em;
-        width: 50%;
-      }
-    }
-    .close {
-      width: 45px;
-      height: 45px;
-    }
-    .close:before,
-    .close:after {
-      height: 45px;
-      width: 4px;
-    }
-    .logo {
-      width: 5.5vw;
-    }
-  }
-}
-@media (min-width: 1000px) {
-  .sidebar-container {
-    .links {
-      .link,
-      .link:active,
-      .link:hover {
-        padding: 10% 0%;
-        font-size: 2em;
-        width: 50%;
-      }
-    }
-    .logo {
-      width: 4vw;
-    }
   }
 }

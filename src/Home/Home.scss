@@ -8,27 +8,23 @@
   padding-bottom: 5vh;
   .title,
   .sub-title {
-    font-size: 2em;
+    font-size: 32px;
     position: relative;
     z-index: 0;
-    @media (min-width: 767px) {
-      font-size: 2.5em;
-    }
     @media (min-width: 1000px) {
-      font-size: 2.7em;
+      font-size: 38px;
     }
   }
   .sub-title {
     font-style: italic;
-    font-weight: lighter;
+    font-weight: 300;
     animation: sub-title 2s ease 4s normal both;
   }
   .title {
     animation: title 2s ease 4s normal both;
   }
-
   .logo-container {
-    height: 50vh;
+    height: 345px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,23 +33,19 @@
     z-index: 1;
     animation: wrapper 3s ease 0.5s normal both;
     .logo-top {
-      width: 225px;
-      height: 20vh;
+      width: 190px;
       position: absolute;
       display: inline-block;
       top: 0;
       animation: logo-top 4s ease 0.5s normal both;
       @media (min-width: 1000px) {
-        width: 250px;
-        height: 20vh;
+        width: 230px;
       }
     }
     .logo-bottom {
-      width: 225px;
-      height: 20vh;
+      width: 190px;
       @media (min-width: 1000px) {
-        width: 250px;
-        height: 20vh;
+        width: 230px;
       }
       margin-left: 7px;
       position: absolute;

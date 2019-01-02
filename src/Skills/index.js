@@ -3,18 +3,18 @@ import './Skills.scss';
 import Border from '../Border';
 const skills = props => {
   let frontEndSkills = [
-    'HTML5',
-    'CSS3',
     'JavaScript',
     'React',
+    'React Native',
     'Redux',
+    'HTML5',
+    'CSS3',
     'Angular',
     'TypeScript',
     'Sass',
-    'Material',
     'JQuery',
     'Gulp.js',
-    'Material-UI'
+    'Material UI'
   ];
   let backEndSkills = [
     'Node.js',
@@ -57,86 +57,92 @@ const skills = props => {
     <div className="skills-container">
       <div className="header">SKILLS</div>
       <div className="skills">
-        <div className="front-end-skill-header">Front End</div>
-        <div className="skill-container">
-          {frontEndSkills.map((skill, key) => {
-            return (
-              <div key={key} className="skill">
-                - {skill}
-              </div>
-            );
-          })}
+        <div className="block">
+          <div className="front-end-skill-header">Front End</div>
+          <div className="skill-container">
+            {frontEndSkills.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="logo-container">
+            <i className="fab fa-js-square" />
+            <i className="fab fa-react" />
+            <i className="fab fa-sass" />
+          </div>
         </div>
-        <div className="logo-container">
-          <i className="fab fa-js-square" />
-          <i className="fab fa-react" />
-          <i className="fab fa-sass" />
+        <div className="block">
+          <div className="skill-header">Back End</div>
+          <div className="skill-container">
+            {backEndSkills.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="logo-container">
+            <i className="fab fa-node-js" />
+            <i className="fab fa-aws" />
+            <i className="fas fa-database" />
+          </div>
         </div>
-        <Border />
-        <div className="skill-header">Back End</div>
-        <div className="skill-container">
-          {backEndSkills.map((skill, key) => {
-            return (
-              <div key={key} className="skill">
-                - {skill}
-              </div>
-            );
-          })}
+        <div className="block">
+          <div className="skill-header">Tools</div>
+          <div className="skill-container">
+            {tools.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="logo-container">
+            <i className="fab fa-github" />
+            <i className="fab fa-npm" />
+            <i className="fas fa-code-branch" />
+          </div>
         </div>
-        <div className="logo-container">
-          <i className="fab fa-node-js" />
-          <i className="fab fa-aws" />
-          <i className="fas fa-database" />
+        <div className="block">
+          <div className="skill-header">Concepts</div>
+          <div className="skill-container">
+            {concepts.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="logo-container">
+            <i className="fas fa-route" />
+            <i className="fas fa-cloud" />
+            <i className="fas fa-code" />
+          </div>
         </div>
-        <Border />
-        <div className="skill-header">Tools</div>
-        <div className="skill-container">
-          {tools.map((skill, key) => {
-            return (
-              <div key={key} className="skill">
-                - {skill}
-              </div>
-            );
-          })}
+        <div className="block">
+          <div className="skill-header">Currently Learning</div>
+          <div className="skill-container">
+            {currentlyLearning.map((skill, key) => {
+              return (
+                <div key={key} className="skill">
+                  {skill}
+                </div>
+              );
+            })}
+          </div>
+          <div className="logo-container">
+            <i className="fas fa-robot" />
+            <i className="fab fa-vuejs" />
+            <i className="fas fa-fire" />
+          </div>
+          <div className="border-bot" />
         </div>
-        <div className="logo-container">
-          <i className="fab fa-github" />
-          <i className="fab fa-npm" />
-          <i className="fas fa-code-branch" />
-        </div>
-        <Border />
-        <div className="skill-header">Concepts</div>
-        <div className="skill-container">
-          {concepts.map((skill, key) => {
-            return (
-              <div key={key} className="skill">
-                - {skill}
-              </div>
-            );
-          })}
-        </div>
-        <div className="logo-container">
-          <i className="fas fa-route" />
-          <i className="fas fa-cloud" />
-          <i className="fas fa-code" />
-        </div>
-        <Border />
-        <div className="skill-header">Currently Learning</div>
-        <div className="skill-container">
-          {currentlyLearning.map((skill, key) => {
-            return (
-              <div key={key} className="skill">
-                - {skill}
-              </div>
-            );
-          })}
-        </div>
-        <div className="logo-container">
-          <i className="fas fa-robot" />
-          <i className="fab fa-vuejs" />
-          <i className="fas fa-fire" />
-        </div>
-        <div className="border-bot" />
       </div>
     </div>
   );

@@ -22,7 +22,6 @@ const experience = () => {
 
   return (
     <div className="experience-container">
-      <div className="header">EXPERIENCE</div>
       <div className="choices">
         <div
           className="work-choice"
