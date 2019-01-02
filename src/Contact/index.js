@@ -11,12 +11,11 @@ const styles = theme => ({
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
     width: '86.5vw',
-    height: '22vh',
+    height: '160px',
     backgroundColor: '#f3f3f3',
-    fontSize: '22px',
-    padding: '1.5vh',
+    fontSize: '20px',
+    padding: '10px',
     wordWrap: 'break-word',
-    color: 'black',
     '&::placeholder': {
       color: '#000000',
       fontWeight: '300'
@@ -24,8 +23,7 @@ const styles = theme => ({
   },
   input: {
     fontSize: '22px',
-    color: '#000000',
-    fontWeight: '300',
+    fontFamily: '"Lato", sans-serif',
     height: '100%',
     maxHeight: '19vh',
     paddingBottom: '1vh'
@@ -130,16 +128,17 @@ class Contact extends Component {
               placeholder="Email"
             />
           </div>
-
-          <input
-            className="subject"
-            type="text"
-            name="subjectInput"
-            id="subject"
-            value={this.state.subjectInput}
-            onChange={this.handleInputChange('subjectInput')}
-            placeholder="Subject"
-          />
+          <div className="subject-input">
+            <input
+              className="subject"
+              type="text"
+              name="subjectInput"
+              id="subject"
+              value={this.state.subjectInput}
+              onChange={this.handleInputChange('subjectInput')}
+              placeholder="Subject"
+            />
+          </div>
           <TextField
             multiline={true}
             className={classes.margin}
@@ -149,7 +148,9 @@ class Contact extends Component {
             placeholder="Message"
             InputProps={{
               disableUnderline: true,
-              classes: { input: classes.input }
+              classes: {
+                input: classes.input
+              }
             }}
           />
         </div>
