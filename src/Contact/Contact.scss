@@ -5,27 +5,27 @@
   .header {
     display: flex;
     flex-direction: column;
-    padding-left: 6vw;
+    padding-left: 6.5vw;
     @media (min-width: 767px) {
       padding-top: 3vh;
       padding-left: 6.7vw;
       padding-bottom: 1.5vh;
     }
     .title {
-      font-size: 30px;
+      font-size: 32px;
       font-family: 'Ubuntu', sans-serif;
       font-weight: 900;
       letter-spacing: 1px;
       @media (min-width: 1000px) {
-        font-size: 40px;
+        font-size: 38px;
       }
     }
     .sub-title {
       font-size: 20px;
-      padding-top: 2vh;
+      padding-top: 10px;
       color: #2e2e2e;
       @media (min-width: 1000px) {
-        font-size: 30px;
+        font-size: 26px;
       }
     }
   }
@@ -46,25 +46,24 @@
       width: 100vw;
       display: flex;
       justify-content: space-evenly;
-      padding-bottom: 1vh;
+      padding-bottom: 10px;
     }
-
     .name,
     .email {
       background-color: #f3f3f3;
-      padding: 1.5vh;
+      padding: 12px;
       width: 40vw;
-      font-size: 22px;
-      height: 7.5vh;
+      font-size: 20px;
+      height: 50px;
     }
   }
 
   .subject {
-    height: 7.5vh;
+    height: 50px;
     width: 86.5vw;
     background-color: #f3f3f3;
-    padding: 1.5vh;
-    font-size: 22px;
+    padding: 12px;
+    font-size: 20px;
   }
 
   .name::placeholder,
@@ -78,7 +77,8 @@
 
 .send-container {
   width: 100vw;
-  padding-left: 6vw;
+  padding-left: 6.5vw;
+  font-size: 20px;
 }
 .footer {
   display: flex;

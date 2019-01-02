@@ -20,7 +20,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 4vh;
+      padding-bottom: 25px;
       width: 90vw;
       .title,
       .date,
@@ -34,7 +34,7 @@
         }
       }
       .date {
-        padding-top: 1vh;
+        padding-top: 8px;
         color: #575757;
         font-size: 20px;
         @media (min-width: 1000px) {

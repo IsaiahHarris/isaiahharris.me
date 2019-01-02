@@ -1,14 +1,13 @@
 @import '../index.scss';
 %send-button {
-  padding-left: 6vw;
-  width: 20vw;
+  width: 90px;
   padding: 3px;
   padding-top: 2px;
   border: $light-green solid 2px;
   border-radius: 5px;
   background-color: $light-green;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: white;
   height: 35px;
