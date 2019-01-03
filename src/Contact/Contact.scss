@@ -5,6 +5,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  @media (min-height: 950px) {
+    justify-content: center;
+  }
   .header-1 {
     display: flex;
     flex-direction: column;
@@ -51,11 +54,11 @@
       width: 100vw;
       display: flex;
       justify-content: space-evenly;
-      padding-bottom: 20px;
+      padding-bottom: 18px;
       @media (min-width: 1000px) {
         width: 980px;
         justify-content: space-between;
-        padding-bottom: 30px;
+        padding-bottom: 23px;
       }
     }
     .name,
@@ -64,22 +67,22 @@
       padding: 12px;
       width: 40%;
       font-size: 20px;
-      height: 50px;
+      height: 100%;
       font-family: 'Lato', sans-serif;
       @media (min-width: 1000px) {
         width: 48%;
-        height: 70px;
+        height: 65px;
         font-size: 26px;
       }
     }
   }
   .subject-input {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
     @media (min-width: 1000px) {
-      padding-bottom: 22px;
+      padding-bottom: 15px;
     }
     .subject {
-      height: 50px;
+      height: 100%;
       width: 86.5vw;
       background-color: #f3f3f3;
       padding: 12px;
@@ -87,7 +90,7 @@
       font-family: 'Lato', sans-serif;
       @media (min-width: 1000px) {
         width: 980px;
-        height: 70px;
+        height: 65px;
         font-size: 26px;
       }
     }
@@ -116,12 +119,12 @@
   height: 110px;
   padding-top: 20px;
   @media (min-width: 1000px) {
-    height: 150px;
+    height: 130px;
   }
   .icon-container {
     display: flex;
     width: 75%;
-    height: 15vh;
+
     justify-content: space-evenly;
     align-items: center;
     @media (min-width: 1000px) {
@@ -155,22 +158,15 @@
 .MuiInputBase-root-26.MuiInput-root-13.MuiInput-underline-17.MuiInputBase-formControl-27.MuiInput-formControl-14.MuiInputBase-multiline-34.MuiInput-multiline-19 {
   border-style: none;
 }
-.MuiPrivateTextarea-textarea-46.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25::placeholder {
-  color: #000000;
-  font-weight: 400;
 
-  @media (min-width: 1000px) {
-    font-size: 26px;
-  }
-}
-
-.MuiPrivateTextarea-textarea-46.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25 {
-  @media (min-width: 1000px) {
-    font-size: 26px;
-  }
-}
 .MuiFormControl-root-11.Contact-margin-1 {
   @media (min-width: 1000px) {
-    height: 220px;
+    height: 250px;
+  }
+}
+
+.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25 {
+  @media (min-width: 1000px) {
+    font-size: 26px;
   }
 }

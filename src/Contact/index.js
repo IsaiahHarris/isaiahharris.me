@@ -11,9 +11,8 @@ const styles = theme => ({
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
     width: '100%',
-    height: '160px',
+    height: '180px',
     backgroundColor: '#f3f3f3',
-    fontSize: '20px',
     padding: '10px',
     '&::placeholder': {
       color: '#000000',
@@ -22,11 +21,9 @@ const styles = theme => ({
   },
   input: {
     width: '100%',
-    fontSize: '26px',
     fontFamily: '"Lato", sans-serif',
     paddingBottom: '1vh',
-    height: '110%',
-    lineHeight: '1.1'
+    lineHeight: '1.2'
   }
 });
 
