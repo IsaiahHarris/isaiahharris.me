@@ -10,23 +10,22 @@ const styles = theme => ({
     margin: theme.spacing.unit,
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
-    width: '100%',
+    width: '99%',
     height: '160px',
     backgroundColor: '#f3f3f3',
     fontSize: '20px',
     padding: '10px',
-    wordWrap: 'break-word',
     '&::placeholder': {
       color: '#000000',
       fontWeight: '300'
     }
   },
   input: {
+    width: '980px',
     fontSize: '22px',
     fontFamily: '"Lato", sans-serif',
-    height: '100%',
-    maxHeight: '19vh',
-    paddingBottom: '1vh'
+    paddingBottom: '1vh',
+    maxHeight: '500px'
   }
 });
 

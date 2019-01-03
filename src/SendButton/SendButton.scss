@@ -1,8 +1,10 @@
 @import '../index.scss';
 %send-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90px;
   padding: 3px;
-  padding-top: 2px;
   border: $light-green solid 2px;
   border-radius: 5px;
   background-color: $light-green;
@@ -11,11 +13,19 @@
   text-align: center;
   color: white;
   height: 35px;
+  @media (min-width: 1000px) {
+    padding: 4px;
+    width: 170px;
+    height: 45px;
+    font-size: 26px;
+  }
 }
 .send-container {
+  padding-top: 3px;
   width: 86.5vw;
   @media (min-width: 1000px) {
     width: 980px;
+    padding-top: 8px;
   }
   display: flex;
   .send {
