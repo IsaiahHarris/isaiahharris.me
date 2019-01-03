@@ -55,7 +55,7 @@ const skills = props => {
 
   return (
     <div className="skills-container">
-      <div className="header">SKILLS</div>
+      <div className="header-1">SKILLS</div>
       <div className="skills">
         <div className="block">
           <div className="front-end-skill-header">Front End</div>

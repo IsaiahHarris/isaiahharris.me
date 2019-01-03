@@ -10,7 +10,7 @@ const styles = theme => ({
     margin: theme.spacing.unit,
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
-    width: '86.5vw',
+    width: '100%',
     height: '160px',
     backgroundColor: '#f3f3f3',
     fontSize: '20px',
@@ -100,7 +100,7 @@ class Contact extends Component {
       messageInput.length > 0;
     return (
       <div className="contact-container">
-        <div className="header">
+        <div className="header-1">
           <div className="title">CONTACT</div>
           <div className="sub-title">Let's get in touch!</div>
         </div>
@@ -139,22 +139,21 @@ class Contact extends Component {
               placeholder="Subject"
             />
           </div>
-          <TextField
-            multiline={true}
-            className={classes.margin}
-            name="messageInput"
-            value={this.state.messageInput}
-            onChange={this.handleInputChange('messageInput')}
-            placeholder="Message"
-            InputProps={{
-              disableUnderline: true,
-              classes: {
-                input: classes.input
-              }
-            }}
-          />
-        </div>
-        <div className="send-container">
+          <div className="message-container">
+            <TextField
+              multiline={true}
+              className={classes.margin}
+              name="messageInput"
+              value={this.state.messageInput}
+              onChange={this.handleInputChange('messageInput')}
+              placeholder="Message"
+              InputProps={{
+                disableUnderline: true,
+                classes: { input: classes.input }
+              }}
+            />
+          </div>
+
           <SendButton click={this.handleClick} enable={!isEnabled} />
         </div>
         <div className="footer">

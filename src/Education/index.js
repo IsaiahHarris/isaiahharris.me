@@ -5,7 +5,7 @@ import Border from '../Border';
 const education = props => {
   return (
     <div className="education-container">
-      <div className="header">EDUCATION</div>
+      <div className="header-1">EDUCATION</div>
       <div className="courses">
         <div className="course-container">
           <div className="title">

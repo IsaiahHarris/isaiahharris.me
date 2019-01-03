@@ -12,8 +12,15 @@
   color: white;
   height: 35px;
 }
-.send {
-  @extend %send-button;
+.send-container {
+  width: 86.5vw;
+  @media (min-width: 1000px) {
+    width: 980px;
+  }
+  display: flex;
+  .send {
+    @extend %send-button;
+  }
 }
 .send:disabled {
   @extend %send-button;
