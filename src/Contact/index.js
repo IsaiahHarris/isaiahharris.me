@@ -10,7 +10,7 @@ const styles = theme => ({
     margin: theme.spacing.unit,
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
-    width: '99%',
+    width: '100%',
     height: '160px',
     backgroundColor: '#f3f3f3',
     fontSize: '20px',
@@ -21,11 +21,12 @@ const styles = theme => ({
     }
   },
   input: {
-    width: '980px',
-    fontSize: '22px',
+    width: '100%',
+    fontSize: '26px',
     fontFamily: '"Lato", sans-serif',
     paddingBottom: '1vh',
-    maxHeight: '500px'
+    height: '110%',
+    lineHeight: '1.1'
   }
 });
 
@@ -142,6 +143,7 @@ class Contact extends Component {
             <TextField
               multiline={true}
               className={classes.margin}
+              rows="7"
               name="messageInput"
               value={this.state.messageInput}
               onChange={this.handleInputChange('messageInput')}
