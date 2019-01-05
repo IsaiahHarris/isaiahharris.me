@@ -2,7 +2,6 @@
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 10vh;
   font-family: 'Lato', sans-serif;
   position: fixed;
@@ -11,14 +10,18 @@
   width: 100%;
   .contact {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     border: 2px solid $light-green;
     border-radius: 8px;
-    padding: 2px 10px;
+    height: 25px;
+    padding: 4px 8px;
     color: $light-green;
-    margin-right: 4%;
     display: flex;
     align-items: center;
+    margin: 4%;
+    @media (min-width: 1000px) {
+      font-size: 26px;
+    }
   }
   .scroll-down {
     opacity: 0;
@@ -27,22 +30,5 @@
   .scroll-up {
     opacity: 1;
     transition: 0.01s;
-  }
-}
-
-@media (min-width: 800px) {
-  .header-container {
-    .contact {
-      font-size: 20px;
-      margin-right: 20px;
-    }
-  }
-}
-@media (min-width: 1000px) {
-  .header-container {
-    .contact {
-      font-size: 26px;
-      margin-right: 20px;
-    }
   }
 }

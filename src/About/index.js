@@ -3,7 +3,7 @@ import './About.scss';
 import Border from '../Border';
 const about = props => (
   <div className="about-container">
-    <div className="header">
+    <div className="header-1">
       <div className="titles">
         <div className="title">ABOUT</div>
         <div className="sub-title">HI, I'm Isaiah Harris.</div>

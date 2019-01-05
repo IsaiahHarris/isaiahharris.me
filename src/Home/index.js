@@ -16,6 +16,11 @@ const home = prop => (
         alt=""
       />
     </div>
+    <div className="title-container">
+      <div className="title-1">Isaiah Harris</div>
+      <div className="title-2">Software Developer</div>
+      <div className="border-bottom" />
+    </div>
     <div className="sub-title">Software Developer</div>
   </div>
 );

@@ -2,10 +2,23 @@
 .contact-container {
   font-family: 'Lato', sans-serif;
   height: 90vh;
-  .header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media (min-height: 950px) {
+    justify-content: center;
+  }
+  .header-1 {
     display: flex;
     flex-direction: column;
     padding-left: 6.5vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100vw;
+    @media (min-width: 1000px) {
+      width: 980px;
+      padding-left: 0px;
+    }
     .title {
       font-size: 32px;
       font-family: 'Ubuntu', sans-serif;
@@ -13,14 +26,16 @@
       letter-spacing: 1px;
       @media (min-width: 1000px) {
         font-size: 38px;
+        width: 980px;
       }
     }
     .sub-title {
-      font-size: 20px;
+      font-size: 22px;
       padding-top: 10px;
       color: #2e2e2e;
       @media (min-width: 1000px) {
-        font-size: 26px;
+        font-size: 28px;
+        width: 980px;
       }
     }
   }
@@ -28,7 +43,6 @@
   .form-container {
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -40,30 +54,54 @@
       width: 100vw;
       display: flex;
       justify-content: space-evenly;
-      padding-bottom: 20px;
+      padding-bottom: 18px;
+      @media (min-width: 1000px) {
+        width: 980px;
+        justify-content: space-between;
+        padding-bottom: 23px;
+      }
     }
     .name,
     .email {
       background-color: #f3f3f3;
       padding: 12px;
-      width: 40vw;
+      width: 40%;
       font-size: 20px;
-      height: 50px;
+      height: 100%;
       font-family: 'Lato', sans-serif;
+      @media (min-width: 1000px) {
+        width: 48%;
+        height: 65px;
+        font-size: 26px;
+      }
     }
   }
   .subject-input {
-    padding-bottom: 13px;
+    padding-bottom: 10px;
+    @media (min-width: 1000px) {
+      padding-bottom: 15px;
+    }
     .subject {
-      height: 50px;
+      height: 100%;
       width: 86.5vw;
       background-color: #f3f3f3;
       padding: 12px;
       font-size: 20px;
       font-family: 'Lato', sans-serif;
+      @media (min-width: 1000px) {
+        width: 980px;
+        height: 65px;
+        font-size: 26px;
+      }
     }
   }
-
+  .message-container {
+    width: 86.5vw;
+    margin-right: 14.8px;
+    @media (min-width: 1000px) {
+      width: 980px;
+    }
+  }
   .name::placeholder,
   .email::placeholder,
   .subject::placeholder,
@@ -73,23 +111,19 @@
   }
 }
 
-.send-container {
-  width: 100vw;
-  padding-left: 6.5vw;
-  font-size: 20px;
-  margin-top: 10px;
-}
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 130px;
-  padding-top: 20px;
+  height: 110px;
+  @media (min-width: 1000px) {
+    height: 130px;
+  }
   .icon-container {
     display: flex;
     width: 75%;
-    height: 15vh;
+
     justify-content: space-evenly;
     align-items: center;
     @media (min-width: 1000px) {
@@ -123,7 +157,15 @@
 .MuiInputBase-root-26.MuiInput-root-13.MuiInput-underline-17.MuiInputBase-formControl-27.MuiInput-formControl-14.MuiInputBase-multiline-34.MuiInput-multiline-19 {
   border-style: none;
 }
-.MuiPrivateTextarea-textarea-46.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25::placeholder {
-  color: #000000;
-  font-weight: 400;
+
+.MuiFormControl-root-11.Contact-margin-1 {
+  @media (min-width: 1000px) {
+    height: 250px;
+  }
+}
+
+.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25 {
+  @media (min-width: 1000px) {
+    font-size: 26px;
+  }
 }

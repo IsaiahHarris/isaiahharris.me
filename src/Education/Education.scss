@@ -1,12 +1,15 @@
 .education-container {
   font-family: 'Lato', sans-serif;
-  .header {
+  .header-1 {
     display: flex;
     justify-content: flex-start;
     font-size: 32px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 4.7%;
     @media (min-width: 1300px) {
       font-size: 38px;
     }

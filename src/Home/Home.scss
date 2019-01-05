@@ -1,27 +1,60 @@
+@import '../index.scss';
 .home-container {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
   padding-bottom: 5vh;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px;
+    height: 90vh;
+    margin-left: 185px;
+  }
+  .title-container {
+    display: none;
+    position: relative;
+    height: 100%;
+    @media (min-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: desktop-title-container 1.8s ease 3.8s normal both;
+    }
+
+    .title-2 {
+      font-style: italic;
+      font-weight: 300;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .border-bottom {
+      width: 70%;
+      position: relative;
+      border-bottom: 2px solid $light-green;
+      animation: border-bottom 1s ease 4.7s normal both;
+    }
+  }
   .title,
   .sub-title {
     font-size: 32px;
     position: relative;
     z-index: 0;
+    display: block;
     @media (min-width: 1000px) {
-      font-size: 38px;
+      display: none;
     }
   }
   .sub-title {
     font-style: italic;
     font-weight: 300;
-    animation: sub-title 2s ease 4s normal both;
+    animation: sub-title 1.8s ease 4s normal both;
   }
   .title {
-    animation: title 2s ease 4s normal both;
+    animation: title 1.8s ease 4s normal both;
   }
   .logo-container {
     height: 345px;
@@ -31,13 +64,17 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    animation: wrapper 3s ease 0.5s normal both;
+    animation: wrapper 3.5s ease 0.5s normal both;
+    @media (min-width: 1000px) {
+      height: 405px;
+      margin-right: 185px;
+    }
     .logo-top {
       width: 190px;
       position: absolute;
       display: inline-block;
       top: 0;
-      animation: logo-top 4s ease 0.5s normal both;
+      animation: logo-top 3.5s ease 0.5s normal both;
       @media (min-width: 1000px) {
         width: 230px;
       }
@@ -51,7 +88,7 @@
       position: absolute;
       display: inline-block;
       bottom: 0;
-      animation: logo-bottom 4s ease 0.5s normal both;
+      animation: logo-bottom 3.5s ease 0.5s normal both;
     }
   }
 }
