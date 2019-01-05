@@ -59,3 +59,27 @@
     opacity: 1;
   }
 }
+
+@keyframes desktop-title-container {
+  0% {
+    left: -10%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes border-bottom {
+  0% {
+    bottom: -10%;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0%;
+    opacity: 1;
+  }
+}

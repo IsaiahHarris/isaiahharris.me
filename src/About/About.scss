@@ -4,29 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
   width: 100vw;
   font-family: 'Lato', sans-serif;
-  .header {
-    width: 95%;
-    height: 20%;
+  .header-1 {
+    width: 85%;
+    padding-top: 25px;
+    padding-bottom: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Ubuntu', sans-serif;
-
     .titles {
       width: 70vw;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: stretch;
+      justify-content: space-around;
       .title {
         font-size: 32px;
-        margin-top: 10px;
         font-weight: 900;
       }
       .sub-title {
-        margin-top: 10px;
         font-size: 20px;
       }
     }
@@ -35,7 +33,6 @@
     width: 30vw;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
     .picture {
       height: 80px;
       width: 80px;
