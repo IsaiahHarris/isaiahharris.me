@@ -5,25 +5,29 @@ import SendButton from '../SendButton';
 import $ from 'jquery';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
+
 const styles = theme => ({
   margin: {
     margin: theme.spacing.unit,
     borderRadius: '0px 5px 5px 0px',
     borderLeft: '#00dea6 4px solid',
     width: '100%',
-    height: '180px',
+    height: '100%',
     backgroundColor: '#f3f3f3',
-    padding: '10px',
+    padding: '12px',
     '&::placeholder': {
       color: '#000000',
       fontWeight: '300'
     }
   },
   input: {
+    fontSize: '20px',
     width: '100%',
+    height: '100%',
     fontFamily: '"Lato", sans-serif',
-    paddingBottom: '1vh',
-    lineHeight: '1.2'
+    lineHeight: '1.3',
+    paddingBottom: '10px',
+    marginTop: '10px'
   }
 });
 
@@ -43,7 +47,28 @@ class Contact extends Component {
     this.sendMessage = this.sendMessage.bind(this);
     this.handleClose = this.handleClose.bind(this);
   }
+  componentDidMount() {
+    let textField = document.getElementById('text-field');
+    let screenWidth = window.screen.availWidth;
+    let screenHeight = window.screen.availHeight;
 
+    console.log(screenHeight);
+    if (screenHeight >= 500 && screenHeight <= 600) {
+      textField.rows = '4';
+      console.log(textField.rows);
+    } else if (screenHeight > 600 && screenHeight <= 700) {
+      textField.rows = '5';
+      console.log(textField.rows);
+    } else if (screenHeight > 700 && screenHeight <= 850) {
+      textField.rows = '6';
+    } else if (screenHeight > 850 && screenHeight <= 1500) {
+      textField.rows = '7';
+    } else if (screenHeight > 1700) {
+      textField.rows = '8';
+    } else if (screenHeight < 500) {
+      textField.rows = '3';
+    }
+  }
   handleClick() {
     this.setState({ open: true });
     this.sendMessage();
@@ -138,10 +163,11 @@ class Contact extends Component {
           </div>
           <div className="message-container">
             <TextField
+              id="text-field"
               multiline={true}
               className={classes.margin}
-              rows="7"
               name="messageInput"
+              rows="2"
               value={this.state.messageInput}
               onChange={this.handleInputChange('messageInput')}
               placeholder="Message"
@@ -151,7 +177,6 @@ class Contact extends Component {
               }}
             />
           </div>
-
           <SendButton click={this.handleClick} enable={!isEnabled} />
         </div>
         <div className="footer">

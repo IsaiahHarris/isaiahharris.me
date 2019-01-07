@@ -14,13 +14,16 @@
     border: 2px solid $light-green;
     border-radius: 8px;
     height: 25px;
-    padding: 4px 8px;
+    padding: 12px 8px;
     color: $light-green;
     display: flex;
     align-items: center;
     margin: 4%;
     @media (min-width: 1000px) {
-      font-size: 26px;
+      font-size: 24px;
+      height: 40px;
+      margin: 2%;
+      padding: 0px 12px;
     }
   }
   .scroll-down {

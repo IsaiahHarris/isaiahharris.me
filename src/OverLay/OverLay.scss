@@ -7,6 +7,9 @@
 }
 .overlay {
   margin: 4%;
+  @media (min-width: 1000px) {
+    margin: 2%;
+  }
   .line {
     @extend %overlay-line;
     background-color: $light-green;

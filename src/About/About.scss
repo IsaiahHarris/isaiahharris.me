@@ -7,6 +7,9 @@
   height: 80vh;
   width: 100vw;
   font-family: 'Lato', sans-serif;
+  @media (min-width: 1000px) {
+    height: 90vh;
+  }
   .header-1 {
     width: 85%;
     padding-top: 25px;

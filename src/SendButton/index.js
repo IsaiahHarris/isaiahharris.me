@@ -4,9 +4,9 @@ import './SendButton.scss';
 const sendButton = props => {
   return (
     <div className="send-container">
-      <button className="send" onClick={props.click} disabled={props.enable}>
-        Send
-      </button>
+      <div className="send" onClick={props.click} disabled={props.enable}>
+        <div className="send-text">Send</div>
+      </div>
     </div>
   );
 };
