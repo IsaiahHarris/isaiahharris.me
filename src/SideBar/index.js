@@ -31,7 +31,9 @@ const sideBar = props => {
           Contact
         </Link>
       </div>
-      <div className="logo" />
+      <div className="logo-container">
+        <div className="logo" />
+      </div>
     </div>
   );
 };
