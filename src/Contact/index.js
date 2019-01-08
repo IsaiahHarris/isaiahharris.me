@@ -14,7 +14,7 @@ const styles = theme => ({
     width: '100%',
     height: '100%',
     backgroundColor: '#f3f3f3',
-    padding: '12px',
+    padding: '11px',
     '&::placeholder': {
       color: '#000000',
       fontWeight: '300'
@@ -62,9 +62,9 @@ class Contact extends Component {
     } else if (screenHeight > 700 && screenHeight <= 850) {
       textField.rows = '6';
     } else if (screenHeight > 850 && screenHeight <= 1500) {
-      textField.rows = '7';
+      textField.rows = '6';
     } else if (screenHeight > 1700) {
-      textField.rows = '8';
+      textField.rows = '7';
     } else if (screenHeight < 500) {
       textField.rows = '3';
     }
