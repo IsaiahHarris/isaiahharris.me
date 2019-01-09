@@ -38,7 +38,7 @@
       padding-bottom: 10px;
       @media (min-width: 1000px) {
         margin-top: 35px;
-        font-size: 26px;
+        font-size: 28px;
       }
     }
     .link {
@@ -51,7 +51,7 @@
       padding-bottom: 10px;
       @media (min-width: 1000px) {
         margin-top: 60px;
-        font-size: 26px;
+        font-size: 28px;
       }
     }
     .link:hover,
@@ -74,6 +74,10 @@
   .close {
     width: 32px;
     height: 32px;
+    @media (min-width: 1000px) {
+      width: 45px;
+      height: 45px;
+    }
   }
   .close:hover {
     opacity: 1;
@@ -85,6 +89,10 @@
     content: ' ';
     height: 33px;
     width: 2px;
+    @media (min-width: 1000px) {
+      height: 38px;
+      width: 3px;
+    }
     background-color: $light-green;
   }
   .close:before {

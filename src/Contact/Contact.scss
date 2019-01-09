@@ -47,6 +47,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 20px;
+    @media (min-width: 1000px) {
+      margin-top: 0px;
+    }
     .error {
       position: absolute;
     }

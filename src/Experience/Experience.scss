@@ -2,6 +2,7 @@
 .experience-container {
   height: 90vh;
   font-family: 'Lato', sans-serif;
+  width: 100vw;
   .header {
     display: flex;
     justify-content: flex-start;
@@ -52,7 +53,7 @@
     z-index: 1;
     position: absolute;
     height: 72.5vh;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -102,7 +103,7 @@
     position: absolute;
     background-color: white;
     height: 73.5vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding-top: 5px;
