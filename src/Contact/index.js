@@ -60,11 +60,11 @@ class Contact extends Component {
       textField.rows = '5';
       console.log(textField.rows);
     } else if (screenHeight > 700 && screenHeight <= 850) {
-      textField.rows = '6';
-    } else if (screenHeight > 850 && screenHeight <= 1500) {
-      textField.rows = '6';
-    } else if (screenHeight > 1700) {
       textField.rows = '7';
+    } else if (screenHeight > 850 && screenHeight <= 1500) {
+      textField.rows = '8';
+    } else if (screenHeight > 1700) {
+      textField.rows = '8';
     } else if (screenHeight < 500) {
       textField.rows = '3';
     }
