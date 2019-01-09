@@ -3,6 +3,11 @@
   width: 95%;
   font-family: 'Lato', sans-serif;
   padding-left: 5%;
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .header-1 {
     padding-top: 25px;
     display: flex;
@@ -12,31 +17,40 @@
     font-weight: 900;
     letter-spacing: 1px;
     padding-bottom: 8px;
+    @media (min-width: 1000px) {
+      width: 980px;
+      font-size: 38px;
+      margin-left: 8vw;
+    }
   }
   .skills {
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media (min-width: 1000px) {
-      flex-direction: row;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+
     .block {
       width: 100vw;
       @media (min-width: 1000px) {
-        width: 50vw;
+        width: 980px;
+        margin-left: 8vw;
+      }
+      .front-end-skill-header {
+        font-size: 24px;
+        width: 100%;
+        margin-top: 10px;
+        @media (min-width: 1000px) {
+          margin-top: 20px;
+          font-size: 30px;
+        }
       }
       .skill-header {
         font-size: 24px;
         margin-top: 4.5%;
         width: 100%;
-      }
-      .front-end-skill-header {
-        font-size: 24px;
-        width: 100%;
-        margin-top: 3.5%;
+        @media (min-width: 1000px) {
+          font-size: 30px;
+        }
       }
       .skill-container {
         display: flex;
@@ -47,7 +61,6 @@
         width: 90vw;
         @media (min-width: 1000px) {
           width: 100%;
-          margin-left: 1.65%;
         }
         .skill {
           padding: 4px;
@@ -56,6 +69,9 @@
           width: 45%;
           font-weight: 300;
           @media (min-width: 1000px) {
+            font-size: 25px;
+            padding: 6px;
+            padding-left: 0;
           }
         }
       }
@@ -66,6 +82,7 @@
         justify-content: space-evenly;
         align-items: center;
         padding-bottom: 5px;
+        margin-right: 30px;
         .fab,
         .fas {
           display: flex;
@@ -74,6 +91,9 @@
           height: 15px;
           width: 12px;
           transform: scale(2.5, 2.5);
+          @media (min-width: 1000px) {
+            transform: scale(3, 3);
+          }
         }
         .fab.fa-sass {
           color: #de5b9c;
@@ -81,7 +101,7 @@
         .fab.fa-js-square {
           color: #fbde00;
           background-color: black;
-          height: 12px;
+          height: 10px;
         }
         .fab.fa-react {
           color: #00ddff;
@@ -124,7 +144,7 @@
       }
     }
     .border-container-skill {
-      width: 100vw;
+      width: 100%;
       .border {
         border: 2px solid $light-green;
         width: 60%;

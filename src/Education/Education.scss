@@ -1,17 +1,22 @@
+@import '../index.scss';
 .education-container {
   font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
   .header-1 {
-    display: flex;
-    justify-content: flex-start;
     font-size: 32px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
     padding-top: 25px;
-    padding-bottom: 10px;
-    padding-left: 4.7%;
-    @media (min-width: 1300px) {
+    padding-bottom: 20px;
+    width: 90vw;
+    @media (min-width: 1000px) {
       font-size: 38px;
+      width: 980px;
     }
   }
   .courses {
@@ -19,12 +24,15 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    @media (min-width: 1000px) {
+      width: 980px;
+    }
     .course-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-bottom: 25px;
-      width: 90vw;
+      width: 100%;
       .title,
       .date,
       .description {
@@ -33,7 +41,7 @@
       .title {
         font-size: 22px;
         @media (min-width: 1000px) {
-          font-size: 28px;
+          font-size: 30px;
         }
       }
       .date {
@@ -41,31 +49,35 @@
         color: #575757;
         font-size: 20px;
         @media (min-width: 1000px) {
-          font-size: 26px;
-          padding-top: 3vh;
+          font-size: 28px;
+          padding-top: 10px;
         }
       }
       .description {
         padding-top: 15px;
         font-size: 18px;
         color: black;
-        padding-bottom: 1vh;
         letter-spacing: 0.2px;
         font-weight: 300;
-        line-height: 1.3em;
-        @media (min-width: 767px) {
-          font-size: 25px;
-          padding-top: 4vh;
+        line-height: 1.3;
+        @media (min-width: 1000px) {
+          font-size: 26px;
+          padding-top: 26px;
         }
-        @media (min-width: 1300px) {
-          font-size: 29px;
-          padding-top: 6vh;
+      }
+      .border-container-education {
+        width: 100vw;
+
+        .border {
+          border: 2px solid $light-green;
+          width: 60%;
+          margin-top: 15px;
         }
       }
 
       .dl-img {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         background-image: url('../Assets/devleague.png');
         background-size: 100% 100%;
         z-index: -1;
@@ -74,8 +86,8 @@
         margin-top: 2vh;
       }
       .udacity-img {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         background-image: url('../Assets/udacity.png');
         background-size: 100% 100%;
         z-index: -1;

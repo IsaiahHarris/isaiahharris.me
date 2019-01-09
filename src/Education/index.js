@@ -17,9 +17,10 @@ const education = props => {
             Completed over 800 hours in an immersive JavaScript coding boot camp
             where I built full-stack web applications utilizing many JavaScript
             frameworks and libraries.
+            <div className="border-container-education">
+              <div className="border" />
+            </div>
           </div>
-
-          <Border />
         </div>
         <div className="course-container">
           <div className="title">
@@ -31,8 +32,10 @@ const education = props => {
             Awarded a scholarship from Facebook to learn Deep Learning with
             Pytorch. Built and trained a model that identifies flower species
             from images.
+            <div className="border-container-education">
+              <div className="border" />
+            </div>
           </div>
-          <Border />
         </div>
         <div className="course-container">
           <div className="title">Udemy: AWS Certified Developer Associate</div>
@@ -41,8 +44,10 @@ const education = props => {
           <div className="description">
             Completed course to help me become a certified developer associate.
             Worked with services like S3, EC2, Dynamo DB and Lambda.
+            <div className="border-container-education">
+              <div className="border" />
+            </div>
           </div>
-          <Border />
         </div>
         <div className="course-container">
           <div className="title">Udemy: The Modern Python 3 Bootcamp</div>
