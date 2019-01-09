@@ -27,7 +27,7 @@ const styles = theme => ({
     fontFamily: '"Lato", sans-serif',
     lineHeight: '1.3',
     paddingBottom: '10px',
-    marginTop: '10px'
+    marginTop: '8px'
   }
 });
 
@@ -59,9 +59,9 @@ class Contact extends Component {
     } else if (screenHeight > 600 && screenHeight <= 700) {
       textField.rows = '5';
       console.log(textField.rows);
-    } else if (screenHeight > 700 && screenHeight <= 850) {
+    } else if (screenHeight > 700 && screenHeight <= 800) {
       textField.rows = '6';
-    } else if (screenHeight > 850 && screenHeight <= 1500) {
+    } else if (screenHeight > 800 && screenHeight <= 1500) {
       textField.rows = '7';
     } else if (screenHeight > 1700) {
       textField.rows = '8';

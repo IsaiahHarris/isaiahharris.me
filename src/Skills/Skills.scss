@@ -11,7 +11,6 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
-    padding-left: 5.3%;
     padding-bottom: 8px;
   }
   .skills {
@@ -25,6 +24,7 @@
       flex-wrap: wrap;
     }
     .block {
+      width: 100vw;
       @media (min-width: 1000px) {
         width: 50vw;
       }
@@ -41,7 +41,7 @@
       .skill-container {
         display: flex;
         margin-top: 2%;
-        padding-bottom: 1.5vh;
+        padding-bottom: 10px;
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 90vw;
@@ -64,8 +64,8 @@
         width: 90%;
         height: 45px;
         justify-content: space-evenly;
-        padding-left: 0px;
         align-items: center;
+        padding-bottom: 5px;
         .fab,
         .fas {
           display: flex;
@@ -121,6 +121,14 @@
         .fas.fa-route {
           color: orange;
         }
+      }
+    }
+    .border-container-skill {
+      width: 100vw;
+      .border {
+        border: 2px solid $light-green;
+        width: 60%;
+        margin-top: 10px;
       }
     }
   }
