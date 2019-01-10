@@ -28,7 +28,39 @@ const about = props => (
         experiences.
       </div>
     </div>
-    <Border />
+    <div className="border-container-about" />
+    <div className="footer">
+      <div className="icon-container">
+        <a
+          href="https://www.github.com/IsaiahHarris"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-github" />
+        </a>
+        <a
+          href="https://linkedin.com/in/isaiah-a-harris"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-linkedin" />
+        </a>
+        <a
+          href="https://medium.com/@isaiah.harris.hi"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-medium-m" />
+        </a>
+        <a
+          href="https://www.instagram.com/isaiah.h__/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="fab fa-instagram" />
+        </a>
+      </div>
+    </div>
   </div>
 );
 
