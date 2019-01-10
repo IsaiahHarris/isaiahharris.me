@@ -20,7 +20,7 @@
     @media (min-width: 1000px) {
       width: 980px;
       font-size: 38px;
-      margin-left: 8vw;
+      margin-left: 15vw;
     }
   }
   .skills {
@@ -33,7 +33,7 @@
       width: 100vw;
       @media (min-width: 1000px) {
         width: 980px;
-        margin-left: 8vw;
+        margin-left: 15vw;
       }
       .front-end-skill-header {
         font-size: 24px;
@@ -82,7 +82,13 @@
         justify-content: space-evenly;
         align-items: center;
         padding-bottom: 5px;
-        margin-right: 30px;
+        @media (min-width: 1000px) {
+          padding-right: 20%;
+          padding-left: 8%;
+          margin-top: 10px;
+          width: 75%;
+          justify-content: space-between;
+        }
         .fab,
         .fas {
           display: flex;
@@ -101,7 +107,10 @@
         .fab.fa-js-square {
           color: #fbde00;
           background-color: black;
-          height: 10px;
+          height: 12px;
+          @media (min-width: 1000px) {
+            height: 10px;
+          }
         }
         .fab.fa-react {
           color: #00ddff;
@@ -149,6 +158,9 @@
         border: 2px solid $light-green;
         width: 60%;
         margin-top: 10px;
+        @media (min-width: 1000px) {
+          width: 45%;
+        }
       }
     }
   }
