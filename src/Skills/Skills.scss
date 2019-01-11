@@ -90,10 +90,10 @@
         align-items: center;
         padding-bottom: 5px;
         @media (min-width: 1000px) {
-          padding-right: 20%;
-          padding-left: 8%;
+          // margin-right: 20%;
+          margin-left: 6%;
           margin-top: 10px;
-          width: 75%;
+          width: 65%;
           justify-content: space-between;
         }
         .fab,
@@ -166,7 +166,7 @@
         width: 60%;
         margin-top: 10px;
         @media (min-width: 1000px) {
-          width: 45%;
+          width: 50%;
         }
       }
     }
@@ -183,8 +183,9 @@
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 90%;
+    margin-left: 10%;
   }
   .skill-header {
     font-size: 24px;
@@ -192,7 +193,7 @@
     width: 100%;
     @media (min-width: 1000px) {
       font-size: 30px;
-      width: auto;
+      width: 490px;
     }
   }
   .skill-container {
@@ -203,7 +204,7 @@
     justify-content: flex-start;
     width: 90vw;
     @media (min-width: 1000px) {
-      width: 100%;
+      width: 490px;
     }
     .skill {
       padding: 4px;
@@ -226,9 +227,9 @@
     align-items: center;
     padding-bottom: 5px;
     @media (min-width: 1000px) {
-      padding-left: 8%;
-      margin-top: 10px;
-      width: 50%;
+      margin-right: 12%;
+      margin-top: 5px;
+      width: 35%;
       justify-content: space-between;
     }
     .fab,

@@ -4,7 +4,7 @@ import Border from '../Border';
 const skills = props => {
   let frontEndSkills = [
     ' JavaScript',
-    ' React',
+    ' React.js',
     ' React Native',
     ' Redux',
     ' HTML5',
