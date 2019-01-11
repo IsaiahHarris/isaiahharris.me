@@ -137,7 +137,7 @@ const skills = props => {
             <div className="border" />
           </div>
         </div>
-        <div className="block">
+        <div className="currently-block">
           <div className="skill-header">Currently Learning</div>
           <div className="skill-container">
             {currentlyLearning.map((skill, key) => {
