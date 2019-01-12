@@ -11,6 +11,7 @@
     justify-content: center;
   }
   .block {
+    width: 87%;
     @media (min-width: 1000px) {
       height: 50%;
       display: flex;
@@ -18,7 +19,7 @@
       justify-content: space-evenly;
     }
     .header-1 {
-      width: 85%;
+      width: 95%;
       padding-top: 25px;
       padding-bottom: 15px;
       display: flex;
@@ -31,7 +32,7 @@
         justify-content: space-between;
       }
       .titles {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -57,11 +58,11 @@
       }
     }
     .picture-container {
-      width: 30vw;
+      width: fit-content;
       display: flex;
       justify-content: flex-end;
       @media (min-width: 1000px) {
-        width: auto;
+        width: fit-content;
       }
       .picture {
         height: 80px;
@@ -72,7 +73,7 @@
       }
     }
     .body {
-      width: 85%;
+      width: 100%;
       @media (min-width: 1000px) {
         width: 490px;
       }
