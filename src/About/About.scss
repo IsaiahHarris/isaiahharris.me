@@ -1,5 +1,4 @@
 @import '../index.scss';
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -7,62 +6,150 @@
   height: 80vh;
   width: 100vw;
   font-family: 'Lato', sans-serif;
-  .header-1 {
-    width: 85%;
-    padding-top: 25px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Ubuntu', sans-serif;
-    .titles {
-      width: 70vw;
+  @media (min-width: 1000px) {
+    height: 90vh;
+    justify-content: center;
+  }
+  .block {
+    width: 87%;
+    @media (min-width: 1000px) {
+      height: 50%;
       display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      justify-content: space-around;
-      .title {
-        font-size: 32px;
-        font-weight: 900;
+      width: 980px;
+      justify-content: space-evenly;
+    }
+    .header-1 {
+      width: 95%;
+      padding-top: 25px;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Ubuntu', sans-serif;
+      @media (min-width: 1000px) {
+        width: 250px;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
       }
-      .sub-title {
-        font-size: 20px;
+      .titles {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        @media (min-width: 1000px) {
+          align-items: flex-end;
+        }
+        .title {
+          font-size: 32px;
+          font-weight: 900;
+          @media (min-width: 1000px) {
+            font-size: 38px;
+            width: fit-content;
+          }
+        }
+        .sub-title {
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 28px;
+            width: fit-content;
+          }
+        }
       }
     }
-  }
-  .picture-container {
-    width: 30vw;
-    display: flex;
-    justify-content: flex-end;
-    .picture {
-      height: 80px;
-      width: 80px;
-      background-image: url('../Assets/profilePic.png');
-      background-size: cover;
-      border-radius: 10px;
+    .picture-container {
+      width: fit-content;
+      display: flex;
+      justify-content: flex-end;
+      @media (min-width: 1000px) {
+        width: fit-content;
+      }
+      .picture {
+        height: 80px;
+        width: 80px;
+        background-image: url('../Assets/profilePic.JPG');
+        background-size: cover;
+        border-radius: 10px;
+      }
     }
-  }
-  .body {
-    width: 85%;
-    .paragraph-1 {
-      font-weight: 300;
-      font-size: 18px;
-      letter-spacing: 0.2px;
-      line-height: 1.25;
+    .body {
+      width: 100%;
+      @media (min-width: 1000px) {
+        width: 490px;
+      }
+      .paragraph-1 {
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        line-height: 1.25;
+        @media (min-width: 1000px) {
+          font-size: 24px;
+        }
+      }
+      .paragraph-2 {
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        line-height: 1.25;
+        @media (min-width: 1000px) {
+          font-size: 24px;
+        }
+      }
+      .paragraph-3 {
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        line-height: 1.25;
+        margin-bottom: 12px;
+        @media (min-width: 1000px) {
+          font-size: 24px;
+        }
+      }
     }
-    .paragraph-2 {
-      font-weight: 300;
-      margin-top: 20px;
-      font-size: 18px;
-      letter-spacing: 0.2px;
-      line-height: 1.25;
+    .border-container-skill {
+      width: 100%;
+      .border {
+        border: 2px solid $light-green;
+        width: 60%;
+        margin-top: 10px;
+        @media (min-width: 1000px) {
+          width: 45%;
+        }
+      }
     }
-    .paragraph-3 {
-      font-weight: 300;
-      margin-top: 20px;
-      font-size: 18px;
-      letter-spacing: 0.2px;
-      line-height: 1.25;
-      margin-bottom: 12px;
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 130px;
+      @media (min-width: 1000px) {
+        height: 130px;
+      }
+      .icon-container {
+        display: flex;
+        width: 75%;
+        justify-content: space-evenly;
+        align-items: center;
+        @media (min-width: 1000px) {
+          width: 50%;
+        }
+        .fab,
+        .fas {
+          transform: scale(2.3, 2.3);
+          @media (min-width: 1000px) {
+            transform: scale(2.8, 2.8);
+          }
+        }
+        a {
+          color: #505050;
+        }
+        a:hover {
+          color: $light-green;
+        }
+      }
     }
   }
 }

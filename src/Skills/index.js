@@ -3,53 +3,53 @@ import './Skills.scss';
 import Border from '../Border';
 const skills = props => {
   let frontEndSkills = [
-    'JavaScript',
-    'React',
-    'React Native',
-    'Redux',
-    'HTML5',
-    'CSS3',
-    'Angular',
-    'TypeScript',
-    'Sass',
-    'JQuery',
-    'Gulp.js',
-    'Material UI'
+    ' JavaScript',
+    ' React.js',
+    ' React Native',
+    ' Redux',
+    ' HTML5',
+    ' CSS3',
+    ' Angular',
+    ' TypeScript',
+    ' Sass',
+    ' JQuery',
+    ' Gulp.js',
+    ' Material UI'
   ];
   let backEndSkills = [
-    'Node.js',
-    'Express.js',
-    'Python',
-    'Passport.js',
-    'AWS',
-    'DynamoDB',
-    'Databases',
-    'SQL',
-    'ORM',
-    'PostgreSQL',
-    'Knex.js',
-    'Bookshelf.js'
+    ' Node.js',
+    ' Express.js',
+    ' Python',
+    ' Passport.js',
+    ' AWS',
+    ' DynamoDB',
+    ' Databases',
+    ' SQL',
+    ' ORM',
+    ' PostgreSQL',
+    ' Knex.js',
+    ' Bookshelf.js'
   ];
   let concepts = [
-    'UI/UX',
-    'OOP',
-    'Serverless',
-    "REST API's",
-    'MVC',
-    'LEAN',
-    'Agile Dev',
-    'DRY'
+    ' UI/UX',
+    ' OOP',
+    ' Serverless',
+    " REST API's",
+    ' MVC',
+    ' LEAN',
+    ' Agile Dev',
+    ' DRY'
   ];
 
   let tools = [
-    'Git',
-    'GitHub',
-    'Trello',
-    'Postman',
-    'Dev Tools',
-    'WebPack',
-    'Babel',
-    'NPM'
+    ' Git',
+    ' GitHub',
+    ' Trello',
+    '  Postman',
+    ' Dev Tools',
+    ' WebPack',
+    ' Babel',
+    ' NPM'
   ];
   let currentlyLearning = ['Deep Learning', 'IOS/Android', 'PyTorch', 'Vue.js'];
 
@@ -63,7 +63,7 @@ const skills = props => {
             {frontEndSkills.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  {skill}
+                  {`${'- ' + skill}`}
                 </div>
               );
             })}
@@ -73,6 +73,9 @@ const skills = props => {
             <i className="fab fa-react" />
             <i className="fab fa-sass" />
           </div>
+          <div className="border-container-skill">
+            <div className="border" />
+          </div>
         </div>
         <div className="block">
           <div className="skill-header">Back End</div>
@@ -80,7 +83,7 @@ const skills = props => {
             {backEndSkills.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  {skill}
+                  {`${'- ' + skill}`}
                 </div>
               );
             })}
@@ -90,6 +93,9 @@ const skills = props => {
             <i className="fab fa-aws" />
             <i className="fas fa-database" />
           </div>
+          <div className="border-container-skill">
+            <div className="border" />
+          </div>
         </div>
         <div className="block">
           <div className="skill-header">Tools</div>
@@ -97,7 +103,7 @@ const skills = props => {
             {tools.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  {skill}
+                  {`${'- ' + skill}`}
                 </div>
               );
             })}
@@ -107,6 +113,9 @@ const skills = props => {
             <i className="fab fa-npm" />
             <i className="fas fa-code-branch" />
           </div>
+          <div className="border-container-skill">
+            <div className="border" />
+          </div>
         </div>
         <div className="block">
           <div className="skill-header">Concepts</div>
@@ -114,7 +123,7 @@ const skills = props => {
             {concepts.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  {skill}
+                  {`${'- ' + skill}`}
                 </div>
               );
             })}
@@ -124,14 +133,17 @@ const skills = props => {
             <i className="fas fa-cloud" />
             <i className="fas fa-code" />
           </div>
+          <div className="border-container-skill">
+            <div className="border" />
+          </div>
         </div>
-        <div className="block">
+        <div className="currently-block">
           <div className="skill-header">Currently Learning</div>
           <div className="skill-container">
             {currentlyLearning.map((skill, key) => {
               return (
                 <div key={key} className="skill">
-                  {skill}
+                  {`${'- ' + skill}`}
                 </div>
               );
             })}

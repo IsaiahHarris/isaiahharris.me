@@ -1,19 +1,19 @@
 @import '../index.scss';
 .contact-container {
   font-family: 'Lato', sans-serif;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  @media (min-height: 950px) {
-    justify-content: center;
+  @media (min-width: 1000px) {
+    height: 90vh;
   }
   .header-1 {
     display: flex;
     flex-direction: column;
     padding-left: 6.5vw;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
     width: 100vw;
     @media (min-width: 1000px) {
       width: 980px;
@@ -42,23 +42,26 @@
 
   .form-container {
     width: 100vw;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: 20px;
+    @media (min-width: 1000px) {
+      margin-top: 0px;
+    }
     .error {
       position: absolute;
     }
     .top-inputs {
       width: 100vw;
+      height: 13%;
       display: flex;
       justify-content: space-evenly;
-      padding-bottom: 18px;
       @media (min-width: 1000px) {
         width: 980px;
         justify-content: space-between;
-        padding-bottom: 23px;
       }
     }
     .name,
@@ -71,16 +74,13 @@
       font-family: 'Lato', sans-serif;
       @media (min-width: 1000px) {
         width: 48%;
-        height: 65px;
         font-size: 26px;
       }
     }
   }
   .subject-input {
-    padding-bottom: 10px;
-    @media (min-width: 1000px) {
-      padding-bottom: 15px;
-    }
+    height: 13%;
+    margin-top: 0.5%;
     .subject {
       height: 100%;
       width: 86.5vw;
@@ -90,7 +90,6 @@
       font-family: 'Lato', sans-serif;
       @media (min-width: 1000px) {
         width: 980px;
-        height: 65px;
         font-size: 26px;
       }
     }
@@ -98,6 +97,7 @@
   .message-container {
     width: 86.5vw;
     margin-right: 14.8px;
+    height: 48%;
     @media (min-width: 1000px) {
       width: 980px;
     }
@@ -116,14 +116,13 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 110px;
+  height: 130px;
   @media (min-width: 1000px) {
     height: 130px;
   }
   .icon-container {
     display: flex;
     width: 75%;
-
     justify-content: space-evenly;
     align-items: center;
     @media (min-width: 1000px) {

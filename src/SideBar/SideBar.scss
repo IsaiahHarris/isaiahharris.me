@@ -12,44 +12,45 @@
   transition: transform 0.3s ease-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-family: 'Lato', sans-serif;
   @media (min-width: 1000px) {
-    width: 35vw;
+    width: 30vw;
   }
   .links {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 65%;
-    margin-left: 25px;
-    height: 80%;
+    margin-left: 10%;
+    height: 90%;
     @media (min-width: 1000px) {
-      margin-left: 60px;
+      margin-left: 15%;
     }
-    .lin {
-      margin-top: 15%;
-      font-size: 1.5em;
+    .link-1 {
+      margin-top: 25px;
+      font-size: 24px;
       width: 80%;
       text-decoration: none;
       color: black;
       font-weight: 300;
       padding-bottom: 10px;
       @media (min-width: 1000px) {
-        margin-top: 5%;
-        font-size: 1.8em;
+        margin-top: 30px;
+        font-size: 30px;
       }
     }
     .link {
-      margin-top: 30%;
-      font-size: 1.5em;
+      margin-top: 37.5px;
+      font-size: 24px;
       width: 80%;
       text-decoration: none;
       color: black;
       font-weight: 300;
       padding-bottom: 10px;
       @media (min-width: 1000px) {
-        margin-top: 18%;
-        font-size: 1.8em;
+        margin-top: 70px;
+        font-size: 30px;
       }
     }
     .link:hover,
@@ -59,16 +60,17 @@
       border-bottom: 2px solid $light-green;
     }
   }
-  .logo {
-    background-image: url('../Assets/logo.png');
-    height: 50px;
-    width: 40px;
-    background-size: 100% 100%;
-    margin: 10px;
-    @media (min-width: 1000px) {
-      margin: 20px;
-      height: 70px;
-      width: 55px;
+  .logo-container {
+    margin: 6%;
+    display: none;
+    @media (min-height: 1000px) {
+      display: block;
+    }
+    .logo {
+      height: 55px;
+      width: 40px;
+      background-image: url('../Assets/logo.png');
+      background-size: 100% 100%;
     }
   }
 }
@@ -77,12 +79,17 @@
   transform: translateX(0);
 }
 .header {
+  height: 8%;
   display: flex;
   justify-content: flex-end;
   padding: 5%;
   .close {
     width: 32px;
     height: 32px;
+    @media (min-width: 1000px) {
+      width: 45px;
+      height: 45px;
+    }
   }
   .close:hover {
     opacity: 1;
@@ -94,6 +101,10 @@
     content: ' ';
     height: 33px;
     width: 2px;
+    @media (min-width: 1000px) {
+      height: 40px;
+      width: 3px;
+    }
     background-color: $light-green;
   }
   .close:before {

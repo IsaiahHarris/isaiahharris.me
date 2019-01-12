@@ -1,15 +1,26 @@
 @import '../index.scss';
-%overlay-line {
-  width: 30px;
-  height: 4px;
-  margin: 5px 0;
-  border-radius: 5px;
-}
 .overlay {
   margin: 4%;
-  .line {
-    @extend %overlay-line;
+  @media (min-width: 1000px) {
+    margin: 2%;
+  }
+  .line-1 {
+    width: 30px;
+    height: 4px;
+    border-radius: 5px;
     background-color: $light-green;
+    @media (min-width: 1000px) {
+      width: 45px;
+      height: 7px;
+      border-radius: 5px;
+    }
+  }
+  .line-mid {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: $dark-green;
     @media (min-width: 1000px) {
       width: 45px;
       height: 7px;
@@ -17,8 +28,11 @@
       border-radius: 5px;
     }
   }
-  .line-mid {
-    @extend %overlay-line;
+  .line-3 {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 5px;
     background-color: $dark-green;
     @media (min-width: 1000px) {
       width: 45px;
