@@ -29,7 +29,8 @@
         width: 250px;
         flex-direction: column;
         height: 100%;
-        justify-content: space-between;
+        justify-content: flex-start;
+        align-items: flex-end;
       }
       .titles {
         width: fit-content;
@@ -58,7 +59,6 @@
       }
     }
     .picture-container {
-      width: fit-content;
       display: flex;
       justify-content: flex-end;
       @media (min-width: 1000px) {
@@ -70,6 +70,10 @@
         background-image: url('../Assets/profilePic.JPG');
         background-size: cover;
         border-radius: 10px;
+        @media (min-width: 1000px) {
+          height: 180px;
+          width: 180px;
+        }
       }
     }
     .body {

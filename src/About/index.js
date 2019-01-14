@@ -7,7 +7,7 @@ const about = props => (
       <div className="header-1">
         <div className="titles">
           <div className="title">ABOUT ME</div>
-          <div className="sub-title">Hi, I'm Isaiah Harris.</div>
+          <div className="sub-title">Hi, I'm Isaiah.</div>
         </div>
         <div className="picture-container">
           <div className="picture" />
