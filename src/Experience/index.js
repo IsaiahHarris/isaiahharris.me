@@ -11,11 +11,11 @@ const experience = () => {
       projectsContainer.style.zIndex = 1;
       workContainer.style.zIndex = 0;
       projectsChoice.className = 'choice-active';
-      workChoice.className = 'work-choice';
+      workChoice.className = 'work-choice-i';
     } else if (subject === 'work') {
       projectsContainer.style.zIndex = 0;
       workContainer.style.zIndex = 1;
-      projectsChoice.className = 'projects-choice';
+      projectsChoice.className = 'projects-choice-i';
       workChoice.className = 'choice-active';
     }
   }
@@ -40,7 +40,7 @@ const experience = () => {
             switchPages('projects');
           }}
         >
-          <div className="projects-choice" id="projects-choice">
+          <div className="projects-choice-i" id="projects-choice">
             Projects
           </div>
         </div>
@@ -58,7 +58,9 @@ const experience = () => {
               with teachers to monitor and promote learning and development of
               each student.
             </div>
-            <Border />
+            <div className="border-experience-container">
+              <div className="border" />
+            </div>
           </div>
         </div>
       </div>
