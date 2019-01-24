@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.scss';
-import Border from '../Border';
+
 const skills = props => {
   let frontEndSkills = [
     ' JavaScript',

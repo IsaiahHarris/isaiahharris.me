@@ -3,6 +3,7 @@
   width: 95%;
   font-family: 'Lato', sans-serif;
   padding-left: 5%;
+
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -116,7 +117,7 @@
           background-color: black;
           height: 12px;
           @media (min-width: 1000px) {
-            height: 10px;
+            height: 12px;
           }
         }
         .fab.fa-react {
@@ -248,11 +249,9 @@
       color: #de5b9c;
     }
     .fab.fa-js-square {
-      color: #fbde00;
-      background-color: black;
       height: 12px;
       @media (min-width: 1000px) {
-        height: 10px;
+        height: 15px;
       }
     }
     .fab.fa-react {

@@ -12,7 +12,6 @@
     justify-content: center;
     font-size: 36px;
     height: 90vh;
-    margin-left: 185px;
   }
   .title-container {
     display: none;
@@ -67,6 +66,7 @@
     animation: wrapper 3s ease 0.5s normal both;
     @media (min-width: 1000px) {
       height: 405px;
+
       margin-right: 185px;
     }
     .logo-top {
