@@ -30,8 +30,8 @@ const education = props => {
           <div className="date">Nov 2018 - Jan 2019</div>
           <div className="description">
             Awarded a scholarship from Facebook to learn Deep Learning with
-            Pytorch. Built and trained a model that identifies flower species
-            from images.
+            Pytorch. Learned to build and train a model that identifies flower
+            species from images.
             <div className="border-container-education">
               <div className="border" />
             </div>

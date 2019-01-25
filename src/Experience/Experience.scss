@@ -12,6 +12,7 @@
     letter-spacing: 1px;
     height: 11.5vh;
     padding-left: 5%;
+
     @media (min-width: 1000px) {
       font-size: 38px;
     }
@@ -21,6 +22,12 @@
     display: flex;
     justify-content: space-between;
     height: 45px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 70px;
+    // position: fixed;
+    // z-index: 2;
+    background-color: white;
+    // top: 10vh;
     @media (min-width: 1000px) {
       justify-content: center;
     }
@@ -65,19 +72,20 @@
   }
   .work-container {
     z-index: 1;
-    position: absolute;
-    height: 72.5vh;
+    height: 78vh;
     width: 100%;
-    background-color: white;
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 1000px) {
+      margin-top: 20px;
+    }
     .course-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-bottom: 4vh;
-      width: 90vw;
+      width: 90%;
       @media (min-width: 1000px) {
         width: 980px;
       }
@@ -140,102 +148,157 @@
   }
   .projects-container {
     z-index: 0;
-    position: absolute;
     background-color: white;
-    height: 73.5vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5px;
+    width: 90%;
+
+    align-items: center;
+    flex-direction: column;
     @media (min-width: 1000px) {
-      width: 980px;
-    }
-    .description-container {
-      width: 48%;
       display: flex;
+      height: fit-content;
+      align-items: center;
       flex-direction: column;
-      height: 230px;
-      .title {
-        padding-top: 20px;
-        font-size: 24px;
-        font-weight: 600;
-        color: #434343;
-        text-decoration: none;
+      width: 100%;
+    }
+    .project,
+    .project-2 {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 5px;
+      height: 320px;
+      @media (min-width: 1000px) {
+        width: 750px;
       }
-      .desc {
-        padding-top: 8px;
-        font-weight: 300;
-        font-size: 18px;
-      }
-      .technology-container {
+      .description-container {
+        width: 48%;
         display: flex;
-        flex-wrap: wrap;
-        width: 490px;
-        .tech1,
-        .tech,
-        .tech-bot,
-        .learn-more {
+        flex-direction: column;
+        height: 230px;
+        @media (min-width: 1000px) {
+          width: 58%;
+        }
+        .title {
+          padding-top: 20px;
+          font-size: 24px;
+          font-weight: 600;
+          color: #434343;
+          text-decoration: none;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+          }
+        }
+        .desc {
+          padding-top: 8px;
+          font-weight: 300;
+          font-size: 18px;
+          @media (min-width: 1000px) {
+            font-size: 24px;
+            width: 75%;
+          }
+        }
+        .technology-container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          .tech1,
+          .tech,
+          .tech-bot,
+          .learn-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            padding: 5px;
+            @media (min-width: 1000px) {
+              font-size: 18px;
+            }
+          }
+          .tech1,
+          .tech,
+          .tech-bot {
+            color: white;
+          }
+          .tech1,
+          .tech {
+            width: 45%;
+            background-color: $light-green;
+            border-radius: 5px;
+            margin-top: 12px;
+            @media (min-width: 1000px) {
+              width: 30%;
+            }
+          }
+          .tech {
+            margin-left: 10px;
+          }
+          .tech-bot {
+            width: 70%;
+            background-color: $light-green;
+            border-radius: 5px;
+            @media (min-width: 1000px) {
+              width: 50%;
+            }
+          }
+          .learn-more {
+            width: 100%;
+            border: 2px solid $light-green;
+            border-radius: 5px;
+            color: $light-green;
+            text-decoration: none;
+            @media (min-width: 1000px) {
+              width: 70%;
+            }
+          }
+          .github {
+            text-decoration: none;
+            width: 100%;
+          }
+          .learn-more,
+          .tech-bot {
+            margin-top: 10px;
+          }
+        }
+      }
+      .phone {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 1000px) {
+          align-items: flex-end;
+          width: 38%;
+        }
+        .phone-container {
+          width: 120px;
+          height: 240px;
+          position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 14px;
-          padding: 5px;
+          padding-top: 48px;
+          flex-direction: column;
+          @media (min-width: 1000px) {
+            width: 150px;
+            height: 300px;
+          }
+          .phone-img {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+          }
+          .garden-guru-img {
+            height: 76%;
+            width: 88%;
+            position: absolute;
+          }
         }
-        .tech1,
-        .tech,
-        .tech-bot {
-          color: white;
-        }
-        .tech1,
-        .tech {
-          width: 45%;
-          background-color: $light-green;
-          border-radius: 5px;
-          margin-top: 12px;
-        }
-        .tech {
-          margin-left: 10px;
-        }
-        .tech-bot {
-          width: 65%;
-          background-color: $light-green;
-          border-radius: 5px;
-        }
-        .learn-more {
-          width: 100%;
-          border: 2px solid $light-green;
-          border-radius: 5px;
-          color: $light-green;
-          text-decoration: none;
-        }
-        .github {
-          text-decoration: none;
-        }
-        .learn-more,
-        .tech-bot {
-          margin-top: 10px;
-        }
-      }
-    }
-    .phone-container {
-      width: 120px;
-      height: 240px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 48px;
-      .phone-img {
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        position: absolute;
-      }
-      .garden-guru-img {
-        height: 76%;
-        width: 88%;
-        position: absolute;
       }
     }
   }
+}
+
+.project-2 {
+  margin-top: 30px;
 }
