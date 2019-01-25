@@ -25,7 +25,7 @@ class experience extends Component {
       projectsContainer.style.display = 'none';
 
       workContainer.style.zIndex = 1;
-      workContainer.style.display = 'block';
+      workContainer.style.display = 'flex';
       projectsChoice.className = 'projects-choice-i';
       workChoice.className = 'choice-active';
     }

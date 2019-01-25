@@ -1,6 +1,5 @@
 @import '../index.scss';
 .experience-container {
-  height: 90vh;
   font-family: 'Lato', sans-serif;
   width: 100vw;
   .header {
@@ -22,13 +21,13 @@
     display: flex;
     justify-content: space-between;
     height: 45px;
-    border-bottom: 1px solid grey;
     padding-bottom: 70px;
     // position: fixed;
     // z-index: 2;
     background-color: white;
     // top: 10vh;
     @media (min-width: 1000px) {
+      border-bottom: 1px solid grey;
       justify-content: center;
     }
     .work-choice,
@@ -72,7 +71,6 @@
   }
   .work-container {
     z-index: 1;
-    height: 78vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -84,7 +82,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 4vh;
+      padding-bottom: 3vh;
       width: 90%;
       @media (min-width: 1000px) {
         width: 980px;
@@ -141,7 +139,7 @@
         .border {
           border: 2px solid $light-green;
           width: 60%;
-          margin-top: 15px;
+          margin-top: 8px;
         }
       }
     }
@@ -150,12 +148,10 @@
     z-index: 0;
     background-color: white;
     width: 90%;
-
     align-items: center;
     flex-direction: column;
     @media (min-width: 1000px) {
       display: flex;
-      height: fit-content;
       align-items: center;
       flex-direction: column;
       width: 100%;
@@ -165,8 +161,9 @@
       display: flex;
       justify-content: space-between;
       padding-top: 5px;
-      height: 320px;
+      height: 260px;
       @media (min-width: 1000px) {
+        height: 320px;
         width: 750px;
       }
       .description-container {
@@ -300,5 +297,8 @@
 }
 
 .project-2 {
-  margin-top: 30px;
+  margin-top: 0px;
+  @media (min-width: 1000px) {
+    margin-top: 30px;
+  }
 }
