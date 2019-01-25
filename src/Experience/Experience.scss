@@ -3,8 +3,6 @@
   height: 90vh;
   font-family: 'Lato', sans-serif;
   width: 100vw;
-  @media (min-width: 1000px) {
-  }
   .header {
     display: flex;
     justify-content: flex-start;
@@ -38,6 +36,10 @@
         padding-bottom: 15px;
         border-bottom: 3px solid $light-green;
         font-size: 22px;
+        @media (min-width: 1000px) {
+          font-size: 30px;
+          width: 50%;
+        }
       }
       .work-choice-start {
         width: 100%;
@@ -45,12 +47,19 @@
         padding-bottom: 15px;
         border-bottom: 3px solid $light-green;
         font-size: 22px;
+        @media (min-width: 1000px) {
+          font-size: 30px;
+          width: 50%;
+        }
       }
       .work-choice-i,
       .projects-choice-i {
         width: 100%;
         height: 5vh;
         font-size: 22px;
+        @media (min-width: 1000px) {
+          font-size: 30px;
+        }
       }
     }
   }
@@ -138,8 +147,11 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 5px;
+    @media (min-width: 1000px) {
+      width: 980px;
+    }
     .description-container {
-      width: 48vw;
+      width: 48%;
       display: flex;
       flex-direction: column;
       height: 230px;
@@ -158,7 +170,7 @@
       .technology-container {
         display: flex;
         flex-wrap: wrap;
-        width: 200px;
+        width: 490px;
         .tech1,
         .tech,
         .tech-bot,
@@ -190,7 +202,7 @@
           border-radius: 5px;
         }
         .learn-more {
-          width: 48vw;
+          width: 100%;
           border: 2px solid $light-green;
           border-radius: 5px;
           color: $light-green;
