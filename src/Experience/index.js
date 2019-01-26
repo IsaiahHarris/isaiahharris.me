@@ -67,12 +67,26 @@ class experience extends Component {
         <div className="work-container" id="work-container">
           <div className="course-container">
             <div className="title">
-              DevLeague, Honolulu, Hawaii Coding Teaching Assistant
+              Applications Software Developer at Hawaii Testing and Technology
             </div>
+
             <div className="dl-img" />
-            <div className="date">Nov 2018 - Present</div>
+            <div className="date">Dec 2018 - Present</div>
             <div className="description">
-              Hired as a web development coding teaching assistant. Collaborate
+              klasndlkansdlkn daskjdbakjs dkas kdj aksj dkaj sdk aksd ka
+              sklasdlk dlask dlaks dlka sldk alskd laks dlka sldk alskd laks
+              dlak sdlk
+            </div>
+            <div className="border-experience-container">
+              <div className="border" />
+            </div>
+          </div>
+          <div className="course-container">
+            <div className="title">Coding Teaching Assistant at DevLeague</div>
+            <div className="dl-img" />
+            <div className="date">Dec 2018 - Present</div>
+            <div className="description">
+              JavaScript web development coding teaching assistant. Collaborate
               with teachers to monitor and promote learning and development of
               each student.
             </div>
@@ -81,30 +95,12 @@ class experience extends Component {
             </div>
           </div>
           <div className="course-container">
-            <div className="title">
-              DevLeague, Honolulu, Hawaii Coding Teaching Assistant
-            </div>
+            <div className="title">Software Developer at 808 Tax Hawaii</div>
             <div className="dl-img" />
-            <div className="date">Nov 2018 - Present</div>
+            <div className="date">Jan 2018 - Present</div>
             <div className="description">
-              Hired as a web development coding teaching assistant. Collaborate
-              with teachers to monitor and promote learning and development of
-              each student.
-            </div>
-            <div className="border-experience-container">
-              <div className="border" />
-            </div>
-          </div>
-          <div className="course-container">
-            <div className="title">
-              DevLeague, Honolulu, Hawaii Coding Teaching Assistant
-            </div>
-            <div className="dl-img" />
-            <div className="date">Nov 2018 - Present</div>
-            <div className="description">
-              Hired as a web development coding teaching assistant. Collaborate
-              with teachers to monitor and promote learning and development of
-              each student.
+              Build full stack web and mobile applications to streamline company
+              processes.
             </div>
             <div className="border-experience-container">
               <div className="border" />
