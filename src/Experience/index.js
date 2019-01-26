@@ -66,16 +66,29 @@ class experience extends Component {
         </div>
         <div className="work-container" id="work-container">
           <div className="course-container">
+            <div className="title">Software Developer at 808 Tax Hawaii</div>
+            <div className="tax-img" />
+            <div className="date">Jan 2019 - Present</div>
+            <div className="description">
+              Hired to build full stack JavaScript web and mobile applications
+              to streamline company processes. Position includes building upon
+              and maintaining company website and systems.
+            </div>
+            <div className="border-experience-container">
+              <div className="border" />
+            </div>
+          </div>
+          <div className="course-container">
             <div className="title">
               Applications Software Developer at Hawaii Testing and Technology
             </div>
 
-            <div className="dl-img" />
+            <div className="htt-img" />
             <div className="date">Dec 2018 - Present</div>
             <div className="description">
-              klasndlkansdlkn daskjdbakjs dkas kdj aksj dkaj sdk aksd ka
-              sklasdlk dlask dlaks dlka sldk alskd laks dlka sldk alskd laks
-              dlak sdlk
+              Working full time building, testing, and deploying full stack web
+              and mobile applications to make the world of Non Destructive
+              Testing in Hawaii technologically advanced.
             </div>
             <div className="border-experience-container">
               <div className="border" />
@@ -84,23 +97,11 @@ class experience extends Component {
           <div className="course-container">
             <div className="title">Coding Teaching Assistant at DevLeague</div>
             <div className="dl-img" />
-            <div className="date">Dec 2018 - Present</div>
+            <div className="date">Nov 2018 - Present</div>
             <div className="description">
               JavaScript web development coding teaching assistant. Collaborate
               with teachers to monitor and promote learning and development of
               each student.
-            </div>
-            <div className="border-experience-container">
-              <div className="border" />
-            </div>
-          </div>
-          <div className="course-container">
-            <div className="title">Software Developer at 808 Tax Hawaii</div>
-            <div className="dl-img" />
-            <div className="date">Jan 2018 - Present</div>
-            <div className="description">
-              Build full stack web and mobile applications to streamline company
-              processes.
             </div>
             <div className="border-experience-container">
               <div className="border" />
@@ -175,7 +176,7 @@ class experience extends Component {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://gardenguru.farm"
+                href="https://isaiahharris.me"
                 className="title"
               >
                 isaiahharris.me
