@@ -15,13 +15,13 @@ const about = props => (
       </div>
       <div className="body">
         <div className="paragraph-1">
-          After discovering coding, I've been determined to improve myself as a
+          After discovering coding, I became determined to improve myself as a
           developer everyday.
         </div>
         <div className="paragraph-2">
-          I completed an immersive JavaScript coding boot camp in Honolulu,
-          Hawaii. Since then I have enjoyed being an Applications Developer and
-          a Teachers Assistant.
+          I've completed an immersive JavaScript coding boot camp in Honolulu,
+          Hawaii. Since then I have enjoyed being an Software Developer and a
+          Teachers Assistant.
         </div>
         <div className="paragraph-3">
           I'm passionate, always ready for a challenge, and open to new

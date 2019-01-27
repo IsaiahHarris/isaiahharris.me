@@ -126,7 +126,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 130px;
+    height: 100px;
     @media (min-width: 1000px) {
       height: 100px;
     }
@@ -154,14 +154,17 @@
     }
   }
   .about-border-container {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    width: 87%;
+    @media (min-width: 1000px) {
+      justify-content: center;
+      width: 100%;
+    }
     .border {
       border: 1.5px solid $light-green;
       width: 60%;
       margin-top: 10px;
-      display: none;
+
       @media (min-width: 1000px) {
         width: 30%;
         display: block;
