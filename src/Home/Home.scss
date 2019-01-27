@@ -22,6 +22,7 @@
       flex-direction: column;
       justify-content: center;
       animation: desktop-title-container 1.8s ease 3.8s normal both;
+      margin-left: 92.5px;
     }
 
     .title-2 {
@@ -66,7 +67,7 @@
     animation: wrapper 3s ease 1s normal both;
     @media (min-width: 1000px) {
       height: 405px;
-      margin-right: 185px;
+      margin-right: 92.5px;
     }
     .logo-top {
       width: 190px;
