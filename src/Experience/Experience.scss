@@ -95,8 +95,9 @@
       align-items: center;
       padding-bottom: 3vh;
       width: 90%;
-      margin-top: 20px;
+      margin-top: 15px;
       @media (min-width: 1000px) {
+        margin-top: 20px;
         width: 980px;
       }
       .title,

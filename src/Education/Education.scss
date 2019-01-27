@@ -31,7 +31,7 @@
       flex-direction: column;
       align-items: center;
       padding-bottom: 25px;
-
+      margin-top: 15px;
       width: 100%;
       @media (min-width: 1000px) {
         width: 980px;
@@ -74,13 +74,13 @@
         .border {
           border: 2px solid $light-green;
           width: 60%;
-          margin-top: 20px;
+          margin-top: 12px;
         }
       }
 
       .dl-img {
-        height: 200px;
-        width: 200px;
+        height: 190px;
+        width: 190px;
         background-image: url('../Assets/devleague.png');
         background-size: 100% 100%;
         z-index: -1;
@@ -114,7 +114,10 @@
       }
     }
     .course-container-1 {
-      margin-top: 5px;
+      margin-top: 0px;
+      @media (min-width: 1000px) {
+        margin-top: 5px;
+      }
     }
   }
 }
