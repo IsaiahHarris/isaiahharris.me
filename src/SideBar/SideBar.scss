@@ -59,6 +59,7 @@
     .link-1:active,
     .lin:hover,
     .lin:active {
+      padding-bottom: 8px;
       border-bottom: 2px solid $light-green;
     }
   }
@@ -101,10 +102,10 @@
     position: absolute;
     right: 10%;
     content: ' ';
-    height: 33px;
+    height: 30px;
     width: 2px;
     @media (min-width: 1000px) {
-      height: 40px;
+      height: 38px;
       width: 3px;
     }
     background-color: $light-green;
