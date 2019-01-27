@@ -63,10 +63,9 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    animation: wrapper 3s ease 0.5s normal both;
+    animation: wrapper 3s ease 1s normal both;
     @media (min-width: 1000px) {
       height: 405px;
-
       margin-right: 185px;
     }
     .logo-top {
