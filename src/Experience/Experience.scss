@@ -132,6 +132,48 @@
           width: 170px;
         }
       }
+      .dl-img {
+        height: 200px;
+        width: 200px;
+        background-image: url('../Assets/devleague.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 170px;
+          width: 170px;
+        }
+      }
+      .htt-img {
+        height: 200px;
+        width: 200px;
+        background-image: url('../Assets/htt.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 30px;
+        @media (min-width: 1000px) {
+          height: 130px;
+          width: 210px;
+        }
+      }
+      .tax-img {
+        height: 200px;
+        width: 200px;
+        background-image: url('../Assets/tax.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 170px;
+          width: 210px;
+        }
+      }
       .border-experience-container {
         width: 100%;
         .border {
@@ -298,5 +340,6 @@
   margin-top: 0px;
   @media (min-width: 1000px) {
     margin-top: 30px;
+    margin-bottom: 50px;
   }
 }
