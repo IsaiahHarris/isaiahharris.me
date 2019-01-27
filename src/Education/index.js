@@ -6,7 +6,7 @@ const education = props => {
     <div className="education-container">
       <div className="header-1">EDUCATION</div>
       <div className="courses">
-        <div className="course-container">
+        <div className="course-container-1">
           <div className="title">
             DevLeague JavaScript Web Engineering Coding Bootcamp
           </div>

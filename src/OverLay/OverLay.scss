@@ -1,6 +1,7 @@
 @import '../index.scss';
 .overlay {
   margin: 4%;
+  cursor: pointer;
   @media (min-width: 1000px) {
     margin: 2%;
   }
