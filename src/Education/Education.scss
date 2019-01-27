@@ -88,8 +88,8 @@
         position: absolute;
         margin-top: 2vh;
         @media (min-width: 1000px) {
-          height: 175px;
-          width: 175px;
+          height: 165px;
+          width: 165px;
         }
       }
       .udacity-img {
@@ -101,6 +101,10 @@
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 165px;
+          width: 165px;
+        }
       }
       .udemy-img {
         height: 165px;
@@ -111,6 +115,10 @@
         opacity: 0.3;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 155px;
+          width: 205px;
+        }
       }
     }
     .course-container-1 {
