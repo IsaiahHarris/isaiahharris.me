@@ -24,11 +24,13 @@
     flex-direction: column;
     align-items: center;
     width: 89.8vw;
+    margin-bottom: 20px;
     .course-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-bottom: 25px;
+      margin-top: 10px;
       width: 100%;
       @media (min-width: 1000px) {
         width: 980px;

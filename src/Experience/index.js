@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Experience.scss';
-import './Animation.css';
+
 class experience extends Component {
   constructor(props) {
     super(props);
