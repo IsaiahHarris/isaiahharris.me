@@ -175,12 +175,7 @@ class experience extends Component {
               </div>
             </div>
             <div className="description-container">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://isaiahharris.me"
-                className="title"
-              >
+              <a target="_blank" rel="noopener noreferrer" className="title">
                 isaiahharris.me
               </a>
               <div className="desc">
