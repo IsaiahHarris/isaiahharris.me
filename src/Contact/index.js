@@ -49,16 +49,13 @@ class Contact extends Component {
   }
   componentDidMount() {
     let textField = document.getElementById('text-field');
-    let screenWidth = window.screen.availWidth;
+
     let screenHeight = window.screen.availHeight;
 
-    console.log(screenHeight);
     if (screenHeight >= 500 && screenHeight <= 600) {
       textField.rows = '4';
-      console.log(textField.rows);
     } else if (screenHeight > 600 && screenHeight <= 700) {
       textField.rows = '5';
-      console.log(textField.rows);
     } else if (screenHeight > 700 && screenHeight <= 800) {
       textField.rows = '5';
     } else if (screenHeight > 800 && screenHeight <= 1500) {
@@ -76,7 +73,6 @@ class Contact extends Component {
   }
 
   handleClose(event, reason) {
-    console.log('hi');
     if (reason === 'clickaway') {
       return;
     }

@@ -6,12 +6,9 @@ const dynamodb = new AWS.DynamoDB({ apiVersion: '2012-08-10' });
 const sns = new AWS.SNS({ apiVersion: '2010-03-31' });
 
 module.exports.sendInfo = (event, context, callback) => {
-  console.log('hello', event.body);
   let { name, email, subject, message } = JSON.parse(event.body);
-  console.log(name, email, subject, message);
 
   let topicARN = process.env.ARN; //environmental variable with ARN
-  console.log(topicARN);
 
   var dynamoParams = {
     Item: {
@@ -33,8 +30,6 @@ module.exports.sendInfo = (event, context, callback) => {
 
   dynamodb.putItem(dynamoParams, (err, data) => {
     if (err) {
-      console.log(err, err.stack);
-
       const response = {
         statusCode: 500,
         headers: {
@@ -60,8 +55,6 @@ module.exports.sendInfo = (event, context, callback) => {
 
       sns.publish(snsFailParams, function(err, data) {
         if (err) {
-          console.log(err.stack);
-
           const response = {
             statusCode: 500,
             headers: {
@@ -72,8 +65,6 @@ module.exports.sendInfo = (event, context, callback) => {
           };
           callback(null, response);
         } else {
-          console.log('Success', data);
-
           const response = {
             statusCode: 200,
             headers: {
@@ -100,8 +91,6 @@ module.exports.sendInfo = (event, context, callback) => {
 
       sns.publish(snsParams, function(err, data) {
         if (err) {
-          console.log(err.stack);
-
           const response = {
             statusCode: 500,
             headers: {
@@ -112,8 +101,6 @@ module.exports.sendInfo = (event, context, callback) => {
           };
           callback(null, response);
         } else {
-          console.log('Success', data);
-
           const response = {
             statusCode: 200,
             headers: {
