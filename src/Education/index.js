@@ -1,6 +1,5 @@
 import React from 'react';
 import './Education.scss';
-import Border from '../Border';
 
 const education = props => {
   return (
