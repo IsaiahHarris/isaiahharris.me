@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Experience.scss';
-
+import './Animation.css';
 class experience extends Component {
   constructor(props) {
     super(props);
@@ -41,26 +41,28 @@ class experience extends Component {
   render() {
     return (
       <div className="experience-container">
-        <div className="choices">
-          <div
-            className="work-choice"
-            onClick={() => {
-              this.switchPages('work');
-            }}
-          >
-            <div className="work-choice-start" id="work-choice">
-              Work
+        <div className="choices-container">
+          <div className="choices">
+            <div
+              className="work-choice"
+              onClick={() => {
+                this.switchPages('work');
+              }}
+            >
+              <div className="work-choice-start" id="work-choice">
+                Work
+              </div>
             </div>
-          </div>
 
-          <div
-            className="projects-choice"
-            onClick={() => {
-              this.switchPages('projects');
-            }}
-          >
-            <div className="projects-choice-i" id="projects-choice">
-              Projects
+            <div
+              className="projects-choice"
+              onClick={() => {
+                this.switchPages('projects');
+              }}
+            >
+              <div className="projects-choice-i" id="projects-choice">
+                Projects
+              </div>
             </div>
           </div>
         </div>

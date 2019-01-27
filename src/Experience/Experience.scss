@@ -2,6 +2,7 @@
 .experience-container {
   font-family: 'Lato', sans-serif;
   width: 100vw;
+  padding-bottom: 40px;
   .header {
     display: flex;
     justify-content: flex-start;
@@ -15,53 +16,64 @@
       font-size: 38px;
     }
   }
-  .choices {
+  .choices-container {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 45px;
-    padding-bottom: 70px;
     background-color: white;
     margin-top: 20px;
-    @media (min-width: 1000px) {
-      border-bottom: 1px solid grey;
-      justify-content: center;
-    }
-    .work-choice,
-    .projects-choice {
-      width: 490px;
-      text-align: center;
+    .choices {
+      width: 100%;
       display: flex;
-      justify-content: center;
-      .choice-active {
-        width: 100%;
-        height: 45px;
-        padding-bottom: 15px;
-        border-bottom: 3px solid $light-green;
-        font-size: 22px;
-        @media (min-width: 1000px) {
-          font-size: 30px;
-          width: 50%;
-        }
+      height: 100%;
+      justify-content: space-between;
+      border-bottom: 3px solid #00dea741;
+      @media (min-width: 1000px) {
+        justify-content: center;
+        width: 980px;
       }
-      .work-choice-start {
-        width: 100%;
-        height: 45px;
-        padding-bottom: 15px;
-        border-bottom: 3px solid $light-green;
-        font-size: 22px;
-        @media (min-width: 1000px) {
-          font-size: 30px;
-          width: 50%;
+      .work-choice,
+      .projects-choice {
+        width: 490px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: rgba(128, 128, 128, 0.619);
+        .choice-active {
+          width: 100%;
+          height: 45px;
+          padding-bottom: 18px;
+          color: black;
+          // background-color: $light-green;
+          border-bottom: 3px solid $light-green;
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+            width: 100%;
+          }
         }
-      }
-      .work-choice-i,
-      .projects-choice-i {
-        width: 100%;
-        height: 5vh;
-        font-size: 22px;
-        @media (min-width: 1000px) {
-          font-size: 30px;
+        .work-choice-start {
+          width: 100%;
+          height: 45px;
+          padding-bottom: 18px;
+          color: black;
+          border-bottom: 3px solid $light-green;
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+            width: 100%;
+          }
+        }
+        .work-choice-i,
+        .projects-choice-i {
+          width: 100%;
+          height: 5vh;
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+          }
         }
       }
     }
@@ -72,6 +84,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
     @media (min-width: 1000px) {
       margin-top: 20px;
     }
@@ -81,9 +94,9 @@
       align-items: center;
       padding-bottom: 3vh;
       width: 90%;
+      margin-top: 5px;
       @media (min-width: 1000px) {
         width: 980px;
-        margin-top: 2px;
       }
       .title,
       .date,
@@ -119,22 +132,8 @@
         }
       }
       .dl-img {
-        height: 200px;
-        width: 200px;
-        background-image: url('../Assets/devleague.png');
-        background-size: 100% 100%;
-        z-index: -1;
-        opacity: 0.2;
-        position: absolute;
-        margin-top: 2vh;
-        @media (min-width: 1000px) {
-          height: 170px;
-          width: 170px;
-        }
-      }
-      .dl-img {
-        height: 200px;
-        width: 200px;
+        height: 190px;
+        width: 190px;
         background-image: url('../Assets/devleague.png');
         background-size: 100% 100%;
         z-index: -1;
@@ -147,8 +146,8 @@
         }
       }
       .htt-img {
-        height: 200px;
-        width: 200px;
+        height: 140px;
+        width: 210px;
         background-image: url('../Assets/htt.png');
         background-size: 100% 100%;
         z-index: -1;
@@ -161,7 +160,7 @@
         }
       }
       .tax-img {
-        height: 200px;
+        height: 170px;
         width: 200px;
         background-image: url('../Assets/tax.png');
         background-size: 100% 100%;
@@ -179,7 +178,10 @@
         .border {
           border: 2px solid $light-green;
           width: 60%;
-          margin-top: 14px;
+          margin-top: 6px;
+          @media (min-width: 1000px) {
+            margin-top: 15px;
+          }
         }
       }
     }
@@ -190,6 +192,8 @@
     width: 90%;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+    margin-top: 10px;
     @media (min-width: 1000px) {
       display: flex;
       align-items: center;
@@ -200,7 +204,6 @@
     .project-2 {
       display: flex;
       justify-content: space-between;
-      padding-top: 5px;
       height: 260px;
       @media (min-width: 1000px) {
         height: 320px;
