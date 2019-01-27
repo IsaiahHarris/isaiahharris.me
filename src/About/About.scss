@@ -13,10 +13,11 @@
   .block {
     width: 87%;
     @media (min-width: 1000px) {
-      height: 50%;
+      margin-bottom: 20px;
+      height: 285px;
       display: flex;
-      width: 980px;
-      justify-content: space-evenly;
+      width: 780px;
+      justify-content: space-between;
     }
     .header-1 {
       width: 95%;
@@ -26,10 +27,12 @@
       justify-content: space-between;
       font-family: 'Ubuntu', sans-serif;
       @media (min-width: 1000px) {
-        width: 250px;
+        width: 37%;
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
+        align-items: flex-end;
+        padding: 0;
       }
       .titles {
         width: fit-content;
@@ -58,7 +61,6 @@
       }
     }
     .picture-container {
-      width: fit-content;
       display: flex;
       justify-content: flex-end;
       @media (min-width: 1000px) {
@@ -70,12 +72,19 @@
         background-image: url('../Assets/profilePic.JPG');
         background-size: cover;
         border-radius: 10px;
+        @media (min-width: 1000px) {
+          height: 180px;
+          width: 180px;
+        }
       }
     }
     .body {
       width: 100%;
       @media (min-width: 1000px) {
-        width: 490px;
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .paragraph-1 {
         font-weight: 300;
@@ -83,7 +92,7 @@
         letter-spacing: 0.2px;
         line-height: 1.25;
         @media (min-width: 1000px) {
-          font-size: 24px;
+          font-size: 23px;
         }
       }
       .paragraph-2 {
@@ -93,7 +102,8 @@
         letter-spacing: 0.2px;
         line-height: 1.25;
         @media (min-width: 1000px) {
-          font-size: 24px;
+          font-size: 23px;
+          margin-top: 0;
         }
       }
       .paragraph-3 {
@@ -104,51 +114,60 @@
         line-height: 1.25;
         margin-bottom: 12px;
         @media (min-width: 1000px) {
-          font-size: 24px;
+          font-size: 23px;
+          margin: 0;
+          margin-top: 0;
         }
       }
     }
-    .border-container-skill {
-      width: 100%;
-      .border {
-        border: 2px solid $light-green;
-        width: 60%;
-        margin-top: 10px;
-        @media (min-width: 1000px) {
-          width: 45%;
-        }
-      }
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    @media (min-width: 1000px) {
+      height: 100px;
     }
-    .footer {
+    .icon-container {
       display: flex;
-      justify-content: center;
+      width: 75%;
+      justify-content: space-evenly;
       align-items: center;
-      width: 100%;
-      height: 130px;
       @media (min-width: 1000px) {
-        height: 130px;
+        width: 35%;
       }
-      .icon-container {
-        display: flex;
-        width: 75%;
-        justify-content: space-evenly;
-        align-items: center;
+      .fab,
+      .fas {
+        transform: scale(2.3, 2.3);
         @media (min-width: 1000px) {
-          width: 50%;
+          transform: scale(2.5, 2.5);
         }
-        .fab,
-        .fas {
-          transform: scale(2.3, 2.3);
-          @media (min-width: 1000px) {
-            transform: scale(2.8, 2.8);
-          }
-        }
-        a {
-          color: #505050;
-        }
-        a:hover {
-          color: $light-green;
-        }
+      }
+      a {
+        color: #505050;
+      }
+      a:hover {
+        color: $light-green;
+      }
+    }
+  }
+  .about-border-container {
+    display: flex;
+    width: 87%;
+    @media (min-width: 1000px) {
+      justify-content: center;
+      width: 100%;
+    }
+    .border {
+      border: 1.5px solid $light-green;
+      width: 60%;
+      margin-top: 10px;
+
+      @media (min-width: 1000px) {
+        width: 30%;
+        display: block;
       }
     }
   }

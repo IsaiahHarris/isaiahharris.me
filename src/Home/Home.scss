@@ -12,7 +12,6 @@
     justify-content: center;
     font-size: 36px;
     height: 90vh;
-    margin-left: 185px;
   }
   .title-container {
     display: none;
@@ -23,6 +22,7 @@
       flex-direction: column;
       justify-content: center;
       animation: desktop-title-container 1.8s ease 3.8s normal both;
+      margin-left: 92.5px;
     }
 
     .title-2 {
@@ -64,10 +64,10 @@
     align-items: center;
     position: relative;
     z-index: 1;
-    animation: wrapper 3s ease 0.5s normal both;
+    animation: wrapper 3s ease 1s normal both;
     @media (min-width: 1000px) {
       height: 405px;
-      margin-right: 185px;
+      margin-right: 92.5px;
     }
     .logo-top {
       width: 190px;

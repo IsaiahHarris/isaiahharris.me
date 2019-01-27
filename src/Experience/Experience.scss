@@ -1,8 +1,8 @@
 @import '../index.scss';
 .experience-container {
-  height: 90vh;
   font-family: 'Lato', sans-serif;
   width: 100vw;
+  padding-bottom: 40px;
   .header {
     display: flex;
     justify-content: flex-start;
@@ -16,54 +16,88 @@
       font-size: 38px;
     }
   }
-  .choices {
+  .choices-container {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 45px;
-    .work-choice,
-    .projects-choice {
-      width: 50vw;
-      text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    .choices {
+      width: 100%;
       display: flex;
-      justify-content: center;
-      .choice-active {
-        width: 100%;
-        height: 45px;
-        padding-bottom: 15px;
-        border-bottom: 3px solid $light-green;
-        font-size: 22px;
-      }
-      .work-choice-start {
-        width: 100%;
-        height: 45px;
-        padding-bottom: 15px;
-        border-bottom: 3px solid $light-green;
-        font-size: 22px;
+      height: 100%;
+      justify-content: space-between;
+      border-bottom: 3px solid #00dea741;
+      @media (min-width: 1000px) {
+        justify-content: center;
+        width: 980px;
       }
       .work-choice,
       .projects-choice {
-        width: 100%;
-        height: 5vh;
-        font-size: 22px;
+        width: 490px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: rgba(128, 128, 128, 0.619);
+        .choice-active {
+          width: 100%;
+          height: 45px;
+          padding-bottom: 18px;
+          color: black;
+          // background-color: $light-green;
+          border-bottom: 3px solid $light-green;
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+            width: 100%;
+          }
+        }
+        .work-choice-start {
+          width: 100%;
+          height: 45px;
+          padding-bottom: 18px;
+          color: black;
+          border-bottom: 3px solid $light-green;
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+            width: 100%;
+          }
+        }
+        .work-choice-i,
+        .projects-choice-i {
+          width: 100%;
+          height: 5vh;
+          font-size: 22px;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+          }
+        }
       }
     }
   }
   .work-container {
     z-index: 1;
-    position: absolute;
-    height: 72.5vh;
     width: 100%;
-    background-color: white;
     display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    @media (min-width: 1000px) {
+      margin-top: 20px;
+    }
     .course-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-bottom: 4vh;
-      width: 90vw;
+      padding-bottom: 3vh;
+      width: 90%;
+      margin-top: 5px;
+      @media (min-width: 1000px) {
+        width: 980px;
+      }
       .title,
       .date,
       .description {
@@ -71,11 +105,18 @@
       }
       .title {
         font-size: 22px;
+        @media (min-width: 1000px) {
+          font-size: 28px;
+        }
       }
       .date {
         padding-top: 8px;
         color: #575757;
         font-size: 20px;
+        @media (min-width: 1000px) {
+          font-size: 26px;
+          padding-top: 10px;
+        }
       }
       .description {
         padding-top: 16px;
@@ -85,113 +126,222 @@
         letter-spacing: 0.2px;
         font-weight: 300;
         line-height: 1.3em;
+        @media (min-width: 1000px) {
+          font-size: 24px;
+          padding-top: 20px;
+        }
       }
       .dl-img {
-        height: 200px;
-        width: 200px;
+        height: 190px;
+        width: 190px;
         background-image: url('../Assets/devleague.png');
         background-size: 100% 100%;
         z-index: -1;
         opacity: 0.2;
         position: absolute;
         margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 170px;
+          width: 170px;
+        }
+      }
+      .htt-img {
+        height: 140px;
+        width: 210px;
+        background-image: url('../Assets/htt.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 30px;
+        @media (min-width: 1000px) {
+          height: 130px;
+          width: 210px;
+        }
+      }
+      .tax-img {
+        height: 170px;
+        width: 200px;
+        background-image: url('../Assets/tax.png');
+        background-size: 100% 100%;
+        z-index: -1;
+        opacity: 0.2;
+        position: absolute;
+        margin-top: 2vh;
+        @media (min-width: 1000px) {
+          height: 170px;
+          width: 210px;
+        }
+      }
+      .border-experience-container {
+        width: 100%;
+        .border {
+          border: 2px solid $light-green;
+          width: 60%;
+          margin-top: 6px;
+          @media (min-width: 1000px) {
+            margin-top: 15px;
+          }
+        }
       }
     }
   }
   .projects-container {
     z-index: 0;
-    position: absolute;
     background-color: white;
-    height: 73.5vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5px;
-    .description-container {
-      width: 48vw;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 10px;
+    @media (min-width: 1000px) {
       display: flex;
+      align-items: center;
       flex-direction: column;
-      height: 230px;
-      .title {
-        padding-top: 20px;
-        font-size: 24px;
-        font-weight: 600;
-        color: #434343;
-        text-decoration: none;
+      width: 100%;
+    }
+    .project,
+    .project-2 {
+      display: flex;
+      justify-content: space-between;
+      height: 260px;
+
+      @media (min-width: 1000px) {
+        height: 320px;
+        width: 750px;
       }
-      .desc {
-        padding-top: 8px;
-        font-weight: 300;
-        font-size: 18px;
-      }
-      .technology-container {
+      .description-container {
+        width: 48%;
         display: flex;
-        flex-wrap: wrap;
-        width: 200px;
-        .tech1,
-        .tech,
-        .tech-bot,
-        .learn-more {
+        flex-direction: column;
+        height: 230px;
+        @media (min-width: 1000px) {
+          width: 58%;
+        }
+        .title {
+          padding-top: 20px;
+          font-size: 24px;
+          font-weight: 600;
+          color: #434343;
+          text-decoration: none;
+          @media (min-width: 1000px) {
+            font-size: 30px;
+          }
+        }
+        .desc {
+          padding-top: 8px;
+          font-weight: 300;
+          font-size: 18px;
+          @media (min-width: 1000px) {
+            font-size: 24px;
+            width: 75%;
+          }
+        }
+        .technology-container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          .tech1,
+          .tech,
+          .tech-bot,
+          .learn-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            padding: 5px;
+            @media (min-width: 1000px) {
+              font-size: 18px;
+            }
+          }
+          .tech1,
+          .tech,
+          .tech-bot {
+            color: white;
+          }
+          .tech1,
+          .tech {
+            width: 45%;
+            background-color: $light-green;
+            border-radius: 5px;
+            margin-top: 12px;
+            @media (min-width: 1000px) {
+              width: 30%;
+            }
+          }
+          .tech {
+            margin-left: 10px;
+          }
+          .tech-bot {
+            width: 70%;
+            background-color: $light-green;
+            border-radius: 5px;
+            @media (min-width: 1000px) {
+              width: 50%;
+            }
+          }
+          .learn-more {
+            width: 100%;
+            border: 2px solid $light-green;
+            border-radius: 5px;
+            color: $light-green;
+            text-decoration: none;
+            @media (min-width: 1000px) {
+              width: 70%;
+            }
+          }
+          .github {
+            text-decoration: none;
+            width: 100%;
+          }
+          .learn-more,
+          .tech-bot {
+            margin-top: 10px;
+          }
+        }
+      }
+      .phone {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 1000px) {
+          align-items: flex-end;
+          width: 38%;
+        }
+        .phone-container {
+          width: 120px;
+          height: 240px;
+          position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
-          font-size: 14px;
-          padding: 5px;
-        }
-        .tech1,
-        .tech,
-        .tech-bot {
-          color: white;
-        }
-        .tech1,
-        .tech {
-          width: 45%;
-          background-color: $light-green;
-          border-radius: 5px;
-          margin-top: 12px;
-        }
-        .tech {
-          margin-left: 10px;
-        }
-        .tech-bot {
-          width: 65%;
-          background-color: $light-green;
-          border-radius: 5px;
-        }
-        .learn-more {
-          width: 48vw;
-          border: 2px solid $light-green;
-          border-radius: 5px;
-          color: $light-green;
-          text-decoration: none;
-        }
-        .github {
-          text-decoration: none;
-        }
-        .learn-more,
-        .tech-bot {
-          margin-top: 10px;
+          padding-top: 48px;
+          flex-direction: column;
+          @media (min-width: 1000px) {
+            width: 150px;
+            height: 300px;
+          }
+          .phone-img {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            position: absolute;
+          }
+          .garden-guru-img {
+            height: 76%;
+            width: 88%;
+            position: absolute;
+          }
         }
       }
     }
-    .phone-container {
-      width: 120px;
-      height: 240px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 48px;
-      .phone-img {
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        position: absolute;
-      }
-      .garden-guru-img {
-        height: 76%;
-        width: 88%;
-        position: absolute;
+    .project-2 {
+      margin-top: 20px;
+      @media (min-width: 1000px) {
+        margin-top: 35px;
+        margin-bottom: 50px;
       }
     }
   }

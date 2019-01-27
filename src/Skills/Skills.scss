@@ -3,6 +3,7 @@
   width: 95%;
   font-family: 'Lato', sans-serif;
   padding-left: 5%;
+
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -36,8 +37,11 @@
       margin-left: 0px;
       justify-content: space-around;
     }
-    .block {
+
+    .block,
+    .top-block {
       width: 100vw;
+      padding-top: 20px;
       @media (min-width: 1000px) {
         width: 45%;
         max-width: 490px;
@@ -84,15 +88,16 @@
       }
       .logo-container {
         display: flex;
-        width: 90%;
+        width: 60%;
         height: 45px;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding-bottom: 5px;
+        padding-left: 20px;
         @media (min-width: 1000px) {
           // margin-right: 20%;
           margin-left: 6%;
-          margin-top: 10px;
+          margin-top: 0px;
           width: 65%;
           justify-content: space-between;
         }
@@ -116,7 +121,7 @@
           background-color: black;
           height: 12px;
           @media (min-width: 1000px) {
-            height: 10px;
+            height: 12px;
           }
         }
         .fab.fa-react {
@@ -159,6 +164,9 @@
         }
       }
     }
+    .top-block {
+      padding-top: 0;
+    }
     .border-container-skill {
       width: 100%;
       .border {
@@ -167,6 +175,7 @@
         margin-top: 10px;
         @media (min-width: 1000px) {
           width: 50%;
+          margin-top: 15px;
         }
       }
     }
@@ -180,6 +189,7 @@
 
 .currently-block {
   width: 100vw;
+  padding-top: 20px;
   @media (min-width: 1000px) {
     display: flex;
     flex-direction: column;
@@ -221,11 +231,12 @@
   }
   .logo-container {
     display: flex;
-    width: 90%;
+    width: 60%;
     height: 45px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 5px;
+    padding-left: 20px;
     @media (min-width: 1000px) {
       margin-right: 12%;
       margin-top: 5px;
@@ -248,11 +259,9 @@
       color: #de5b9c;
     }
     .fab.fa-js-square {
-      color: #fbde00;
-      background-color: black;
       height: 12px;
       @media (min-width: 1000px) {
-        height: 10px;
+        height: 15px;
       }
     }
     .fab.fa-react {

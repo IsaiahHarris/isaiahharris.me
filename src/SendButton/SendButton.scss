@@ -11,7 +11,7 @@
   color: white;
   padding: 15px 8px;
   @media (min-width: 1000px) {
-    padding: 18px 8px;
+    padding: 17px 7px;
     width: 160px;
     font-size: 26px;
   }
@@ -22,7 +22,11 @@
   margin-top: 10px;
   @media (min-width: 1000px) {
     width: 980px;
-    margin-top: 40px;
+    margin-top: 20px;
+  }
+  @media (min-height: 900px) {
+    width: 980px;
+    margin-top: 0px;
   }
   display: flex;
   .send {

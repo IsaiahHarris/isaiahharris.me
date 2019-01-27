@@ -6,8 +6,8 @@ const about = props => (
     <div className="block">
       <div className="header-1">
         <div className="titles">
-          <div className="title">ABOUT ME</div>
-          <div className="sub-title">Hi, I'm Isaiah Harris.</div>
+          <div className="title">ABOUT</div>
+          <div className="sub-title">Hi, I'm Isaiah.</div>
         </div>
         <div className="picture-container">
           <div className="picture" />
@@ -15,14 +15,13 @@ const about = props => (
       </div>
       <div className="body">
         <div className="paragraph-1">
-          After discovering coding in High-School, I've been determined to
-          improve myself as a developer everyday.
+          After discovering coding, I became determined to improve myself as a
+          developer everyday.
         </div>
         <div className="paragraph-2">
-          Four months later, I completed an immersive Javascript Coding Bootcamp
-          in Honolulu, Hawaii. Since then I have enjoyed being a Teachers
-          Assistant. I also have taken multiple online courses and participated
-          in multiple meetups and hackathons to enhance my skills.
+          I've completed an immersive JavaScript coding boot camp in Honolulu,
+          Hawaii. Since then I have enjoyed being an Software Developer and a
+          Teachers Assistant.
         </div>
         <div className="paragraph-3">
           I'm passionate, always ready for a challenge, and open to new
@@ -30,7 +29,10 @@ const about = props => (
         </div>
       </div>
     </div>
-    <div className="border-container-about" />
+
+    <div className="about-border-container">
+      <div className="border" />
+    </div>
     <div className="footer">
       <div className="icon-container">
         <a
