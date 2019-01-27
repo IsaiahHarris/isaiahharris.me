@@ -39,10 +39,12 @@
     }
 
     .block,
-    .top-block {
+    .top-block,
+    .second-block {
       width: 100vw;
       padding-top: 20px;
       @media (min-width: 1000px) {
+        padding-top: 25px;
         width: 45%;
         max-width: 490px;
       }
@@ -167,6 +169,12 @@
     .top-block {
       padding-top: 0;
     }
+    .second-block {
+      @media (min-width: 1000px) {
+        padding-top: 0px;
+      }
+    }
+
     .border-container-skill {
       width: 100%;
       .border {
