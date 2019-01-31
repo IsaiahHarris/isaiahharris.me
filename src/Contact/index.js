@@ -185,7 +185,7 @@ class Contact extends Component {
               <i className="fab fa-github" />
             </a>
             <a
-              href="https://linkedin.com/in/isaiah-a-harris"
+              href="https://linkedin.com/in/isaiahaharris"
               rel="noopener noreferrer"
               target="_blank"
             >
