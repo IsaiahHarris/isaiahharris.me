@@ -20,7 +20,7 @@ const about = props => (
         </div>
         <div className="paragraph-2">
           I've completed an immersive JavaScript coding boot camp in Honolulu,
-          Hawaii. Since then I have enjoyed being an Software Developer and a
+          Hawaii. Since then, I have enjoyed being a Software Developer and a
           Teachers Assistant.
         </div>
         <div className="paragraph-3">

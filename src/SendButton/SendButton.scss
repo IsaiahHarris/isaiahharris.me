@@ -32,11 +32,17 @@
   .send {
     @extend %send-button;
     cursor: pointer;
+    @media screen and (max-height: 500px) {
+      display: none;
+    }
   }
   .send:disabled {
     @extend %send-button;
     background-color: #b6b6b6;
     border: none;
     border: #b6b6b6 solid 2px;
+    @media screen and (max-height: 500px) {
+      display: none;
+    }
   }
 }

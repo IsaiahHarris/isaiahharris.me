@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 1;
+
   @media (min-width: 1000px) {
     height: 90vh;
     justify-content: center;
@@ -38,6 +40,9 @@
         font-size: 28px;
         width: 980px;
       }
+      @media screen and (max-height: 500px) {
+        padding-top: 0px;
+      }
     }
   }
 
@@ -48,7 +53,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
+
+    @media screen and (max-height: 500px) {
+      height: 110%;
+      margin-top: 15px;
+    }
     @media (min-width: 1000px) {
       margin-top: 0px;
     }
@@ -64,6 +73,9 @@
         width: 980px;
         height: 13%;
         justify-content: space-between;
+      }
+      @media screen and (max-height: 500px) {
+        height: 15%;
       }
     }
     .name,
@@ -86,6 +98,10 @@
     @media (min-width: 1000px) {
       height: 13%;
     }
+    @media screen and (max-height: 500px) {
+      height: 16%;
+      margin-top: 1%;
+    }
     .subject {
       height: 100%;
       width: 86.5vw;
@@ -106,6 +122,9 @@
     @media (min-width: 1000px) {
       width: 980px;
     }
+    @media screen and (max-height: 500px) {
+      height: 46%;
+    }
   }
   .name::placeholder,
   .email::placeholder,
@@ -124,6 +143,9 @@
   height: 130px;
   @media (min-width: 1000px) {
     height: 110px;
+  }
+  @media screen and (max-height: 500px) {
+    display: none;
   }
   .icon-container {
     display: flex;
@@ -167,9 +189,20 @@
     height: 190px;
   }
 }
-
-.MuiInputBase-input-38.MuiInput-input-23.Contact-input-2.MuiInputBase-inputMultiline-40.MuiInput-inputMultiline-25 {
+#text-field {
+  @media screen and (max-height: 500px) {
+    margin-top: 15px;
+    padding-top: 5px;
+    line-height: 1;
+    overflow: scroll;
+    height: 100%;
+    max-height: 100%;
+  }
   @media (min-width: 1000px) {
     font-size: 26px;
   }
+}
+
+.MuiInputBase-root-28.MuiInput-root-15.MuiInputBase-formControl-29.MuiInput-formControl-16.MuiInputBase-multiline-36.MuiInput-multiline-21 {
+  overflow: scroll;
 }
