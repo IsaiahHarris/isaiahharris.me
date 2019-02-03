@@ -51,7 +51,12 @@ const skills = props => {
     ' Babel',
     ' NPM'
   ];
-  let currentlyLearning = ['Deep Learning', 'IOS/Android', 'PyTorch', 'Vue.js'];
+  let currentlyLearning = [
+    'React Hooks',
+    'iOS/Android',
+    'Data Structures',
+    'Algorithms'
+  ];
 
   return (
     <div className="skills-container">
@@ -149,9 +154,9 @@ const skills = props => {
             })}
           </div>
           <div className="logo-container">
-            <i className="fas fa-robot" />
-            <i className="fab fa-vuejs" />
-            <i className="fas fa-fire" />
+            <i class="fab fa-apple" />
+            <i class="fab fa-android" />
+            <i class="fas fa-table" />
           </div>
           <div className="border-bot" />
         </div>
