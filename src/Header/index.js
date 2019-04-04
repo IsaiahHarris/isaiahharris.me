@@ -4,7 +4,6 @@ import OverLay from '../OverLay';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
 const header = props => {
-  //header disapears on scroll
   let lastScrollTop = 0;
   $(window).scroll(function(event) {
     var st = $(this).scrollTop();
