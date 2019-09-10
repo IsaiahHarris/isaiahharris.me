@@ -42,7 +42,7 @@ const education = props => {
           <div className="date">Oct 2018</div>
           <div className="description">
             Completed course to help me become a certified developer associate.
-            Worked with services like S3, EC2, Dynamo DB and Lambda.
+            Worked with services like S3, EC2, Dynamo DB, and Lambda.
             <div className="border-container-education">
               <div className="border" />
             </div>
