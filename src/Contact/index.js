@@ -116,6 +116,7 @@ class Contact extends Component {
       emailInput.length > 0 &&
       subjectInput.length > 0 &&
       messageInput.length > 0;
+      
     return (
       <div className="contact-container">
         <div className="header-1">
