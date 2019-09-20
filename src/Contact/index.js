@@ -80,6 +80,7 @@ class Contact extends Component {
       open: false
     });
   }
+  
   sendMessage() {
     const data = {
       name: this.state.nameInput,
