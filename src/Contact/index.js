@@ -66,6 +66,7 @@ class Contact extends Component {
       textField.rows = '3';
     }
   }
+  
   handleClick() {
     this.setState({ open: true });
     this.sendMessage();
