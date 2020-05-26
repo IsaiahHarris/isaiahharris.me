@@ -10,7 +10,6 @@ module.exports.sendInfo = (event, context, callback) => {
 
   let topicARN = process.env.ARN; //environmental variable with ARN
 
-
   var dynamoParams = {
     Item: {
       Name: {
