@@ -8,7 +8,7 @@ const sns = new AWS.SNS({ apiVersion: '2010-03-31' });
 module.exports.sendInfo = (event, context, callback) => {
   let { name, email, subject, message } = JSON.parse(event.body);
 
-  let topicARN = process.env.ARN; //environmental variable with ARN
+  let topicARN = process.env.ARN;
 
   var dynamoParams = {
     Item: {
