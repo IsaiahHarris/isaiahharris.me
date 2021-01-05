@@ -6,7 +6,7 @@
     "@material-ui/core": "^3.6.1",
     "@material-ui/icons": "^3.0.1",
     "aws-sdk": "^2.365.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
