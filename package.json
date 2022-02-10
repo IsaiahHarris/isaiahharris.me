@@ -8,7 +8,7 @@
     "aws-sdk": "^2.365.0",
     "axios": "^0.18.0",
     "jquery": "^3.3.1",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
